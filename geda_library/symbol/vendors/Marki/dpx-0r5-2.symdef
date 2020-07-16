@@ -1,0 +1,19 @@
+
+[labels]
+refdes=DPX?
+Diplexer
+! device=DPX-0R5-2
+! footprint=DPX-0R5-2
+! description=Diplexer 0-0.36GHz LowPass; 0.7-8GHz HighPass
+! net=GND:4
+
+[left]
+1 IN
+
+[right]
+2 HiPass
+3 LowPass
+
+[top]
+
+[bottom]

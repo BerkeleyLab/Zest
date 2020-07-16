@@ -1,0 +1,14 @@
+[labels]
+! tc1-1-13m
+refdes=T?
+! author=yubin zhao
+! the corresponding footprint is AT224
+[left]
+
+1 S_D
+2 NC
+3 SEC
+[right]
+6 P_D
+5 NC
+4 PRC

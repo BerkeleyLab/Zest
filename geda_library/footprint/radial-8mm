@@ -1,0 +1,7 @@
+Element["" "radial_8mm" "C?" "470uF" 56.0000mm 33.5000mm -3.3100mm 5.7850mm 1 100 ""]
+(
+	Pin[0.0000 1.7500mm 60.00mil 30.00mil 66.00mil 30.00mil "1" "1" "square"]
+	Pin[0.0000 -1.7500mm 60.00mil 30.00mil 66.00mil 30.00mil "2" "2" ""]
+	ElementArc [0.0000 0.0000 4.0000mm 4.0000mm 90 360 10.00mil]
+
+	)

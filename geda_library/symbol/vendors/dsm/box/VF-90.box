@@ -1,0 +1,19 @@
+[labels]
+VF-90
+refdes=PZTAMP?
+! device=PIEZO-AMPLIFIER
+! value=VF-90
+
+[left]
+2 IN
+3 GND
+
+[top]
+0 +5.5V	
+
+[right]
+8 OUT
+
+[bottom]
+1 GND
+9 GND

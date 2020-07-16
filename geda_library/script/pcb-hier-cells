@@ -1,0 +1,262 @@
+#!/usr/bin/perl
+
+### Replicates PCB layouts
+### John Griessen changed to create hierarchic names in  a flat gnetlist
+### Find jg28nov06 for the change in this file, and see config example (after -- #)
+### Configuration example -- # x0			|	100
+### Configuration example -- # y0			|	50
+### Configuration example -- # xoffset			|	0
+### Configuration example -- # yoffset			|	1010
+### Configuration example -- # last_col			|	0
+### Configuration example -- # last_row			|	5
+### Configuration example -- # input_filename		|	h2o-sens-dual-lp.pcb
+### Configuration example -- # output_filename		|	h2o-sens-dual-lp-x6.pcb
+### Configuration example -- # cell_refdes_prefix	|  	S
+
+### No-Fee License Version 0.1
+
+### Intent
+
+### The intent of this license is to allow for distribution of this
+### software without fee. Usage of this software other than
+### distribution, is unrestricted.
+
+### License
+
+### This software may be distributed provided that no fee is charged.
+### Modification is allowed provided that the resultant work is
+### released with the same license.
+
+### This documentation and software is provided by the author "AS IS"
+### and any express or implied warranties, including, but not limited
+### to, the implied warranties of merchantability and fitness for a
+### particular purpose are disclaimed. In no event shall the author be
+### liable for any direct, indirect, incidental, special, exemplary,
+### or consequential damages (including, but not limited to,
+### procurement of substitute goods or services; loss of use, data, or
+### profits; or business interruption) however caused and on any
+### theory of liability, whether in contract, strict liability, or
+### tort (including negligence or otherwise) arising in any way out of
+### the use of this software, even if advised of the possibility of
+### such damage.
+
+use strict;
+use warnings;
+use Carp;
+use Data::Dumper;
+
+use constant SCALE_FACTOR => 100;
+
+# Set the default configuration values. All of these values can be set
+# in the in the configuration.
+
+my %Cfg = (x0       => 500,
+	   y0       => 100,
+	   xoffset  => 1500,
+	   yoffset  => 1000,
+	   last_col => 1,
+	   last_row => 0);
+
+while (<>) {
+    s/^\s*\#.*//; # Remove comments
+    s/\s*$//; # Revove trailing spaces
+    next unless length; # Skip empty lines
+    my ($key, @values) = split /\s*\|\s*/;
+    next unless defined $key;
+
+    # If there is more than one value on the line then save all the
+    # values as an anonymous array. Currently none of the routines
+    # will deal with a scalar value that is a reference.
+
+    $Cfg{$key} = $#values == 0 ? $values[0] : [ @values ]
+}
+
+
+my $undefined_filename = 0;
+foreach (qw(input_filename output_filename)) {
+    next if defined $Cfg{$_};
+    $undefined_filename = 1;
+    carp "A value for $_ was not defined in the configuration file";
+}
+die if $undefined_filename;
+
+# Each line in the PCB is placed in the %Cfg hash in an anonymous
+# array.  Lines prior to the marker placed in the array referenced by
+# $Cfg{_pcb_header} lines after are placed in the array referenced by
+# $Cfg{_pcb}.
+
+my $Section = '_pcb_header';
+my %Refdes;
+
+$Cfg{$Section} = [];
+
+open(IN, "$Cfg{input_filename}") or die "Could not open $Cfg{input_filename} for input: $!";
+while (<IN>) {
+
+    # If we have found the marker line then create an anonymous array
+    # for the PCB layout.
+
+    if (/^\#\#\#\#\#__PCB__\#\#\#\#\#$/) {
+	$Section = '_pcb';
+	$Cfg{$Section} = [];
+    } else {
+	push @{$Cfg{$Section}}, $_;
+	if ($Section eq '_pcb' && /^\s*Element\[(.*?)\]/) {
+	    my $param = $1;
+	    my $refdes = (split /\s+/, $param)[2];
+	    if ($refdes =~ /([A-Za-z]+)(\d+)/) {
+		$Refdes{$1}{_values} = [] unless defined $Refdes{$1};
+		push @{$Refdes{$1}{_values}}, $2;
+	    }
+	}
+    }
+}
+close(IN);
+
+
+# If the marker line wasn't found then the anonymous array for the PCB
+# layout was not created.
+
+unless (defined $Cfg{'_pcb'}) {
+    print <<'END';
+(pcb-matrix) The PCB marker line was not defined
+
+A line containing only the string #####__PCB__#####
+needs to be present in the file that is used to create the
+matrix.
+
+This usually resides after all of the symbol declarations and
+before the vias.
+
+END
+}
+
+
+# Sort the refdes's
+
+foreach my $refdes (keys %Refdes) {
+    $Refdes{$refdes}{_values} = [sort { $a <=> $b } @{$Refdes{$refdes}{_values}}];
+    $Refdes{$refdes}{_last} = ${$Refdes{$refdes}{_values}}[-1];
+}
+
+# Assumes refdes ordinal > 0, rows start at 0, cols start at 0
+
+sub refdes ($$$) {
+    my ($refdes, $row, $col) = @_;
+    croak "Bad refdes" unless $refdes =~ /([A-Za-z]+)(\d+)/;
+    my ($prefix, $ordinal) = ($1, $2);
+    my $last = $Refdes{$prefix}{_last};
+#    return sprintf("\"%s%i\"", $prefix, $ordinal + $last * $row + $last * ($Cfg{last_row}+1) * $col);
+    return sprintf("\"%s%i%s%s%i\"", $Cfg{cell_refdes_prefix},$row,"/", $prefix, $ordinal );  #jg28nov06 hierarchic names version..
+}
+
+
+open(OUT, ">$Cfg{output_filename}") or die "Could not open $Cfg{output_filename} for output: $!";
+
+foreach (@ { $Cfg{_pcb_header} }) {
+    print OUT "$_"; ######
+}
+
+my $X = $Cfg{x0};
+my $Y = $Cfg{y0};
+
+my @Element;
+foreach (@ { $Cfg{_pcb} }) {
+    if (/^\s*(Element)\[(.*?)\]/) {
+	push @Element, $1, '[', $2, ']';
+    } elsif (/^\s*(Polygon)\((.*?)\)/) {
+	push @Element, $1, '(', $2, ')';
+    } elsif (/^\s*Line\[(.*?)\]/) {
+	&output_element(['Line', '[', $1, ']']);
+    } elsif (/^\s*Via\[(.*?)\]/) {
+	&output_element(['Via', '[', $1, ']']);
+    } elsif ($#Element == -1) {
+	print OUT "$_\n";
+    } elsif (/\(/) {
+	push @Element, $_;
+    } elsif (/\)/) {
+	push @Element, $_;
+	&output_element(\@Element);
+	@Element = ();
+    } else {
+	push(@Element, $_) unless $#Element == -1;
+    }
+}
+
+sub output_element ($) {
+    my ($ref) = @_;
+    my ($type, $left_bracket, $param, $right_bracket) = splice @$ref, 0, 4;
+
+    # New refdes for elements
+
+    my @param = (split /\s+/, $param) if $type eq 'Element';
+
+    foreach my $col (0..$Cfg{last_col}) {
+	foreach my $row (0..$Cfg{last_row}) {
+	    my $xoffset = ($col * $Cfg{xoffset} + $Cfg{x0}) * SCALE_FACTOR;
+	    my $yoffset = ($row * $Cfg{yoffset} + $Cfg{y0}) * SCALE_FACTOR;
+	    print OUT &new_param($type,
+			     $left_bracket,
+			     $type eq 'Element'
+			        ? join(' ', @param[0,1], &refdes($param[2], $row, $col), @param[3..$#param])
+			        : $param,
+			     $right_bracket,
+			     $xoffset,
+			     $yoffset);
+	    if ($type eq 'Polygon') {
+		foreach (@$ref) {
+		    my $line = $_;
+		    $line =~ s/\[(\d+)\s+(\d+)\]/sprintf("[%i %i]", $1+$xoffset, $2+$yoffset)/ge;
+		    print OUT "$line\n";
+		}
+	    } else {
+		foreach (@$ref) {
+		    print OUT "$_\n";
+		}
+	    }
+	}
+    }
+}
+
+# Element ... flags description layoutname value textx texty x y direction scale textflags
+
+my %Pt_fields;
+
+BEGIN {
+    %Pt_fields = ( Element => [qw(0 0 0 0 1 0 0 0 0 0)],
+		   Line    => [qw(1 1 0 0 0)],
+		   Via     => [qw(1 0 0 0 0 0 0)],
+		   Polygon => [qw(0)],
+		   );
+}
+
+sub new_param ($$$$) {
+    my ($type, $left_bracket, $param, $right_bracket, $xoffset, $yoffset) = @_;
+    my $element_str = sprintf("%s%s", $type, $left_bracket);
+    my @values = split /\s+/, $param;
+    foreach my $pt_field (@ { $Pt_fields{$type} }) {
+	if ($pt_field) {
+	    my ($x, $y) = splice @values, 0, 2;
+	    $element_str .= sprintf("%i %i ", $x + $xoffset, $y + $yoffset);
+	} else {
+	    $element_str .= sprintf("%s ", shift(@values));
+	}
+    }
+    return $element_str . "$right_bracket\n";
+}
+
+
+
+# Style (adapted from the Perl Cookbook, First Edition, Recipe 12.4)
+
+# 1. Names of functions and local variables are all lowercase.
+# 2. The program's persistent variables (either file lexicals
+#    or package globals) are capitalized.
+# 3. Identifiers with multiple words have each of these
+#    separated by an underscore to make it easier to read.
+# 4. Constants are all uppercase.
+# 5. If the arrow operator (->) is followed by either a
+#    method name or a variable containing a method name then
+#    there is a space before and after the operator.
+
+

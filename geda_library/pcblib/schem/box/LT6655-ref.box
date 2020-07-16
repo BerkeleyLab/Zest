@@ -1,0 +1,18 @@
+[labels]
+LT6655-ref
+refdes=U?
+! author=Jin Yang
+! device=Voltage Reference
+! description=sub-module
+! source=LT6655-ref.sch
+
+[left]
+1	VIN
+
+[right]
+2	VOUT
+
+[top]
+
+[bottom]
+3	GND

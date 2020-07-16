@@ -1,0 +1,35 @@
+
+# Kionix KX023
+
+[labels]
+
+KX023
+refdes=U?
+! author=Larry Doolittle
+! device=KX023-1025
+! description=3-Axis accelerometer
+! footprint=LGA-16
+
+[left]
+1 IOVdd
+2 NC
+3 NC
+4 SCL
+5 GND
+
+[bottom]
+6 SDA
+7 ADDR
+8 nCS
+
+[right]
+13 TRIG
+12 GND
+11 INT1
+10 NC
+9 INT2
+
+[top]
+16 NC
+15 NC
+14 Vdd

@@ -1,0 +1,47 @@
+v 20130925 2
+B 300 300 1900 800 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 2200 1200 9 10 0 0 0 0 1
+source=lm723-ps.sch
+T 2200 1400 9 10 0 0 0 0 1
+description=sub-module
+T 2200 1600 9 10 0 0 0 0 1
+device=POWER-SUPPLY
+T 2200 1800 9 10 0 0 0 0 1
+author=Jin Yang
+T 1265 657 9 10 1 1 0 3 1
+LM723-PS
+T 800 1200 9 10 1 1 0 3 1
+refdes=U?
+P 2500 700 2200 700 1 0 0
+{
+T 2150 700 9 10 1 1 0 7 1
+pinlabel=OUT
+T 2300 750 5 8 1 1 0 0 1
+pinnumber=1
+T 2300 750 5 8 0 1 0 0 1
+pinseq=1
+T 2100 750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 1300 1400 1300 1100 1 0 0
+{
+T 1300 1050 9 10 1 1 0 5 1
+pinlabel=V+
+T 1350 1150 5 8 1 1 0 0 1
+pinnumber=2
+T 1350 1150 5 8 0 1 0 0 1
+pinseq=2
+T 1200 50 9 10 0 1 0 6 1
+pintype=pas
+}
+P 1300 0 1300 300 1 0 0
+{
+T 1300 350 9 10 1 1 0 3 1
+pinlabel=GND
+T 1350 250 5 8 1 1 0 2 1
+pinnumber=3
+T 1350 250 5 8 0 1 0 2 1
+pinseq=3
+T 1200 50 9 10 0 1 0 6 1
+pintype=pas
+}

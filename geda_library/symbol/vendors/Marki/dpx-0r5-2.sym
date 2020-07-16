@@ -1,0 +1,47 @@
+v 20130925 2
+B 300 0 2900 1200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 3200 1300 9 10 0 0 0 0 1
+net=GND:4
+T 3200 1500 9 10 0 0 0 0 1
+description=Diplexer 0-0.36GHz LowPass; 0.7-8GHz HighPass
+T 3200 1700 9 10 0 0 0 0 1
+footprint=DPX-0R5-2
+T 3200 1900 9 10 0 0 0 0 1
+device=DPX-0R5-2
+T 1800 600 9 10 1 1 0 3 1
+refdes=DPX?
+T 1800 200 9 10 1 1 0 3 1
+Diplexer
+P 0 800 300 800 1 0 0
+{
+T 350 800 9 10 1 1 0 1 1
+pinlabel=IN
+T 200 850 5 8 1 1 0 6 1
+pinnumber=1
+T 200 850 5 8 0 1 0 6 1
+pinseq=1
+T 200 850 9 10 0 1 0 6 1
+pintype=pas
+}
+P 3500 800 3200 800 1 0 0
+{
+T 3150 800 9 10 1 1 0 7 1
+pinlabel=HiPass
+T 3300 850 5 8 1 1 0 0 1
+pinnumber=2
+T 3300 850 5 8 0 1 0 0 1
+pinseq=2
+T 3100 850 9 10 0 1 0 6 1
+pintype=pas
+}
+P 3500 400 3200 400 1 0 0
+{
+T 3150 400 9 10 1 1 0 7 1
+pinlabel=LowPass
+T 3300 450 5 8 1 1 0 0 1
+pinnumber=3
+T 3300 450 5 8 0 1 0 0 1
+pinseq=3
+T 3100 450 9 10 0 1 0 6 1
+pintype=pas
+}

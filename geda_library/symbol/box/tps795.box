@@ -1,0 +1,15 @@
+[labels]
+  tps795
+refdes=U?
+! author=Yubin Zhao
+! the package is SOT223-6
+
+[left]
+
+1 EN
+2 IN
+3 GND
+4 OUT
+5 NT/FB
+[right]
+6 GND

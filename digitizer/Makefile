@@ -2,7 +2,7 @@ LINKS=digitizer_05_se2diff.sch digitizer_06_diff2se.sch digitizer_07_thermo_brid
 SOURCE := $(sort $(wildcard ./digitizer_*.sch))
 SOURCE += $(LINKS)
 SOURCE_PDF = $(SOURCE:%.sch=%_sch.pdf)
-GEDA_LIBRARY=../../submodules/geda_library
+GEDA_LIBRARY=../geda_library
 OPENSCAD = openscad
 
 TOP_SCH = digitizer_01_adda.sch digitizer_02_fmc.sch digitizer_03_housekeeping.sch digitizer_04_power.sch

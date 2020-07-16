@@ -1,0 +1,36 @@
+
+# TI TRF370315IRGET
+
+[labels]
+
+TRF370315IRGET
+refdes=U?
+! author=Qiang Du
+! device=TRF370315IRGET
+! description=  IC QUADRATURE MODULATOR 24-QFN
+! footprint=VFN24_4_EP.fp
+! price=11.28
+! vendor=digikey
+! vendor_id=296-20731-1-ND
+! net=GND:2,5,8,11,12,14,17,19,20,23
+
+[left]
+21 BBIP
+22 BBIN
+
+3 LOP
+4 LON
+
+9 BBQN
+10 BBQP
+
+[right]
+
+16 RF_OUT
+
+[top]
+18 VCC
+24 VCC
+
+[bottom]
+2 GND

@@ -1,0 +1,28 @@
+
+# Linear LT1763
+
+[labels]
+
+LT1763
+refdes=U?
+! author=Qiang Du
+! device=LT1763CS8-5#PBF
+! description=IC REG LDO 5V 0.5A 8SOIC
+! footprint=S8
+! price=4.15
+! vendor=digikey
+! vendor_id=LT1763CS8-5#PBF-ND
+! net=GND:3,6,7
+
+[left]
+8 Vin
+
+5 ! SD
+
+[right]
+1 Vout
+2 ADJ
+4 BYP
+
+[bottom]
+3 GND

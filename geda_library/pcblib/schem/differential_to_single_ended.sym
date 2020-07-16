@@ -1,0 +1,65 @@
+v 20130925 2
+B 300 0 2000 1200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 2300 1000 9 10 0 0 0 0 1
+description=sub-module
+T 2300 1200 9 10 0 0 0 0 1
+device=Pre-amplifier
+T 2300 1400 9 10 0 0 0 0 1
+author=Jin Yang
+T 1300 800 9 10 1 1 0 3 1
+Diff --> SE
+T 1300 300 9 10 1 1 0 3 1
+refdes=U?
+P 0 1000 300 1000 1 0 0
+{
+T 355 995 9 10 1 1 0 0 1
+pinlabel=DIFF+
+T 205 1045 5 8 1 1 0 6 1
+pinnumber=2
+T 200 1050 5 8 1 1 0 6 1
+pinseq=2
+T 400 1050 9 10 0 1 0 0 1
+pintype=pas
+}
+P 0 600 300 600 1 0 0
+{
+T 355 595 9 10 1 1 0 0 1
+pinlabel=DIFF-
+T 205 645 5 8 1 1 0 6 1
+pinnumber=3
+T 200 650 5 8 1 1 0 6 1
+pinseq=3
+T 400 650 9 10 0 1 0 0 1
+pintype=pas
+}
+T 2600 795 8 10 0 0 0 0 1
+source=diff2se.sch
+P 2600 600 2300 600 1 0 0
+{
+T 2245 595 9 10 1 1 0 6 1
+pinlabel=SE+
+T 2395 645 5 8 1 1 0 0 1
+pinnumber=1
+T 2400 650 5 8 1 1 0 0 1
+pinseq=1
+}
+P 0 200 300 200 1 0 0
+{
+T 355 195 9 10 1 1 0 0 1
+pinlabel=CM
+T 205 245 5 8 1 1 0 6 1
+pinnumber=4
+T 200 250 5 8 1 1 0 6 1
+pinseq=4
+T 400 250 9 10 0 1 0 0 1
+pintype=pas
+}
+P 2600 200 2300 200 1 0 0
+{
+T 2245 195 9 10 1 1 0 6 1
+pinlabel=SE-
+T 2395 245 5 8 1 1 0 0 1
+pinnumber=5
+T 2400 250 5 8 1 1 0 0 1
+pinseq=5
+}

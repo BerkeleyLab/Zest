@@ -1,0 +1,41 @@
+
+# Linear LTC3604
+
+[labels]
+
+LTC3604
+refdes=U?
+! author=Qiang Du
+! device=LTC3604EUD#PBF
+! description=IC REG BUCK SYNC 2.5A 16QFN
+! footprint=QFN16UD
+! price=6.93
+! vendor=digikey
+! vendor_id=LTC3604EUD#PBF-ND
+
+[left]
+
+14 RUN
+2 PGOOD
+13 Track/SS
+7 INTVcc
+12 ITH
+10 RT
+1 MODE/SYNC
+
+[right]
+6 BOOST
+
+3 SW
+4 SW
+8 Von
+
+11 FB
+
+[top]
+15 Vin
+16 Vin
+
+[bottom]
+17 PGND
+9 SGND

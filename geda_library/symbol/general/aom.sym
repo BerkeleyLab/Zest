@@ -1,0 +1,45 @@
+v 20130925 2
+B 400 300 3600 800 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 400 1500 9 10 0 0 0 0 1
+value=AMF-55-1550-2FP
+T 400 1700 9 10 0 0 0 0 1
+device=ACOUSTO-OPTIC-MODULATOR
+T 2200 700 9 10 1 1 0 3 1
+AOM Brimrose
+T 2200 500 9 10 1 1 0 3 1
+PN AMF-55-1550-2FP
+T 2300 1200 9 10 1 1 0 3 1
+refdes=AOM?
+P 100 700 400 700 1 0 0
+{
+T 450 700 9 10 1 1 0 1 1
+pinlabel=Input
+T 300 750 5 8 1 1 0 6 1
+pinnumber=1
+T 300 750 5 8 0 1 0 6 1
+pinseq=1
+T 300 750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 4300 700 4000 700 1 0 0
+{
+T 3950 700 9 10 1 1 0 7 1
+pinlabel=Output
+T 4100 750 5 8 1 1 0 0 1
+pinnumber=2
+T 4100 750 5 8 0 1 0 0 1
+pinseq=2
+T 3900 750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 3300 1400 3300 1100 1 0 0
+{
+T 3300 1050 9 10 1 1 0 5 1
+pinlabel=SMB Modualtion
+T 3350 1150 5 8 1 1 0 0 1
+pinnumber=3
+T 3350 1150 5 8 0 1 0 0 1
+pinseq=3
+T 3200 50 9 10 0 1 0 6 1
+pintype=pas
+}

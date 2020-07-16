@@ -1,0 +1,13 @@
+
+Element["selected" "" "" "" 9100 19700 0 0 0 100 "selected"]
+(
+	Pad[0 -14200 0 -10300 7600 1200 8200 "" "4" "selected,square"]
+	Pad[-5900 -1500 -5900 1600 2800 1200 3400 "" "1" "selected,square,edge2"]
+	Pad[0 -1100 0 1200 3600 1200 4200 "" "2" "selected,square,edge2"]
+	Pad[5900 -1500 5900 1600 2800 1200 3400 "" "3" "selected,square,edge2"]
+	ElementLine [-8800 -19400 8700 -19400 600]
+	ElementLine [8700 -19400 8700 4100 600]
+	ElementLine [8700 4100 -8800 4100 600]
+	ElementLine [-8800 4100 -8800 -19400 600]
+
+	)

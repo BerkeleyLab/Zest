@@ -1,0 +1,22 @@
+v 20100214 2
+T 10 650 5 10 0 0 0 0 1
+device=MTG
+T 0 1900 5 10 0 0 0 0 1
+author=Bert Timmerman
+T 0 900 5 10 0 0 0 0 1
+numslots=0
+V 200 200 100 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+L 0 200 400 200 3 0 0 0 -1 -1
+L 200 400 200 0 3 0 0 0 -1 -1
+T 0 1700 5 10 0 0 0 0 1
+description=Mounting hole
+T 0 1500 5 10 0 0 0 0 1
+dist-license=GPL
+T 0 1300 5 10 0 0 0 0 1
+use-license=unlimited
+T 0 1100 5 10 0 0 0 0 1
+footprint=MTG____.fp
+T 500 300 8 10 0 1 0 0 1
+device=hex washer
+T 300 300 8 10 1 1 0 0 1
+refdes=M?

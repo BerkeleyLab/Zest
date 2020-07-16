@@ -1,0 +1,31 @@
+[labels]
+LTC6401
+refdes=U?
+! author=Jin Yang
+! device=ad driver
+
+[top]
+1	V+
+3	V+
+10	V+
+
+[bottom]
+4	V-
+9	V-
+12	V-
+17	V-
+
+
+[left]
+13	IN+
+14	IN+
+15	IN-
+16	IN-
+11	! ENABLE
+
+[right]
+8	OUT+
+7	OUTF+
+6	OUTF-
+5	OUT-
+2	VOCM

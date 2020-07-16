@@ -1,0 +1,18 @@
+[labels]
+JDSUx5
+refdes=MOD?
+! device=MODULATOR
+! value=21067769-010
+
+[left]
+1 PIN
+2 RF
+
+[top]
+4 V-bia	
+
+[right]
+3 Output
+
+[bottom]
+5	GND

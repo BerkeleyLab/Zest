@@ -1,0 +1,50 @@
+
+# Linear LTC3604
+
+[labels]
+
+LTC3605
+refdes=U?
+! author=Qiang Du
+! device=LTC3605IUF#PBF
+! description=IC REG BUCK ADJ 5A SYNC 24QFN
+! footprint=QFN24UF
+! price=10.68
+! vendor=digikey
+! vendor_id=LTC3605IUF#PBF-ND
+
+[left]
+7 RUN
+2 PHMODE
+3 MODE
+
+24 CLKIN
+8 PGOOD
+5 Track/SS
+21 INTVcc
+6 ITH
+1 RT
+
+[right]
+23 CLKOUT
+20 BOOST
+
+11 SW
+12 SW
+13 SW
+14 SW
+15 SW
+16 SW
+9 Von
+
+4 FB
+
+[top]
+17 PVin
+18 PVin
+19 SVin
+
+[bottom]
+25 PGND
+10 PGND
+22 SGND

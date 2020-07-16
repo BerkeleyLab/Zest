@@ -1,0 +1,15 @@
+[lable]
+SMA
+refdes=J?
+!author Yubin Zhao
+!standard SMA, the corresponding footprint is SMA
+[right]
+1 S
+
+[bottom]
+2 GND
+[left]
+3 GND
+4 GND
+[top]
+5 GND

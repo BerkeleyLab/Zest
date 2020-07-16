@@ -1,0 +1,27 @@
+
+# TI 74LVC2T45
+
+[labels]
+
+SN74LVC2T45
+refdes=U?
+! author=Qiang Du
+! device=SN74LVC2T45DCTR
+! description=IC BUS TRANSCVR 2BIT N-INV SM8
+! footprint=SM8
+! price=0.74
+! vendor=digikey
+! vendor_id=296-16845-1-ND
+
+[left]
+1 VccA
+2 A1
+3 A2
+4 GND
+
+[right]
+8 VccB
+7 B1
+6 B2
+5 DIR
+

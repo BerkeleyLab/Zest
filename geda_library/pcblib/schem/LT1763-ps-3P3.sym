@@ -1,0 +1,48 @@
+v 20130925 2
+B 300 300 2300 800 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 2600 1200 9 10 0 0 0 0 1
+source=LT1763-ps.sch
+T 2600 1400 9 10 0 0 0 0 1
+description=sub-module
+T 2600 1600 9 10 0 0 0 0 1
+device=LDO
+T 2600 1800 9 10 0 0 0 0 1
+author=Jin Yang
+T 1400 600 9 10 1 1 0 3 2
+LT1763-ps
+3.3V
+T 1500 100 9 10 1 1 0 3 1
+refdes=U?
+P 0 700 300 700 1 0 0
+{
+T 350 700 9 10 1 1 0 1 1
+pinlabel=VIN
+T 200 750 5 8 1 1 0 6 1
+pinnumber=1
+T 200 750 5 8 0 1 0 6 1
+pinseq=1
+T 200 750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 2900 700 2600 700 1 0 0
+{
+T 2550 700 9 10 1 1 0 7 1
+pinlabel=VOUT
+T 2700 750 5 8 1 1 0 0 1
+pinnumber=2
+T 2700 750 5 8 0 1 0 0 1
+pinseq=2
+T 2500 750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 1500 0 1500 300 1 0 0
+{
+T 1500 350 9 10 1 1 0 3 1
+pinlabel=GND
+T 1550 250 5 8 1 1 0 2 1
+pinnumber=3
+T 1550 250 5 8 0 1 0 2 1
+pinseq=3
+T 1400 50 9 10 0 1 0 6 1
+pintype=pas
+}

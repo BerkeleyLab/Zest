@@ -1,0 +1,102 @@
+v 20060123 1
+B 300 300 1700 2800 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 2000 3200 9 10 0 0 0 0 1
+net=GND:4
+T 2000 3400 9 10 0 0 0 0 1
+net=VCC:8
+T 2000 3600 9 10 0 0 0 0 1
+device=I2C compatitble Serial EEPROM 32Kbit (4096x8)
+T 2000 3800 9 10 0 0 0 0 1
+author=Gang Huang
+T 1200 2500 9 10 1 1 0 3 1
+AT24C32D
+T 1200 2100 9 10 1 1 0 3 1
+refdes=U?
+P 0 2700 300 2700 1 0 0
+{
+T 350 2700 9 10 1 1 0 1 1
+pinlabel=A0
+T 200 2750 5 8 1 1 0 6 1
+pinnumber=1
+T 200 2750 5 8 0 1 0 6 1
+pinseq=1
+T 200 2750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 0 2300 300 2300 1 0 0
+{
+T 350 2300 9 10 1 1 0 1 1
+pinlabel=A1
+T 200 2350 5 8 1 1 0 6 1
+pinnumber=2
+T 200 2350 5 8 0 1 0 6 1
+pinseq=2
+T 200 2350 9 10 0 1 0 6 1
+pintype=pas
+}
+P 0 1900 300 1900 1 0 0
+{
+T 350 1900 9 10 1 1 0 1 1
+pinlabel=A2
+T 200 1950 5 8 1 1 0 6 1
+pinnumber=3
+T 200 1950 5 8 0 1 0 6 1
+pinseq=3
+T 200 1950 9 10 0 1 0 6 1
+pintype=pas
+}
+P 1500 0 1500 300 1 0 0
+{
+T 1500 350 9 10 1 1 0 3 1
+pinlabel=GND
+T 1550 250 5 8 1 1 0 2 1
+pinnumber=4
+T 1550 250 5 8 0 1 0 2 1
+pinseq=4
+T 1400 50 9 10 0 1 0 6 1
+pintype=pas
+}
+P 0 700 300 700 1 0 0
+{
+T 350 700 9 10 1 1 0 1 1
+pinlabel=SDA
+T 200 750 5 8 1 1 0 6 1
+pinnumber=5
+T 200 750 5 8 0 1 0 6 1
+pinseq=5
+T 200 750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 0 1100 300 1100 1 0 0
+{
+T 350 1100 9 10 1 1 0 1 1
+pinlabel=SCL
+T 200 1150 5 8 1 1 0 6 1
+pinnumber=6
+T 200 1150 5 8 0 1 0 6 1
+pinseq=6
+T 200 1150 9 10 0 1 0 6 1
+pintype=pas
+}
+P 900 0 900 300 1 0 0
+{
+T 900 350 9 10 1 1 0 3 1
+pinlabel=WP
+T 950 250 5 8 1 1 0 2 1
+pinnumber=7
+T 950 250 5 8 0 1 0 2 1
+pinseq=7
+T 800 50 9 10 0 1 0 6 1
+pintype=pas
+}
+P 1200 3400 1200 3100 1 0 0
+{
+T 1200 3050 9 10 1 1 0 5 1
+pinlabel=VCC
+T 1250 3150 5 8 1 1 0 0 1
+pinnumber=8
+T 1250 3150 5 8 0 1 0 0 1
+pinseq=8
+T 1100 50 9 10 0 1 0 6 1
+pintype=pas
+}

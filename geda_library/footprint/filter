@@ -1,0 +1,10 @@
+Element["" "" "" "" 0.0000 0.0000 0.0000 0.0000 0 100 ""]
+(
+	Pad[360.00mil 400.00mil 360.00mil 600.00mil 480.00mil 20.00mil 490.00mil "" "1" "square"]
+	Pad[2400.00mil 400.00mil 2400.00mil 600.00mil 480.00mil 20.00mil 490.00mil "" "2" "square"]
+	ElementLine [0.0000 0.0000 2760.00mil 0.0000 10.00mil]
+	ElementLine [2760.00mil 0.0000 2760.00mil 980.00mil 10.00mil]
+	ElementLine [2760.00mil 980.00mil 0.0000 980.00mil 10.00mil]
+	ElementLine [0.0000 980.00mil 0.0000 0.0000 10.00mil]
+
+	)

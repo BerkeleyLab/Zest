@@ -1,0 +1,60 @@
+v 20130925 2
+B 300 300 1700 900 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+{
+T 300 1200 5 10 0 1 0 0 1
+source=Wenzel
+}
+T 900 1800 9 10 0 0 0 0 1
+value=LNPDN-112-3-B-0-B
+T 900 2000 9 10 0 0 0 0 1
+device=PROGRAMMABLE DIVIDER
+T 2420 136 9 10 1 1 0 3 1
+IFM-2 Freq Multiplier
+T 700 1200 9 10 1 1 0 3 1
+refdes=U?
+P 0 700 300 700 1 0 0
+{
+T 350 700 9 10 1 1 0 1 1
+pinlabel=Input
+T 200 750 5 8 1 1 0 6 1
+pinnumber=1
+T 200 750 5 8 0 1 0 6 1
+pinseq=1
+T 200 750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 2300 700 2000 700 1 0 0
+{
+T 1950 700 9 10 1 1 0 7 1
+pinlabel=Output
+T 2100 750 5 8 1 1 0 0 1
+pinnumber=2
+T 2100 750 5 8 0 1 0 0 1
+pinseq=2
+T 1900 750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 1200 1500 1200 1200 1 0 0
+{
+T 1200 1150 9 10 1 1 0 5 1
+pinlabel=Vs
+T 1250 1250 5 8 1 1 0 0 1
+pinnumber=3
+T 1250 1250 5 8 0 1 0 0 1
+pinseq=3
+T 1100 150 9 10 0 1 0 6 1
+pintype=pas
+}
+P 1200 0 1200 300 1 0 0
+{
+T 1200 350 9 10 1 1 0 3 1
+pinlabel=GND
+T 1250 250 5 8 1 1 0 2 1
+pinnumber=4
+T 1250 250 5 8 0 1 0 2 1
+pinseq=4
+T 1100 50 9 10 0 1 0 6 1
+pintype=pas
+}
+T 900 2200 8 10 0 0 0 0 1
+Vs=12V?

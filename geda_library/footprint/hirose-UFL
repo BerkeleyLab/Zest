@@ -1,0 +1,13 @@
+Element["" "hirose_ufl" "J?" "" 59.5000mm 16.0000mm 2.3542mm -1.5842mm 0 120 ""]
+(
+	Pad[-60.00mil 0.0000 -60.00mil 0.0000 40.00mil 12.00mil 46.00mil "" "1" "square"]
+	Pad[-20.00mil -60.00mil 20.00mil -60.00mil 40.00mil 12.00mil 46.00mil "" "2" "square,edge2"]
+	Pad[-20.00mil 60.00mil 20.00mil 60.00mil 40.00mil 12.00mil 46.00mil "" "3" "square,edge2"]
+	ElementLine [-74.00mil -74.00mil 74.00mil -74.00mil 8.00mil]
+	ElementLine [-74.00mil -74.00mil -74.00mil 74.00mil 8.00mil]
+	ElementLine [-74.00mil 74.00mil 74.00mil 74.00mil 8.00mil]
+	ElementLine [74.00mil -74.00mil 74.00mil 74.00mil 8.00mil]
+	ElementArc [0.0000 0.0000 35.00mil 35.00mil 180 360 8.00mil]
+	ElementArc [0.0000 0.0000 12.00mil 12.00mil 180 360 8.00mil]
+
+	)

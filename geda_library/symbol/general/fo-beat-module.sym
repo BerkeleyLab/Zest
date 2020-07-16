@@ -1,0 +1,54 @@
+v 20140308 2
+B 300 0 1600 1000 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 200 1100 9 10 0 0 0 0 1
+value=FO-Beat-Module
+T 200 1300 9 10 0 0 0 0 1
+device=FO-BEAT-MODULE
+T 1100 800 9 10 1 1 0 3 1
+FO Beat Module
+T 1100 400 9 10 1 1 0 3 1
+refdes=FBM?
+P 0 600 300 600 1 0 0
+{
+T 350 600 9 10 1 1 0 1 1
+pinlabel=Bias_in
+T 200 650 5 8 1 1 0 6 1
+pinnumber=1
+T 200 650 5 8 0 1 0 6 1
+pinseq=1
+T 200 650 9 10 0 1 0 6 1
+pintype=pas
+}
+P 0 200 300 200 1 0 0
+{
+T 350 200 9 10 1 1 0 1 1
+pinlabel=Beat_in
+T 200 250 5 8 1 1 0 6 1
+pinnumber=2
+T 200 250 5 8 0 1 0 6 1
+pinseq=2
+T 200 250 9 10 0 1 0 6 1
+pintype=pas
+}
+P 2200 600 1900 600 1 0 0
+{
+T 1850 600 9 10 1 1 0 7 1
+pinlabel=Out
+T 2000 650 5 8 1 1 0 0 1
+pinnumber=3
+T 2000 650 5 8 0 1 0 0 1
+pinseq=3
+T 1800 650 9 10 0 1 0 6 1
+pintype=OUT
+}
+P 2200 200 1900 200 1 0 0
+{
+T 1850 200 9 10 1 1 0 7 1
+pinlabel=Monitor
+T 2000 250 5 8 1 1 0 0 1
+pinnumber=4
+T 2000 250 5 8 0 1 0 0 1
+pinseq=4
+T 1800 250 9 10 0 1 0 6 1
+pintype=OUT
+}

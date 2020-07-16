@@ -1,0 +1,18 @@
+[labels]
+Thermometer Bridge
+refdes=U?
+! author=Gang Huang
+! net=VSS:3
+! net=GND:4
+[left]
+
+[top]
+3 VIN
+
+
+[right]
+1 VOUT_P
+2 VOUT_N
+
+[bottom]
+4 GND

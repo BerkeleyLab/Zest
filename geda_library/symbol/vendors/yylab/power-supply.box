@@ -1,0 +1,18 @@
+[labels]
+Power-Supply ??V
+refdes=HWS?
+! device=Power-Supply
+value=HWS15-?
+
+[left]
+1 V+
+2 V-
+
+[top]
+
+[right]
+3 GND
+4 AC(L)
+5 AC(N)
+
+[bottom]

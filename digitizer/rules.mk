@@ -1,8 +1,8 @@
 TOP := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 GAF_VERSION := $(shell gaf --version 2>/dev/null)
 
-FOOTGEN_DIR = $(TOP)submodule/geda_library/footprint
-DJBOXSYM_DIR = $(TOP)submodule/geda_library/symbol
+FOOTGEN_DIR = $(TOP)geda_library/footprint
+DJBOXSYM_DIR = $(TOP)/geda_library/symbol
 SCRIPT_DIR = /usr/share/gEDA/scheme/
 #$(TOP)script
 
@@ -70,7 +70,7 @@ geda_lib:
 	make -C $(DJBOXSYM_DIR)
 
 %.sym: %.symdef
-	$(TOP)submodule/geda_library/script/djboxsym $< > $@
+	$(TOP)geda_library/script/djboxsym $< > $@
 
 clean: clean_dep
 	rm -f *~ *- $(TARGET) $(CLEAN)
