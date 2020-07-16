@@ -1,0 +1,51 @@
+CMOS (mostly SPI) subsystem
+  All driven via level converters from P2, where P2_VADJ is used
+  on 74LVC8T245 or 74AVC4T245 CMOS level converter chips.
+  Note that 74AVC4T245 chips' control pins are referenced to VCC(A).
+
+All signalling directions listed from the perspective of the peripheral
+  chip on this board, not the FPGA.
+
+BMB7 compatibility note:
+  "TOP" FMC is LPC, connected to HR Kintex banks 13 and 14
+  "BOTTOM" FMC is HPC, LPC subset connected to HP Kintex banks 32 and 34
+  Top and bottom as drawn with optical links to the left, FMC to the right,
+  opposite from SLAC's drawings of fmc_carrier_c00 that have FMC to the left.
+    BMB7-BOTTOM   P1   HPC   HP  (1.8V only)
+    BMB7-TOP      P2   LPC   HR  (3.3V tolerant)
+
+U1  LMK01801  3.3V  (but will work at 1.8V)
+  CLK   input
+  DATA  input
+  LE    input
+
+U2,U3  AD9653  1.8V  (not 3.3V tolerant)
+  SCLK  input, shared
+  SYNC  input, shared
+  PDWN  input, shared
+  CSB   input, dedicated
+  SDIO  I/O, shared?
+
+U4  AD9781  3.3V  (won't work at 1.8V)
+  CSB   input
+  SCLK  input
+  SDO   output
+  SDIO  input
+  RESET input
+
+U15  AMC7823  3.3V (won't work at 1.8V)
+  SS    input
+  SCLK  input
+  MOSI  input
+  MISO  output
+
+U18  AD7794  3.3V (won't work at 1.8V)
+  CS    input
+  SCLK  input
+  DIN   input
+  CLK   input (optional?)
+  DOUT  output
+
+U33,U34  TPS62110 12V  (will work down to 1.8V)
+  ENABLE  input, shared
+  SYNC    input, shared

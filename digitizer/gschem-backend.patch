@@ -1,0 +1,26 @@
+diff -u a/gnet-partslist3.scm b/gnet-partslist3.scm
+--- a/gnet-partslist3.scm	2015-05-01 14:59:09.000000000 -0700
++++ b/gnet-partslist3.scm	2015-07-30 07:34:15.000000000 -0700
+@@ -21,7 +21,7 @@
+ (define partslist3:write-top-header
+   (lambda (port)
+     (display ".START\n" port)
+-    (display "..device\tvalue\tfootprint\tquantity\trefdes\n" port)))
++    (display "..device\tvalue\tfootprint\tdielectric\tvoltage\tquantity\trefdes\n" port)))
+ 
+ (define (partslist3:write-partslist ls port)
+   (if (null? ls)
+diff -u a/partslist-common.scm b/partslist-common.scm
+--- a/partslist-common.scm	2015-05-01 14:59:09.000000000 -0700
++++ b/partslist-common.scm	2015-07-30 07:24:02.000000000 -0700
+@@ -24,7 +24,9 @@
+ 	    (cons (list package
+ 			(get-device package)
+ 			(get-value package)  
+-			(gnetlist:get-package-attribute package "footprint")) ;; sdb change
++			(gnetlist:get-package-attribute package "footprint")  ;; sdb change
++			(gnetlist:get-package-attribute package "dielectric")  ;; lrd change
++			(gnetlist:get-package-attribute package "voltage")) ;; lrd change
+ 		  (get-parts-table (cdr packages)))))))
+ 
+ (define (write-one-row ls separator end-char port)
