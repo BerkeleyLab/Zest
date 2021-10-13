@@ -1,0 +1,10 @@
+Element["" "IND_7mm" "L?" "10uH" 46.0000mm 15.0000mm -4.0000mm -5.2660mm 0 100 ""]
+(
+	Pad[-125.98mil -11.81mil -125.98mil 11.81mil 62.99mil 12.00mil 68.99mil "1" "1" "square"]
+	Pad[125.99mil -11.81mil 125.99mil 11.81mil 62.99mil 12.00mil 68.99mil "2" "2" "square"]
+	ElementLine [163.48mil 143.70mil -163.48mil 143.70mil 10.00mil]
+	ElementLine [-163.48mil 143.70mil -163.48mil -143.70mil 10.00mil]
+	ElementLine [-163.48mil -143.70mil 163.48mil -143.70mil 10.00mil]
+	ElementLine [163.48mil -143.70mil 163.48mil 143.70mil 10.00mil]
+
+	)

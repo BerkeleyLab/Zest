@@ -1,0 +1,17 @@
+[labels]
+ZX85-12G-S+
+refdes=BIAT?
+! device=BIAS-TEE
+! value=ZX85-12G-S+
+
+[left]
+1 IN
+
+[top]
+3 V+	
+
+[right]
+2 Out
+
+[bottom]
+4 GND

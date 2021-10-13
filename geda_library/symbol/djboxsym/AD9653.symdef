@@ -1,0 +1,61 @@
+[labels]
+AD9653
+refdes=U?
+! author=Gang Huang
+! device=16bit quad ADC
+! net=AVDD18:3,4,7,34,39,45,46
+! net=DRVDD:8,29
+
+[left]
+36  VIN+A
+35  VIN-A
+37  VIN+B
+38  VIN-B
+48  VIN+C
+47  VIN-C
+1   VIN+D
+2   VIN-D
+43  VCM
+
+6   CLK+
+5   CLK-
+
+41  SENSE
+40  RBIAS
+42  VREF
+
+[top]
+
+3   AVDD
+8   DRVDD
+49   AGND
+
+[right]
+28  D0+A
+27  D0-A
+26  D1+A
+25  D1-A
+24  D0+B
+23  D0-B
+22  D1+B
+21  D1-B
+16  D0+C
+15  D0-C
+14  D1+C
+13  D1-C
+12  D0+D
+11  D0-D
+10  D1+D
+9   D1-D
+
+20  FCO+
+19  FCO-
+18  DCO+
+17  DCO-
+
+[bottom]
+33 	PDWN
+32  CSB
+31  SDIO/OLM
+30  SCLK/DTP
+44  SYNC

@@ -1,0 +1,23 @@
+(Typed in by hand, could have a couple of typos)
+
+Top levels, part refdes are as given:
+digitizer_01_adda.sch
+digitizer_02_fmc.sch
+digitizer_03_housekeeping.sch
+digitizer_04_power.sch
+
+Sublevels, each part refdes has a prefix based on their instantiation:
+digitizer_05_se2diff.sch
+  instantiated from p.1 as U5, U6, U7, U8, U9, U10, U11, U12
+digitizer_06_diff2se.sch
+  instantiated from p.1 as U13, U14
+digitizer_07_thermo_bridge.sch
+  instantiated from p.3 as U19, U20, U21, U22
+digitizer_08_LDO-B.sch
+  instantiated from p.4 as U35
+digitizer_09_LT6655-ref.sch
+  instantiated from p.4 as U31
+digitizer_10_TPS62210-ps.sch
+  instantiated from p.4 as U32, U33
+digitizer_11_LT1763-ps.sch
+  instantiated from p.4 as U29, U36

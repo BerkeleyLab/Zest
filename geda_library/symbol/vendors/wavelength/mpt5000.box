@@ -1,0 +1,34 @@
+[labels]
+MPT5000
+refdes=TEC?
+! device=TEMPERATURE-CONTROLLER
+! value=MPT5000
+
+[left]
+.bus
+5 Analog GND(for Pin 6)
+6 Analog Input
+7 V+
+8 V+
+
+.bus
+11 Temp Setpoint Monitor
+12 Temperature Monitor
+13 Monitor GND(for Pins 11&12)
+14 GND(for Pins 7&8)
+15 GND(for Pins 7&8)
+
+[top]
+
+[right]
+.bus
+1 TEC-
+2 TEC-
+3 TEC+
+4 TEC+
+
+.bus
+9 Sensor-
+10 Sensor+
+
+[bottom]

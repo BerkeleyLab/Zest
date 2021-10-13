@@ -1,0 +1,18 @@
+
+# VAT2+ generated symbol
+
+[labels]
+
+VAT2+
+refdes=VAT2+
+! author=Qi Chen
+! device=VAT2+
+! description=VAT2+ generated symbol
+! footprint=VAT2+
+! vendor=LBNL
+
+[left]
+SMAF SMAF
+
+[right]
+SMAM SMAM

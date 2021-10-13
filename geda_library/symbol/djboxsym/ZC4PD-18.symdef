@@ -1,0 +1,21 @@
+
+# ZC4PD-18 generated symbol
+
+[labels]
+
+ZC4PD-18
+refdes=ZC4PD-18
+! author=Qi Chen
+! device=ZC4PD-18
+! description=ZC4PD-18 generated symbol
+! footprint=ZC4PD-18
+! vendor=LBNL
+
+[right]
+PORT1 PORT1
+PORT2 PORT2
+PORT3 PORT3
+PORT4 PORT4
+
+[left]
+SUMPORT SUMPORT

@@ -1,0 +1,65 @@
+
+# Arduino Uno
+
+[labels]
+
+Arduino Uno
+refdes=U?
+! author=Gang Huang
+! device=Arduino Uno
+! description=
+! footprint=
+! net=GND:3,6,7
+
+[top]
+41 USB_1
+42 USB_2
+43 USB_3
+44 USB_4
+
+40 PWR
+39 GND
+[bottom]
+38 ICSP_1
+37 ICSP_2
+36 ICSP_3
+35 ICSP_4
+34 ICSP_5
+33 ICSP_6
+[left]
+32 UNNAMED_1
+1 IOREF
+2 RESET
+3 3P3V
+4 5P0V
+5 GND
+45 GND
+6 VIN
+
+7 A0
+8 A1
+9 A2
+10 A3
+11 A4
+12 A5
+[right]
+31 UNNAMED_2
+30 UNNAMED_3
+29 UNNAMED_4
+
+27 AREF
+28 GND
+26 D13
+25 D12
+24 !D11
+23 !D10
+22 !D9
+21 D8
+20 D7
+19 !D6
+18 !D5
+17 D4
+16 !D3
+15 D2
+14 D1_TX
+13 D0_RX

@@ -1,0 +1,19 @@
+[labels]
+HMC-C007
+refdes=DIV?
+! device=DIVIDER of 8
+! value=HMC-C007
+! Vs=+5V,98mA
+! Input=-15~10dBm
+
+[left]
+1 Input
+
+[top]
+3 Vs	
+
+[right]
+2 Output
+
+[bottom]
+4	GND

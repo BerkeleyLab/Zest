@@ -1,0 +1,26 @@
+[labels]
+ LT1763IDE
+! -1.8 or-3.3
+refdes=U?
+! author=Yubin Zhao
+! package is DFN-12
+
+[left]
+
+1 NC
+2 OUT
+3 OUT
+4 NC
+5 SENSE
+6 BYP
+[right]
+
+12 NC
+11 IN
+10 IN
+9 NC
+8 SHDN 
+7 GND
+[bottom]
+13 GNd
+

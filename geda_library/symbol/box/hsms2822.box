@@ -1,0 +1,17 @@
+[labels]
+hsms2822
+refdes=U?
+! author=Jin Yang
+! device=diode
+
+[top]
+
+[bottom]
+
+
+[left]
+1 IN1
+2 IN2
+
+[right]
+3 T

@@ -1,0 +1,4 @@
+(component-library ".")
+(component-library-search "../geda_library")
+(source-library  ".")
+(source-library  "../geda_library/pcblib/schem/")

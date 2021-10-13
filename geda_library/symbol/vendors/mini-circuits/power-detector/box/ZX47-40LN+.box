@@ -1,0 +1,23 @@
+[labels]
+ZX47-40LN+
+refdes=POWD?
+! author=Jin Yang
+! device=POWER DETECTOR
+! value=ZX47-40LN+
+! Vs=+5V,120mA
+! Input-range=-40~15dBm@2GHz
+! Output=0.5-2.1V
+
+
+[left]
+1 RF-Input
+[top]
+4 Vs
+
+[right]
+2 DC-Out
+3 Temp-Out
+
+[bottom]
+5 GND
+

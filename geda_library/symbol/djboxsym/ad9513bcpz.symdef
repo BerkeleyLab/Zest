@@ -1,0 +1,52 @@
+
+# Analog devices AD9513BCPZ
+
+[labels]
+
+AD9513BCPZ
+refdes=U?
+! author=Qiang Du
+! device=AD9513BCPZ
+! description=IC CLK BUFFER 1:3 800MHZ 32LFCSP
+! footprint=LFCSP_VQ32.fp
+! price=11.66
+! vendor=digikey
+! vendor_id=AD9513BCPZ-ND
+! net=VS:1,4,17,20,21,24,26,29,30
+
+[left]
+32 RSET
+2 CLK
+3 CLKB
+
+5 SYNCB
+
+7 S10
+8 S9
+9 S8
+10 S7
+11 S6
+12 S5
+13 S4
+14 S3
+15 S2
+16 S1
+25 S0
+
+[right]
+6 VREF
+
+28 OUT0
+27 OUT0B
+
+23 OUT1
+22 OUT1B
+
+19 OUT2
+18 OUT2B
+
+[top]
+1 VS
+
+[bottom]
+31 GND

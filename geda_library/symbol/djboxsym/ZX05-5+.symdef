@@ -1,0 +1,19 @@
+
+# ZX05-5+ generated symbol
+
+[labels]
+
+ZX05-5+
+refdes=ZX05-5+
+! author=Qi Chen
+! device=ZX05-5+
+! description=ZX05-5+ PCB generated symbol
+! footprint=ZX05-5+
+! vendor=LBNL
+
+[left]
+LO LO
+
+IF IF
+[right]
+RF RF

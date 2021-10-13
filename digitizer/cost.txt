@@ -1,0 +1,11 @@
+As of 2015-08-21
+
+Digi-Key BOM/shopping cart creation (based on orderable.txt) is
+half-broken, but I can tell that qty. 25 parts cost is $743.42.
+
+ 2  ASP-134604-01   @newark          16.37
+10  TCM4-19+        @minicircuits     2.09
+ 2  TCM2-43X+       @minicircuits     3.29
+ 1  TCP-2-33W+      @minicircuits     2.99
+
+total non-Digi-Key: $63.21

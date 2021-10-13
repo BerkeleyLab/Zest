@@ -1,0 +1,20 @@
+[labels]
+LDO-B
+refdes=U?
+! author=Jin Yang
+! device=Home Made LDO part B
+! description=sub-module
+! source=LDO-B.sch
+
+[left]
+1	REF
+
+[right]
+2	1P8OUT
+
+[top]
+3	3P3V
+4	2P2V
+
+[bottom]
+5	GND

@@ -1,0 +1,181 @@
+v 20130925 2
+T 0 0 1 1 0 1 0 0 1
+device:tec_controller
+T 0 0 1 1 0 1 0 0 1
+model:MPT5000
+T 0 0 1 1 0 1 0 0 1
+value:v1
+B 300 300 3300 1900 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T -3800 -1200 9 10 0 0 0 0 1
+value=MPT5000
+T -3800 -1000 9 10 0 0 0 0 1
+device=TEMPERATURE-CONTROLLER
+T 1200 1400 9 10 1 1 0 3 1
+MPT2500
+T 2200 2300 9 10 1 1 0 3 1
+refdes=M?
+P 2700 0 2700 300 1 0 0
+{
+T 2945 500 9 10 1 1 180 0 1
+pinlabel=TEC-
+T 2650 205 5 8 1 1 90 6 1
+pinnumber=1
+T 2750 200 5 8 0 1 270 0 1
+pinseq=1
+T 2750 400 9 10 0 1 270 6 1
+pintype=pas
+}
+P 2200 0 2200 300 1 0 0
+{
+T 2445 500 9 10 1 1 180 0 1
+pinlabel=TEC-
+T 2150 205 5 8 1 1 90 6 1
+pinnumber=2
+T 2250 200 5 8 0 1 270 0 1
+pinseq=2
+T 2250 400 9 10 0 1 270 6 1
+pintype=pas
+}
+P 1700 0 1700 300 1 0 0
+{
+T 1945 500 9 10 1 1 180 0 1
+pinlabel=TEC+
+T 1650 205 5 8 1 1 90 6 1
+pinnumber=3
+T 1750 200 5 8 0 1 270 0 1
+pinseq=3
+T 1750 400 9 10 0 1 270 6 1
+pintype=pas
+}
+P 1200 0 1200 300 1 0 0
+{
+T 1445 500 9 10 1 1 180 0 1
+pinlabel=TEC+
+T 1150 205 5 8 1 1 90 6 1
+pinnumber=4
+T 1250 200 5 8 0 1 270 0 1
+pinseq=4
+T 1250 400 9 10 0 1 270 6 1
+pintype=pas
+}
+P 0 2000 300 2000 1 0 0
+{
+T 350 2000 9 10 1 1 0 1 1
+pinlabel=Analog GND(for Pin 6)
+T 200 2050 5 8 1 1 0 6 1
+pinnumber=5
+T 200 2050 5 8 0 1 0 6 1
+pinseq=5
+T 200 2050 9 10 0 1 0 6 1
+pintype=pas
+}
+P 0 1800 300 1800 1 0 0
+{
+T 350 1800 9 10 1 1 0 1 1
+pinlabel=Analog Input
+T 200 1850 5 8 1 1 0 6 1
+pinnumber=6
+T 200 1850 5 8 0 1 0 6 1
+pinseq=6
+T 200 1850 9 10 0 1 0 6 1
+pintype=pas
+}
+P 3900 2000 3600 2000 1 0 0
+{
+T 3545 1995 9 10 1 1 0 6 1
+pinlabel=V+
+T 3695 2045 5 8 1 1 0 0 1
+pinnumber=7
+T 3700 1950 5 8 0 1 180 6 1
+pinseq=7
+T 3700 1950 9 10 0 1 180 6 1
+pintype=pas
+}
+P 3900 1800 3600 1800 1 0 0
+{
+T 3545 1795 9 10 1 1 0 6 1
+pinlabel=V+
+T 3695 1845 5 8 1 1 0 0 1
+pinnumber=8
+T 3700 1750 5 8 0 1 180 6 1
+pinseq=8
+T 3700 1750 9 10 0 1 180 6 1
+pintype=pas
+}
+P 3900 900 3600 900 1 0 0
+{
+T 3550 900 9 10 1 1 0 7 1
+pinlabel=Sensor-
+T 3700 950 5 8 1 1 0 0 1
+pinnumber=9
+T 3700 950 5 8 0 1 0 0 1
+pinseq=9
+T 3500 950 9 10 0 1 0 6 1
+pintype=pas
+}
+P 3900 700 3600 700 1 0 0
+{
+T 3550 700 9 10 1 1 0 7 1
+pinlabel=Sensor+
+T 3700 750 5 8 1 1 0 0 1
+pinnumber=10
+T 3700 750 5 8 0 1 0 0 1
+pinseq=10
+T 3500 750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 0 1100 300 1100 1 0 0
+{
+T 350 1100 9 10 1 1 0 1 1
+pinlabel=Temp Setpoint Monitor
+T 200 1150 5 8 1 1 0 6 1
+pinnumber=11
+T 200 1150 5 8 0 1 0 6 1
+pinseq=11
+T 200 1150 9 10 0 1 0 6 1
+pintype=pas
+}
+P 0 900 300 900 1 0 0
+{
+T 350 900 9 10 1 1 0 1 1
+pinlabel=Temperature Monitor
+T 200 950 5 8 1 1 0 6 1
+pinnumber=12
+T 200 950 5 8 0 1 0 6 1
+pinseq=12
+T 200 950 9 10 0 1 0 6 1
+pintype=pas
+}
+P 0 700 300 700 1 0 0
+{
+T 350 700 9 10 1 1 0 1 1
+pinlabel=Monitor GND(for Pins 11&12)
+T 200 750 5 8 1 1 0 6 1
+pinnumber=13
+T 200 750 5 8 0 1 0 6 1
+pinseq=13
+T 200 750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 3900 1600 3600 1600 1 0 0
+{
+T 3700 1550 5 8 0 1 180 6 1
+pinseq=14
+T 3700 1550 9 10 0 1 180 6 1
+pintype=pas
+T 3545 1595 9 10 1 1 0 6 1
+pinlabel=GND(for Pins 7&8)
+T 3695 1645 5 8 1 1 0 0 1
+pinnumber=14
+}
+P 3900 1400 3600 1400 1 0 0
+{
+T 3700 1350 5 8 0 1 180 6 1
+pinseq=15
+T 3700 1350 9 10 0 1 180 6 1
+pintype=pas
+T 3545 1395 9 10 1 1 0 6 1
+pinlabel=GND(for Pins 7&8)
+T 3695 1445 5 8 1 1 0 0 1
+pinnumber=15
+}

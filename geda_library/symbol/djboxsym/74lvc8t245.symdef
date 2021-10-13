@@ -1,0 +1,50 @@
+
+# TI 74LVC8T245
+
+[labels]
+
+74LVC8T245
+refdes=U?
+! author=Qiang Du
+! device=74LVC8T245DBR
+! description=IC BUS TRANSCVR 8BIT 24SSOP
+! footprint=TSSOP-24
+! price=1.22
+! vendor=digikey
+! vendor_id=296-21065-1-ND
+
+[left]
+2 DIR
+
+.bus
+3 A1
+4 A2
+5 A3
+6 A4
+7 A5
+8 A6
+9 A7
+10 A8
+
+[right]
+22 ! OE
+
+.bus
+21 B1
+20 B2
+19 B3
+18 B4
+17 B5
+16 B6
+15 B7
+14 B8
+
+[top]
+1 VccA
+23 VccB
+24 VccB
+
+[bottom]
+11 GND
+12 GND
+13 GND

@@ -1,0 +1,21 @@
+
+# TI DS1822Z
+
+[labels]
+DS1822
+refdes=U?
+
+! author=Qiang Du
+! device=DS1822Z+
+! description=IC THERMOMETER ECONO DIG 8SOIC
+! footprint=SO-8
+! price=2.40
+! vendor=digikey
+! vendor_id=DS1822Z+-ND
+
+[left]
+3 Vdd
+4 DQ
+
+[bottom]
+5 GND

@@ -1,0 +1,31 @@
+[labels]
+  TPS\
+  62110
+refdes=U?
+! the package is  QFN-16
+! footprint=QFN16EP2
+[left]
+17 GND
+1 PGND
+2 VIN
+3 VIN
+4 EN
+
+[bottom]
+5 SYNC
+6 LBO
+7 LBI
+8 VINA
+
+[right]
+12 GND
+11 GND
+10 FB
+9 AGND
+
+[top]
+16 PGND
+15 SW
+14 SW
+13 PG
+

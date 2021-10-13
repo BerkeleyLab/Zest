@@ -1,0 +1,10 @@
+{
+"vendor":"optiworks",
+"parts":[
+{"model":"CPC2C12101AP100","device":"optical-coupler1x2","value":"v1"},
+{"model":"CPC2C12501AP100","device":"optical-coupler1x2","value":"v1"},
+{"model":"CPC2C22101AP100","device":"optical-coupler2x2","value":"v1"},
+{"model":"FORM-11P-1550-9_125-60-3A-1-1","device":"faraday-rotator-mirror","value":"v1"}
+
+]
+}

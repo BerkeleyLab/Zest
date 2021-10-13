@@ -1,0 +1,983 @@
+# PCB footprints
+# Convert to newlib by using footgen.py
+# This file is not copyrighted
+# You may use these footprints as you wish.
+# There is no guarantee that the data is accurate
+# check the datasheets for your components
+
+elementdir = "elements"		# where to put generated files
+# put all reference designators 1mm above origin
+refdesx = 0mm
+refdesy = 1mm
+# Xilinx BGA packages
+# data from XAPP157
+# Entered by Darrell Harmon
+# values for all 1mm pitch Xilinx BGA
+	type = "bga"
+	pitch = 1mm
+	silkwidth = 10 mils
+	silkoffset = 1mm		# used if silkbox is invalid
+	dia = 0.4mm
+	maskclear = 6 mil		# total additional opening: 3 mils from pad to mask
+	polyclear = 6 mil
+# Xilinx FT256 1mm pitch BGA
+	silkboxwidth = 17mm
+	silkboxheight = 17mm
+	rows = 16
+	cols = 16
+part "FT256"
+	rows = 22
+	cols = 22
+	# some balls missing on FG456
+	omitballs = "H8:R8,H8:H15,R8:R15,H15:R15"
+part "FG456"
+	omitballs = ""
+part "FG484"
+	rows = 26
+	cols = 26
+	omitballs = ""
+part "FG676"
+	rows = 30
+	cols = 30
+part "FG900"
+	rows = 34
+	cols = 34
+part "FG1156"
+
+# Xilinx Virtex-5 packages, info from UG195 (v4.2) entered by L. Doolittle
+	type = "bga"
+	pitch = 1mm
+	dia = 0.45mm    # extrapolated from UG112 table 5-3
+# start individual packages
+	rows = 18
+	cols = 18
+part "FF323"        # strange but true
+part "FF324"
+	rows = 26
+	cols = 26
+	omitballs = "A1,B1,G1,H1,N1,P1,W1,Y1,AE1,AF1,J9"
+part "FF665"
+	omitballs = ""
+part "FF676"
+	rows = 34
+	cols = 34
+	omitballs = "A1,A4,A5,A10,A34,E1,F1,L1,M1,U1,V1,AC1,AD1,AJ1,AK1,AP1,AP4,AP5,AP10,AP34"
+part "FF1136"
+	omitballs = "A34,AP1,AP34"
+part "FF1153"
+	rows = 42
+	cols = 42
+	omitballs = "A42,A18,A13,A12,A7,A6,A1,D1,J1,K1,R1,T1,AA1,AB1,AG1,AH1,AN1,AP1,AW1,BB1,BB6,BB7,BB12,BB13,BB18,BB42"
+part "FF1738"
+	omitballs = "A1,A42,BB1,BB42"
+part "FF1760"
+	pitch = 0.8mm
+	dia = 0.4mm
+	rows = 18
+	cols = 18
+	omitballs = ""
+part "CS324"
+# as described in MT47H128M16 datasheet
+# XXX check ball dimensions
+	pitch = 0.8 mm
+	rows = 15
+	cols = 9
+	omitballs = "K1,M1,P1,L9,N9,R9,A4:R4,A5:R5,A6:R6"
+	silkboxwidth = 11.5mm
+	silkboxheight = 14mm
+part "DDR2-84"
+# as described in MT41J128M16 datasheet (2gbddr3.pdf p. 28)
+	pitch = 0.8 mm
+	rows = 16
+	cols = 9
+	omitballs = "A4:T4,A5:T5,A6:T6"
+	silkboxwidth = 9.1mm
+	silkboxheight = 14mm
+part "DDR3-96"
+# as used by LTM4644
+	pitch = 1.27 mm
+	dia = 0.63mm
+	rows = 11
+	cols = 7
+	omitballs = ""
+	silkboxwidth = 9.0 mm
+	slikboxheight = 15.0 mm
+part "BGA-77"
+
+
+# ASP-134606-01 or ASP-134604-01 (FMC LPC Mezzanine)
+# ASP-134602-01 or ASP-134488-01 (FMC HPC Mezzanine)
+# ASP-134603-01 (FMC LPC Carrier)
+# ASP-134486-01 (FMC HPC Carrier)
+# XXX not complete -- need alignment pins
+	pitch = 50 mils
+	dia = 25 mils
+	rows = 10
+	cols = 40
+	silkboxwidth = 2196 mils
+	silkboxheight = 578 mils
+	omitballs = ""
+	lefthand = 1
+part "FMC_HPC_MEZ"
+	lefthand = 0
+part "FMC_HPC_CAR"
+	omitballs = "A1:B40,E1:F40,J1:K40"
+	lefthand = 1
+part "FMC_LPC_MEZ"
+	lefthand = 0
+part "FMC_LPC_CAR"
+
+# QFP type parts
+	pins = 176
+	type "qfp"		# pins must be divisible by 4
+	pitch = 0.5 mm
+	width = 24 mm		# distance inside pins
+	height = 24 mm
+	padwidth = 1.5 mm
+	padheight = 0.25 mm
+	silkoffset = 0.25mm 		# inside pads with 1mm clearance
+	silkstyle = "inside"
+part "LQFP176"
+	# Linear Technology UJ package, 40-Lead Plastic QFN (6mm x 6mm)
+	# e.g., LTC2248
+	pins = 40
+	width = 5.10mm
+	padheight = 0.25mm
+	padwidth = 0.70mm
+	ep = 4.42mm
+part "QFN40"
+	ep = 0
+	pins = 48
+	width = 7mm
+	padheight = 0.27mm
+	padwidth = 1.2mm
+part "TQFP48"
+	#ep = 2mm			# 2mm square exposed thermal pad
+	ep = 4mm			# changed 5/13/04 Darrell Harmon
+part "TQFP48EP"				# AD9954 Datasheet
+	ep = 0				# turn off ep
+	# LQFP64 according to STM32F100 datasheet
+	pins = 64
+	pitch = 0.5 mm
+	padheight = 0.3 mm
+	padwidth = 1.2 mm
+	width = 10.3 mm
+	height = 10.3 mm
+part "LQFP64"
+	pins = 16
+	width = 2.9mm
+	padwidth = 1mm
+	pitch = 0.65mm
+part "QFN16"
+	ep = 2mm
+	# Checked against ADXL320
+part "QFN16EP"
+	pitch = 0.65mm
+	width = 3.15mm
+	padwidth = 0.85mm
+	padheight = 0.35mm
+	ep = 2.7mm
+	# Checked against TI PVQFN-N16 TPS6211x
+part "QFN16EP2"
+
+	# based on Xilinx QFG48
+	pins = 48
+	pitch = 0.5mm
+	padheight = 0.30mm  # b max
+	padwidth = 0.95mm # 0.45 mm L + 0.5 mm toe
+	width = 6.1mm  # 7.0mm D - 2 * 0.45mm L
+	ep = 4.2mm # 2.25/4.70/5.25 min/nom/max
+part "QFG48"
+
+	ep = 0
+	pins = 64
+	width = 8mm
+	pitch = 0.5mm
+	silkboxwidth = 9.5mm
+	silkboxheight = 9.5mm
+part "QFN64"
+	ep = 7.15mm
+part "QFN64EP"
+	# used on Linear Technology's LTC2249 and related high speed ADCs
+	ep = 3.45mm
+	pins = 32
+	pitch = 0.50mm
+	width = 4.10mm
+	height = 4.10mm
+	padwidth = 0.70mm
+	padheight = 0.25mm
+	silkoffset = 0.1mm
+	silkwidth = 6 mils
+part "QFN32UH"
+	silkboxwidth = 0
+	silkwidth = 10 mils
+	# used on Cypress's CY7C68013-LF56
+	ep = 6mm
+	pins = 56
+	pitch = 0.50mm
+	width = 7.10mm
+	height = 7.10mm
+	padwidth = 0.70mm
+	padheight = 0.28mm
+	silkstyle = "outside"
+part "QFN56LF"
+	silkoffset = 0.5mm
+	ep = 0
+	pins = 68
+
+	pins = 100
+	# rectangular package
+	pinshigh = 30
+	pitch = 0.65mm
+	width = 14mm
+	height = 20mm
+	padwidth = 1.3mm
+	padheight = 0.35mm
+	silkstyle = "inside"
+part "CY7C68013TQ100"
+	pinshigh = 0
+
+	pitch = 0.40mm
+	padheight = 0.23mm
+	pins = 84
+	width = 8.8mm
+	height = 8.8mm
+	padwidth = 1.1mm
+	ep = 5.1mm
+part "ET1011C"
+
+	# as used on LTC2173, LTC2174, LTC2175
+	pins = 52
+	pinshigh = 14
+	pitch = 0.50 mm
+	padheight = 0.30 mm
+	padwidth = 1.1 mm
+	width = 7.50 mm
+	height = 8.50 mm
+	ep = 5.40 mm  # 6.40 high
+part "QFN52EP"
+	pinshigh = 0
+
+	# as used on AD9780/AD9781/AD9783
+	pins = 72
+	pitch = 0.50 mm
+	padheight = 0.30 mm
+	padwidth = 1.1 mm
+	width = 10.30 mm
+	height = 10.30 mm
+	ep = 4.70 mm
+part "QFN72EP"
+
+	# as used on LTC6400-xx and LTC6401-xx
+	pins = 16
+	pitch = 0.50mm
+	silkstyle = "outside"
+	padwidth = 0.70mm
+	padheight = 0.25mm
+	width = 2.10mm
+	ep = 1.45mm
+part "QFN16UD"
+	# as used on LTC3605IUF
+	pins = 24
+	pitch = 0.50mm
+	silkstyle = "outside"
+	padwidth = 0.70mm
+	padheight = 0.25mm
+	width = 3.10mm
+	ep = 2.45mm
+part "QFN24UF"
+	ep = 0
+
+	# as used by MiniCircuits CSWA2-63+
+	pins = 16
+	pitch = 0.65mm
+	silkstyle = "outside"
+	padwidth = 0.8mm
+	padheight = 0.3mm
+	width = 2.7mm
+part "DG1293"
+	# as used by MiniCircuits WP4L
+	pins = 12
+	pitch = 20 mils
+	padwidth = 20 mils
+	padheight = 10 mils
+	width = 87 mils
+	ep = 49 mils
+part "DQ1225"
+	# precursor to MiniCircuits GAT-x
+	pins = 4
+	pitch = 1mm
+	padwidth = 1.54mm
+	padheight = 0.61mm
+	width = 1.63mm
+# part "FG873_big"
+	ep = 0
+	pins = 44
+	pitch = 0.8mm
+	padwidth = 1.0mm
+	padheight = 0.5mm
+	width = 10.0mm
+part "VQ44"   # probably wrong
+
+# Int. Rect. IR3859M
+	pins = 28
+	pitch = 0.50 mm
+	padwidth = 0.75 mm
+	padheight = 0.25 mm
+	width = 4.0 mm
+part "QFN17"
+
+# Enperion EN6337QI
+	pins = 38  # really 38, 6 + 13 + 6 + 13
+	pinshigh = 6
+	pitch = 0.50 mm
+	padwidth = 0.60  mm
+	padheight = 0.25 mm
+	width = 6.2 mm
+	height = 3.2 mm
+part "QFN38"
+
+	# ERA-4XSM, case style WW107
+	pins = 4
+	pitch = 50 mil
+	padwidth = 60 mil
+	width = 160 mil
+	padheight = 30 mil
+part "WW107"
+
+	# based on Skyworks SE4110L
+	pins = 24
+	width = 4.20 mm
+	padheight = 0.25 mm
+	padwidth = 0.50 mm
+	pitch = 0.50 mm
+part "QFN24EP"
+
+        # based on Analog Devices CP-32-2
+        pins = 32
+	pinshigh = 8
+        padheight = 0.32 mm
+	padwidth = 0.57 mm
+        width = 4.06 mm
+        height = 4.06 mm
+	pitch = 0.50 mm
+        ep = 3.55 mm
+part "LFCSP_VQ"
+
+        ep = 0
+	# NXP 74xxQ parts, e.g., 74AVC4T245BQ and 74AHCT02BQ
+	pins = 14
+	pinshigh = 2
+	pitch = 0.50 mm
+	padheight = 0.28 mm
+	padwidth = 1.0 mm
+	width = 2.0 mm   # package width = 3.0 mm
+	height = 1.5 mm  # package height = 2.5 mm
+	# pin numbers come out wrong
+part "DHVQFN14-incomplete"
+	pins = 16
+	width = 2.5 mm  # package width = 3.5 mm
+	# pin numbers come out wrong
+part "DHVQFN16-incomplete"
+
+	# incomplete  SKY13350-385LF
+	pins = 6
+	pinshigh = 2
+	pitch = 0.50 mm
+	padheight = 0.20 mm  # datasheet says 0.15 mm for 4 of 6 pads
+	padwidth = 0.33 mm
+	height = 0.64 mm
+	width = 0.64 mm
+	# stretch the side pins inward, to 0.51 mm length
+part "MLPD-6-incomplete"
+
+# SOIC parts
+# data from TI SBFA015A
+# entered by Darrell Harmon
+	pins = 8
+	type "so"
+	width = 93 mils
+	pitch = 50 mils
+	padheight = 20 mils
+	padwidth = 94 mils
+	silkoffset = 15 mils
+	silkboxheight = 0.2in
+	silkwidth = 10 mils
+	silkstyle = "inside"
+part "SO-8"
+	pins = 14
+	silkboxheight = 0.344 in
+part "SO-14"
+	pins = 16
+	silkboxheight = 0.394 in
+part "SO-16"
+# change width to begin wide parts
+	pins = 16
+	width = 258 mils
+	padwidth = 99 mils
+	silkboxheight = 0.413 in
+part "SO-16W"
+	pins = 18
+	silkboxheight = 0.463 in
+part "SO-18W"
+	pins = 20
+	silkboxheight = 0.512 in
+part "SO-20W"
+	pins = 24
+	silkboxheight = 0.614 in
+part "SO-24W"
+	pins = 28
+	silkboxheight = 0.713 in
+part "SO-28W"
+# as used in MiniCircuits JEPS-16-1W
+    pins = 24
+    padwidth = 100 mils
+    padheight = 65 mils
+    pitch = 100 mils
+    width = 770 mils
+    silkboxheight = 1450 mils
+part "PL-090"
+# as used in MiniCircuits JDC-10-4+
+    pins = 6
+    padwidth = 100 mils
+    padheight = 65 mils
+    pitch = 100 mils
+    width = 100 mils
+    silkboxheight = 310 mils
+part "PL-046"
+# as used in MiniCircuits JS4PS-1+
+    pins = 8
+    padwidth = 100 mils
+    padheight = 65 mils
+    pitch = 200 mils
+    width = 280 mils
+    silkboxheight = 800 mils
+part "PL-101"
+# as used in MiniCircuits JPS-2-1N+
+    pins = 6
+    pitch = 100 mils
+    width = 100 mils
+    silkboxheight = 310 mils
+part "PL-035"
+# as used in Linear LT1763S8
+    pins = 8
+    padwidth = 45 mils
+    padheight = 30 mils
+    pitch = 50 mils
+    width = 160 mils
+    silkboxheight = 190 mils
+part "S8"
+# as used in TI SN74LVC2T45DCT
+    padwidth = 1.60 mm
+    padheight = 0.30 mm
+    pitch = 0.65 mm
+    width = 1.80 mm
+    silkboxheight = 3.15 mm
+part "SM8"
+	pins = 6
+	pitch = 37.4 mils
+	width = 0.038 in
+	padheight = 20 mil
+	padwidth = 58 mil
+	silkboxheight = 0.118 in
+	silkstyle = "outside"
+part "SOT23-6"
+	padwidth = 68 mil
+	pins = 8
+	pitch = 25.6 mils
+	width = 0.019 in
+part "SOT23-8"
+	width = 0.101 in
+	padheight = 15 mil
+	padwidth = 66 mil
+	silkboxheight = 0.122 in
+	silkstyle = "inside"
+part "MSOP-8"
+	pins = 10
+	padwidth = 89 mils
+	width = 0.181 in
+	silkboxheight = 0.175 in
+part "SSOP-10"
+	pins = 20
+	silkboxheight = 0.295 in
+part "SSOP-20"
+	pins = 24
+	silkboxheight = 0.355 in
+part "SSOP-24"
+	pins = 28
+	silkboxheight = 0.413 in
+part "SSOP-28"
+	pitch = 25 mil
+	pins = 16
+	width = 0.093 in
+	padwidth = 94 mil
+	silkboxheight = 0.197 in
+part "SSOP-16"
+	pins = 48
+	padwidth = 89 mil
+	width = 0.279 in
+	silkboxheight = 0.630 in
+part "SSOP-48"
+	pins = 56
+	silkboxheight = 0.730 in
+part "SSOP-56"
+#http://cds.linear.com/docs/en/packaging/TSSOP_24_05-08-1771.pdf
+        pins = 24
+        width = 4.50 mm
+        silkboxheight = 7.90 mm
+        padwidth = 1.05 mm
+        padheight = 0.45 mm
+        pitch = 0.65 mm
+part "TSSOP-24"
+# Analog Devices 10-Lead Mini Small Outline Package [MSOP] (RM-10)
+	pins = 10
+	pitch = 0.50 mm
+	padwidth = 1.4 mm
+	padheight = 0.30 mm
+	width = 3.3 mm
+	silkboxheight = 3.1 mm
+part "MSOP-10"
+# LT1763CDE 4x3mm DFN
+	pins = 12
+	padwidth = 1.0 mm
+	width = 2.2 mm
+	ep = 1.7 mm
+	rect = 3.3 mm
+part "DFN-12"
+
+
+
+# ATF-511P8 2x2mm DFN
+	pins = 8
+	padwidth = 1.0 mm
+	width = 1.2 mm
+	ep = 0.7 mm
+	rect = 1.6 mm
+part "DFN-8"
+
+# YSF-322+ minicircuits
+	pins = 8
+	padwidth = 40 mils
+	padheight = 20 mils
+	pitch = 50 mils
+	width = 177 mils
+	ep = 155 mils
+	rect = 162 mils
+	silkstyle = "outside"
+part "DL1636"
+	rect =1.6 mm
+	silkstyle = "inside"
+
+	ep = 0
+# as used on a MC74VHC1GT04, DF suffix: SC-88A/SOT-353/SC-70
+# except you'll have to remove pin 5 and rename pin 6 as 5.
+	pins = 6
+	padheight = 0.40 mm
+	pitch = 0.65 mm
+	width = 1.40 mm
+	padwidth = 0.90 mm
+	silkboxheight = 2.20 mm
+part "SC-88A-incomplete"
+
+# as used by STMicro ST1L05PU25R
+	pins = 6
+	padheight = 0.45 mm
+	pitch = 0.95mm
+	width = 2.1mm
+	padwidth = 0.50 mm
+	ep = 1.75 mm
+	width = 2.5 mm
+part "DFN-6_3x3"
+
+# as used by LTC3025-x
+	pins = 6
+	pitch = 0.50 mm
+	padheight = 0.25 mm
+	padwidth = 0.70 mm
+	height = 1.15 mm
+	ep = 0.61 mm
+	width = 1.42 mm
+part "DFN-6_2x2"
+	ep = 0
+
+# Maxim 16 QSOP, Package code E16+1, Outline 21-0055, Land pattern 90-0167
+# as used by MAX11615EEE
+	pins = 16
+	pitch = 0.635 mm
+	padheight = 0.36 mm
+	padwidth = 1.60 mm
+	width = 3.71 mm   # 5.31 - 1.60
+part "QSOP16"
+
+# as used by TPS794xxDGN
+	pins = 8
+	pitch = 0.65 mm
+	padheight = 0.38 mm
+	padwidth = 1.2 mm  # 0.5mm toe
+	width = 3.5 mm
+	ep = 2.0 mm # XXX scaled from drawing, not dimensioned
+part "DGN-8"
+
+	ep = 0
+# Rohm MNR04
+	pins = 8
+	pitch = 0.50 mm
+	padheight = 0.30 mm
+	width = 0.40 mm
+	padwidth = 0.80 mm
+part "quad0402"
+
+# as used on "0805" interdigitated capacitors like Murata LLA215C
+	pins = 8
+	pitch = 0.50 mm
+	padheight = 0.30 mm
+	width = 0.60 mm
+	padwidth = 0.80 mm
+part "0805interdig"
+
+# as used on MiniCircuits MCA-30FH+
+	pins = 10
+	padheight = 20 mil   # 30 mil for 20 mil Rogers RO4350B
+	pitch = 50 mil
+	width = 126 mil
+	padwidth = 85 mil
+	silkboxheight = 0
+part "DZ883"   # MiniCircuits case style
+	# as used by MiniCircuits SCN-2-35
+	pins = 6
+	pitch = 0.99 mm
+	padwidth = 1.07 mm
+	padheight = 0.61 mm
+	width = 0.98 mm
+	silkboxwidth = 3.2 mm
+	silkboxheight = 4.0 mm
+part "FV1206-1"
+	# as used by MinCircuits TCM4-19
+	pins = 6
+	pitch = 1.27 mm
+	padwidth = 1.65 mm
+	padheight = 0.76 mm
+	width = 1.53 mm
+	silkboxwidth = 3.81 mm
+part "DB714"
+	# as used by MiniCircuits SIM-722MH+
+	pins = 8
+	pitch = 50 mils
+	width = 118 mils
+	padwidth = 60 mils
+	padheight = 30 mils
+part "HV1195"
+	# Crystal oscillator, CSX-750V series and many more
+	pins = 6
+	pitch = 2.54mm
+	width = 2.2mm
+	padwidth = 2.5mm
+	padheight = 1.8mm
+part "OSC6"
+# as used on AD8317ACPZ
+	pins = 8
+	padheight = 0.3 mm
+	pitch = 0.5 mm
+	padwidth = 0.7 mm
+	width = 1.2 mm
+	silkboxheight = 3.2 mm
+part "CP-8-1"
+# as used on ADL5531
+	pins = 8
+	padheight = 0.3 mm
+	pitch = 0.5 mm
+	padwidth = 1.0 mm
+	width = 2.0 mm
+	ep = 1.6 mm
+	silkboxheight = 3.0 mm
+part "CP-8-2"
+	ep = 0
+# Bourns 4mm tactile switch 7914G
+	pins = 4
+	padheight = 1.27 mm
+	pitch = 2.54 mm
+	padwidth = 1.27 mm
+	width = 4.23 mm
+	silkboxheight = 5 mm
+part "switch_4mm"
+
+	pins = 20
+	pitch = 0.8 mm
+	padheight = 0.5 mm
+	padwidth = 2.0 mm
+	width = 6.2 mm
+	skew = 0.2 mm
+	silkboxheight = 14.25 mm
+part "SFP-base"    # incomplete, needs mounting holes and more
+	pins = 38
+	pitch = 0.8 mm
+	# 2.51 mm row center-to-center, 1.80 mm pad
+	padheight = 0.35 mm
+	padwidth = 1.8 mm
+	width = 0.71 mm
+	skew = -0.2 mm
+	silkboxheight = 14.25 mm
+part "QSFP-base"    # incomplete, needs mounting holes and more
+        # JS202011SCQN
+        pins = 6
+        skew = 0 mm
+        pitch = 2.5 mm
+        padheight = 1.2 mm
+        padwidth = 2.5 mm
+        width = 3.0 mm
+        silkboxheight = 9.0 mm
+part "JS202011SCQN"
+
+	ep = 0
+	skew = 0
+# end SOIC
+
+# DIP parts
+	type = "dip"
+	drill = 30 mil
+	paddia = 55 mil
+	pins = 8
+	width = 0.3 in
+	pitch = 0.1 in
+part "DIP8"
+	pins = 14
+part "DIP14"
+	pins = 16
+part "DIP16"
+	pins = 18
+part "DIP18"
+	pins = 20
+part "DIP20"
+	pins = 24
+part "DIP24N"
+	pins = 28
+part "DIP28N"
+	width = 0.6 in
+part "DIP28W"
+	pins = 24
+part "DIP24W"
+	pins = 40
+part "DIP40"
+# traditional (100 mil) double-row headers
+	width = 0.1 in
+	pins = 10
+	drill = 40 mils
+	paddia = 70 mils
+part "HDR10"
+	pins = 16
+part "HDR16"
+	pins = 20
+part "HDR20"
+	pins = 34
+part "HDR34"
+	pins = 40
+part "HDR40"
+	pins = 4
+	width = 6.5mm
+	pitch = 4.5mm
+part "switch_6mm"
+
+# single-row headers
+	type = "sip"
+	pins = 2
+part "SIP2"
+	pins = 3
+part "SIP3"
+	pins = 4
+part "SIP4"
+	pins = 5
+part "SIP5"
+	pins = 6
+part "SIP6"
+	pins = 8
+part "SIP8"
+	pins = 10
+part "SIP10"
+# metric (2mm) double-row headers
+	type = "dip"
+	pitch = 2 mm
+	width = 2 mm
+	pins = 2
+	drill = 30 mils
+	paddia = 60 mils
+part "HDR2_2mm"
+	pins  = 8
+part "HDR8_2mm"
+	pins = 14
+part "HDR14_2mm"
+	pins = 16
+part "HDR16_2mm"
+	pins = 24
+part "HDR24_2mm"
+
+
+#Tabbed parts
+	# parameters common to all DDPAK
+	# from TI SBFA015A
+	# Entered by Darrell Harmon
+	type = "tabbed"
+	padheight = 5.08mm
+	tabheight = 11.43mm
+	tabwidth = 12.95mm
+	# distance from pads to tab pad
+	height = 2.16mm
+	# DDPAK3 specific
+	pitch = 2.54mm
+	pins = 3
+	padwidth = 1.35mm
+part = "DDPAK3"
+	# DDPAK 5
+	pitch = 1.70mm
+	padwidth = 0.97mm
+	pins = 5
+part = "DDPAK5"
+	# DDPAK 7
+	pitch = 1.27mm
+	padwidth = 0.89mm
+	pins = 7
+part = "DDPAK7"
+	# SOT223
+	tabwidth = 4.72mm
+	tabheight = 2.11mm
+	height = 3.89mm
+	padheight = 2.11mm
+	# 3 pin specific
+	pins = 3
+	padwidth = 0.81mm
+	pitch = 2.30mm
+part = "SOT223-3"
+	pins = 5
+	padwidth = 0.51mm
+	pitch = 1.27mm
+part = "SOT223-5"
+#	# ZETEX ZXCT1009Q
+#       # needs to swap pin 1 & 3
+#	pins = 2
+#	tabwidth = 0.80mm
+#	tabheight = 0.9mm
+#	height = 1.1mm
+#	padheight = 0.9mm
+#	padwidth = 0.8mm
+#	pitch = 1.9mm
+#part = "SOT23-3"
+	# Watkins-Johnson AH1
+	pins = 3
+	tabwidth = 1.70mm
+	tabheight = 3.48mm
+	height = 0.58mm
+	padheight = 1.27mm
+	padwidth = 0.86mm
+	pitch = 1.5mm
+part = "SOT-89"
+	# TO-277 as used on Vishay SS10P3
+	pins = 2
+	tabheight = 4.72mm
+	tabwidth = 4.80mm
+	height = 0.81mm
+	padheight = 1.27mm
+	padwidth = 1.40mm
+	pitch = 2.08mm
+part = "TO-277"
+
+
+# 0201, 0402, 0603, ....
+	type "twopad"
+	silkboxheight = 0
+	silkboxwidth = 0
+	width = 0.250mm
+	padwidth = 0.225mm
+	padheight = 0.300mm
+	silkoffset = 6 mil
+	silkwidth = 5 mil
+part "0201"
+	width = 0.5mm
+	padwidth = 0.4mm
+	padheight = 0.5mm
+part "0402"
+	width = 0.8mm
+	padwidth = 0.7mm
+	padheight = 0.8mm
+part "0603"
+	width = 1mm
+	padwidth = 0.8mm
+	padheight = 1.2mm
+part "0805"
+	width = 1.2mm
+	padwidth = 1.5mm
+	padheight = 2.2mm
+part "1008"
+	width = 2mm
+	padwidth = 0.8mm
+	padheight = 1.5mm
+part "1206"
+	width = 2.0mm
+	padwidth = 0.9mm
+	padheight = 2.5mm
+part "1210"
+	# following datasheet for MCS3264
+	padwidth = 2.0mm
+	padheight = 3.80 mm
+	width = 4.20 mm
+part "2512"
+	# following datasheet for muRata ECAS
+	padwidth = 2.2mm
+	padheight = 2.80 mm
+	width = 4.00 mm
+	silkboxheight = 4.3 mm
+part "2917"
+	# HC49USMD XTAL
+	silkwidth = 10 mil
+	width = 4mm
+	padwidth = 4.7mm
+	padheight = 0.8mm
+	silkboxheight = 5mm
+part "HC49USMD"
+	# TDK SLF7032 inductor
+	width = 4.9mm
+	padwidth = 1.5mm
+	padheight = 2.2mm
+	silkboxheight = 7mm
+	silkboxwidth = 8mm
+part "SLF7032"
+	# CoEv/Tyco DS series inductor, DS6630
+	width = 0.160in
+	padwidth = 0.055in
+	padheight = 0.140in
+	silkboxheight = 0.177in
+	silkboxwidth = 0in
+part "DS6630"
+	# Epcos B82462-G4 shielded inductors, 6x6 mm
+	width = 4.0 mm
+	padwidth = 2.0 mm
+	padheight = 2.4 mm
+	silkboxheight = 6.0 mm
+	silkboxwidth = 6.0 mm
+part "B82462"
+	# Wurth 744325120 shielded inductor, 11x11mm
+	width = 3.8 mm
+	padwidth = 3.85 mm
+	padheight = 4.0 mm
+	silkboxheight = 10.7 mm
+	silkboxwidth = 10.7 mm
+part "IND_11mm"
+	# Wurth 74477710 shielded inductor, 7.3x7.3mm
+	width = 4.8 mm
+	padwidth = 1.6 mm
+	padheight = 2.2 mm
+	silkboxheight = 7.3 mm
+	silkboxwidth = 7.3 mm
+part "IND_7mm"
+	# Wurth 744373360047 shielded inductor, 6.5x6.5mm
+	width = 2.5 mm
+	padwidth = 2.0 mm
+	padheight = 1.8 mm
+	silkboxheight = 6.7 mm
+	silkboxwidth = 6.7 mm
+part "IND_6mm"
+        # VISHAY IHLP-2020BZ-01
+        width = 2.16 mm
+        padwidth = 1.915 mm
+        padheight = 2.79 mm
+        silkboxheight = 5.28 mm
+        silkboxwidth = 6.10 mm
+part "IHLP-2020BZ"

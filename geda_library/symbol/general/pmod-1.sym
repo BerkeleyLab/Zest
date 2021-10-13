@@ -1,0 +1,146 @@
+v 20130925 2
+T 500 2175 8 10 1 1 0 6 1
+refdes=J?
+T -1275 2075 5 10 0 0 0 0 1
+device=CONNECTOR_10
+T -1275 2275 5 10 0 0 0 0 1
+footprint=SIP10N
+T -1275 2475 5 10 0 0 0 0 1
+author=Leon Kos
+T -1275 2675 5 10 0 0 0 0 1
+description=generic connector
+T -1275 2875 5 10 0 0 0 0 1
+numslots=0
+P 0 2000 200 2000 1 0 0
+{
+T 200 2050 5 8 0 1 0 6 1
+pinnumber=1
+T 200 1950 5 8 0 1 0 8 1
+pinseq=1
+T 250 1950 9 8 1 1 0 0 1
+pinlabel=1
+T 350 2000 5 8 0 1 0 2 1
+pintype=pas
+}
+P 0 1625 200 1625 1 0 0
+{
+T 200 1675 5 8 0 1 0 6 1
+pinnumber=2
+T 200 1575 5 8 0 1 0 8 1
+pinseq=2
+T 250 1550 9 8 1 1 0 0 1
+pinlabel=2
+T 350 1625 5 8 0 1 0 2 1
+pintype=pas
+}
+P 0 1250 200 1250 1 0 0
+{
+T 200 1300 5 8 0 1 0 6 1
+pinnumber=3
+T 200 1200 5 8 0 1 0 8 1
+pinseq=3
+T 250 1175 9 8 1 1 0 0 1
+pinlabel=3
+T 350 1250 5 8 0 1 0 2 1
+pintype=pas
+}
+P 0 875 200 875 1 0 0
+{
+T 200 925 5 8 0 1 0 6 1
+pinnumber=4
+T 200 825 5 8 0 1 0 8 1
+pinseq=4
+T 250 800 9 8 1 1 0 0 1
+pinlabel=4
+T 350 875 5 8 0 1 0 2 1
+pintype=pas
+}
+P 0 525 200 525 1 0 0
+{
+T 200 575 5 8 0 1 0 6 1
+pinnumber=5
+T 200 475 5 8 0 1 0 8 1
+pinseq=5
+T 250 450 9 8 1 1 0 0 1
+pinlabel=5
+T 350 525 5 8 0 1 0 2 1
+pintype=pwr
+}
+P 0 125 200 125 1 0 0
+{
+T 200 175 5 8 0 1 0 6 1
+pinnumber=6
+T 200 75 5 8 0 1 0 8 1
+pinseq=6
+T 250 75 9 8 1 1 0 0 1
+pinlabel=6
+T 350 125 5 8 0 1 0 2 1
+pintype=pwr
+}
+P 800 2000 600 2000 1 0 0
+{
+T 695 2045 5 8 0 1 0 0 1
+pinnumber=7
+T 600 1950 5 8 0 1 0 2 1
+pinseq=7
+T 545 1945 9 8 1 1 0 6 1
+pinlabel=7
+T 450 2000 5 8 0 1 0 8 1
+pintype=pas
+}
+P 800 1625 600 1625 1 0 0
+{
+T 695 1670 5 8 0 1 0 0 1
+pinnumber=8
+T 600 1575 5 8 0 1 0 2 1
+pinseq=8
+T 545 1570 9 8 1 1 0 6 1
+pinlabel=8
+T 450 1625 5 8 0 1 0 8 1
+pintype=pas
+}
+P 800 1250 600 1250 1 0 0
+{
+T 695 1295 5 8 0 1 0 0 1
+pinnumber=9
+T 600 1200 5 8 0 1 0 2 1
+pinseq=9
+T 545 1195 9 8 1 1 0 6 1
+pinlabel=9
+T 450 1250 5 8 0 1 0 8 1
+pintype=pas
+}
+P 800 875 600 875 1 0 0
+{
+T 695 920 5 8 0 1 0 0 1
+pinnumber=10
+T 600 825 5 8 0 1 0 2 1
+pinseq=10
+T 545 820 9 8 1 1 0 6 1
+pinlabel=10
+T 450 875 5 8 0 1 0 8 1
+pintype=pas
+}
+B 200 0 400 2125 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+P 800 500 600 500 1 0 0
+{
+T 695 545 5 8 0 1 0 0 1
+pinnumber=11
+T 600 450 5 8 0 1 0 2 1
+pinseq=11
+T 450 500 5 8 0 1 0 8 1
+pintype=pwr
+T 545 445 9 8 1 1 0 6 1
+pinlabel=11
+}
+P 800 125 600 125 1 0 0
+{
+T 695 170 5 8 0 1 0 0 1
+pinnumber=12
+T 600 75 5 8 0 1 0 2 1
+pinseq=12
+T 450 125 5 8 0 1 0 8 1
+pintype=pwr
+T 545 70 9 8 1 1 0 6 1
+pinlabel=12
+}

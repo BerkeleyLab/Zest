@@ -1,0 +1,20 @@
+[labels]
+TPS62110-ps
+refdes=U?
+! author=Jin Yang
+! device=Switch Regulator
+! description=sub-module
+! source=TPS62110-ps.sch
+
+[left]
+1	ENABLE
+2	SYNC
+
+[right]
+3	OUTPUT
+
+[top]
+4	12P0V
+
+[bottom]
+5	GND

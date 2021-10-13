@@ -1,0 +1,25 @@
+T 0 0 1 1 0 1 0 0 1
+device:te_cooler
+T 0 0 1 1 0 1 0 0 1
+model:CP1.4-127-10-L1-W4.5
+T 0 0 1 1 0 1 0 0 1
+value:v1
+v 20140308 2
+P 0 400 200 400 1 0 0
+{
+T 243 338 5 10 1 1 0 0 1
+pinlabel=V+
+}
+T 400 600 8 10 1 1 0 0 1
+refdes=M?
+B 200 0 1200 500 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 200 800 8 10 0 0 0 0 1
+device=THERMOELECTRIC-COOLER
+T 500 100 9 10 1 0 0 0 2
+TE
+COOLER
+P 0 100 200 100 1 0 0
+{
+T 248 34 5 10 1 1 0 0 1
+pinlabel=V-
+}

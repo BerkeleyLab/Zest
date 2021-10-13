@@ -1,0 +1,20 @@
+[labels]
+PRE-AMP
+refdes=U?
+! author=Jin Yang
+! device=Pre-amplifier
+! description=sub-module
+! source=pre-amp.sch
+
+[left]
+
+[right]
+1	OUT+
+2	OUT-
+3	VOCM
+
+[top]
+4	3P3V
+
+[bottom]
+5	GND

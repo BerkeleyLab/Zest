@@ -23,8 +23,18 @@ The digitizer board features:
 
 ## Schematics
 
-To get PDF versions for reference,
-simply `make` in this directory.  The result is digitizer_schematics.pdf.
+To get PDF versions for reference:
+
+  * Download the `djboxsym` tool. Put it in your PATH.
+
+```bash
+$ wget http://www.gedasymbols.org/user/dj_delorie/tools/djboxsym
+$ echo "1a372fdef8e474119fae8acde38226f82271b62cd16b7f47b6b2408f0c0dd1ea  djboxsym" | sha256sum -c
+djboxsym: OK
+```
+
+  * call `make` in `geda_library/symbol/djboxsym/`, which generates symbols from the included symbol templates
+  * call `make` in `digitizer/`, which should generate `digitizer_schematic.pdf`
 
 ## Artwork/Gerbers
 

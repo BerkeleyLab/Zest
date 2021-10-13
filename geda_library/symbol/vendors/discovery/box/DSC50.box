@@ -1,0 +1,20 @@
+[labels]
+DSC50
+refdes=D?
+! device=PHOTODIODE
+! value=DSC50
+! Vs=0.5-10V,200mW
+! MaxInput=+19dBm
+
+[left]
+5 PhotoIN
+
+[top]
+1 V-bia	
+
+[right]
+4 RF-Out
+
+[bottom]
+2 GND
+3 NC

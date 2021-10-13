@@ -1,0 +1,63 @@
+[labels]
+LMK01801
+refdes=U?
+! author=Gang Huang
+! device=Dual Clock Divider Buffer
+
+[left]
+6   Vcc1_CLKout_0_1_2_3
+15  Vcc2_CLKin0
+20  Vcc3_CLKout_4_5_6_7
+25  Vcc4_Bias
+26  Bias 
+32  Vcc5_CLKout_8_9_10_11
+37  Vcc6_CLKin1 
+41  Vcc7_CLKout_12_13 
+46  Vcc8_DIG 
+
+13  CLKin0
+14  CLKin0*
+38  CLKin1
+39  CLKin1*
+
+27  EN_PIN_CTRL 
+11  Test/CLKoutTYPE_0
+12  SYNC0/CLKoutTYPE_1
+40  SYNC1/CLKoutTYPE_2
+47  DATAuWire/CLKoutDIV_0
+48  CLKuWire/CLKoutDIV_1
+1   LEuWire/CLKoutDIV_2
+49  DAP 
+
+[right]
+2   CLKout0
+3   CLKout0*
+5   CLKout1
+4   CLKout1*
+7   CLKout2
+8   CLKout2*
+10  CLKout3
+9   CLKout3*
+16  CLKout4 
+17  CLKout4* 
+19  CLKout5
+18  CLKout5* 
+21  CLKout6 
+22  CLKout6*
+24  CLKout7
+23  CLKout7*
+28  CLKout8
+29  CLKout8* 
+31  CLKout9
+30  CLKout9* 
+33  CLKout10 
+34  CLKout10*
+36  CLKout11
+35  CLKout11* 
+42  CLKout12 
+43  CLKout12* 
+45  CLKout13 
+44  CLKout13* 
+
+[top]
+[bottom]

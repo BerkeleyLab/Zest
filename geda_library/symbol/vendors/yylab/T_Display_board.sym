@@ -1,0 +1,74 @@
+v 20130925 2
+B 300 300 2200 900 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T -500 600 9 10 0 0 0 0 1
+value=T Display board
+T -500 800 9 10 0 0 0 0 1
+device=T Display board
+T 1400 900 9 10 1 1 0 3 1
+T Display Board
+T 1300 600 9 10 1 1 0 3 1
+refdes=Module?
+P 0 900 300 900 1 0 0
+{
+T 350 900 9 10 1 1 0 1 1
+pinlabel=Input
+T 200 950 5 8 1 1 0 6 1
+pinnumber=1
+T 200 950 5 8 0 1 0 6 1
+pinseq=1
+T 200 950 9 10 0 1 0 6 1
+pintype=pas
+}
+P 2800 600 2500 600 1 0 0
+{
+T 2450 600 9 10 1 1 180 1 1
+pinlabel=Output
+T 2600 550 5 8 1 1 180 6 1
+pinnumber=3
+T 2600 550 5 8 0 1 180 6 1
+pinseq=3
+T 2600 550 9 10 0 1 180 6 1
+pintype=pas
+}
+P 0 500 300 500 1 0 0
+{
+T 350 500 9 10 1 1 0 1 1
+pinlabel=USB
+T 200 550 5 8 1 1 0 6 1
+pinnumber=2
+T 200 550 5 8 0 1 0 6 1
+pinseq=2
+T 200 550 9 10 0 1 0 6 1
+pintype=pas
+}
+P 1500 1500 1500 1200 1 0 0
+{
+T 1350 1100 9 10 1 1 0 1 1
+pinlabel=+5V
+T 1550 1300 5 8 1 1 270 6 1
+pinnumber=4
+T 1550 1300 5 8 0 1 270 6 1
+pinseq=4
+T 1550 1300 9 10 0 1 270 6 1
+pintype=pas
+}
+P 1500 0 1500 300 1 0 0
+{
+T 1650 400 9 10 1 1 180 1 1
+pinlabel=GND
+T 1450 200 5 8 1 1 90 6 1
+pinnumber=5
+T 1450 200 5 8 0 1 90 6 1
+pinseq=5
+T 1450 200 9 10 0 1 90 6 1
+pintype=pas
+}
+P 800 1500 800 1200 1 0 0
+{
+T 850 1300 5 8 1 1 270 6 1
+pinnumber=6
+T 850 1300 5 8 0 1 270 6 1
+pinseq=6
+T 850 1300 9 10 0 1 270 6 1
+pintype=pas
+}

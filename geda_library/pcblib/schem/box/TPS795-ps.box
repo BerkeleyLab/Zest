@@ -1,0 +1,18 @@
+[labels]
+TPS795-ps
+refdes=U?
+! author=Jin Yang
+! device=LDO
+! description=sub-module
+! source=TPS795-ps.sch
+
+[left]
+1	VIN
+
+[right]
+2	VOUT
+
+[top]
+
+[bottom]
+3	GND

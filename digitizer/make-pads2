@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Run this from the gEDA/scheme directory, wherever that is.
+# Maybe /usr/share/gEDA/scheme or $HOME/share/gEDA/scheme.
+GNET_PADS=${1:-/usr/share/gEDA/scheme/gnet-pads.scm}
+set -e
+test -r $GNET_PADS
+echo "342d477f483c77fb6ce5bab79a28f1901e1007e4  $GNET_PADS" | sha1sum -c
+sed -e 's/pads:/pads2:/' -e 's/define pads /define pads2 /' -e '/package "footprint"/i\
+	       (display (gnetlist:get-package-attribute package "device") port)\
+	       (write-char #\\_ port)\
+	       (display (gnetlist:get-package-attribute package "value") port)\
+	       (write-char #\\@ port)
+' < $GNET_PADS > gnet-pads2.scm
+echo "gnet-pads2.scm created OK!"

@@ -1,0 +1,8 @@
+{
+"vendor":"wavelength",
+"parts":[
+{"model":"MPT5000","device":"tec_controller","value":"v1"},
+{"model":"TCS610","device":"thermistor","value":"10k"}
+
+]
+}

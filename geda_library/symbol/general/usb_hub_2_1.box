@@ -1,0 +1,14 @@
+[labels]
+USB hub
+refdes=?
+
+[left]
+1 In_1
+2 In_2
+
+[top]
+
+[right]
+3 Out
+
+[bottom]

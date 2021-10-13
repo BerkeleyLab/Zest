@@ -1,0 +1,3 @@
+schematics digitizer.sch
+output-name digitizer
+elements-dir ../footprint

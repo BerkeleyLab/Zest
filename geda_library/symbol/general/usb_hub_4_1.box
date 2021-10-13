@@ -1,0 +1,16 @@
+[labels]
+USB hub
+refdes=Module?
+
+[left]
+2 In_1
+3 In_2
+4 In_3
+5 In_4
+
+[top]
+
+[right]
+1 Out
+
+[bottom]

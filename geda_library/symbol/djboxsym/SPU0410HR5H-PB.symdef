@@ -1,0 +1,20 @@
+[labels]
+SPU0410HR5H-PB
+refdes=U?
+! author=Gang Huang
+! device=SiSonic Microphone
+! vendor=knowles
+! net=VDD:1
+! net=GND:2,3
+[left]
+
+[top]
+1 VDD
+2 GND
+
+
+[right]
+4  OUTPUT
+
+[bottom]
+

@@ -1,0 +1,30 @@
+
+# Analog devices AD8361
+
+[labels]
+
+AD8361
+refdes=U?
+! author=Qiang Du
+! device=AD8361ARMZ
+! description=IC PWR DETECTOR 2.5GHZ 8-MSOP
+! footprint=MSOP-8
+! price=9.03
+! vendor=digikey
+! vendor_id=AD8361ARMZ-ND
+
+[left]
+3 RFIN
+4 PWDN
+2 IREF
+
+[right]
+6 FLTR
+7 VRMS
+8 SREF
+
+[top]
+1 VPOS
+
+[bottom]
+5 COMM

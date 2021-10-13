@@ -1,0 +1,76 @@
+v 20140308 2
+B 300 1000 4100 1200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 200 2600 9 10 0 0 0 0 1
+value=BME15Pz+S
+T 200 2800 9 10 0 0 0 0 1
+device=LASER
+T 1900 1900 9 10 1 1 0 3 1
+Koheras
+T 1900 1700 9 10 1 1 0 3 1
+Standard Rackmount
+T 1900 1500 9 10 1 1 0 3 1
+BME15Pz+S
+T 1900 1300 9 10 1 1 0 3 1
+1560.49nm
+T 2500 2300 9 10 1 1 0 3 1
+refdes=CW-LASER?
+P 4700 1300 4400 1300 1 0 0
+{
+T 3850 1300 9 10 1 1 0 1 1
+pinlabel=Alarm
+T 4800 1350 5 8 1 1 0 6 1
+pinnumber=2
+T 4900 1350 5 8 0 1 0 6 1
+pinseq=2
+T 5000 1050 9 10 0 1 0 6 1
+pintype=pas
+}
+P 3400 2500 3400 2200 1 0 0
+{
+T 3550 2100 9 10 1 1 0 7 1
+pinlabel=USB
+T 3300 2550 5 8 1 1 0 0 1
+pinnumber=3
+T 3200 2550 5 8 0 1 0 0 1
+pinseq=3
+T 3000 2550 9 10 0 1 0 6 1
+pintype=pas
+}
+P 4000 2500 4000 2200 1 0 0
+{
+T 4250 2100 9 10 1 1 0 7 1
+pinlabel=RS232
+T 3800 2550 5 8 1 1 0 0 1
+pinnumber=4
+T 3900 2550 5 8 0 1 0 0 1
+pinseq=4
+T 3600 2550 9 10 0 1 0 6 1
+pintype=pas
+}
+P 0 1200 300 1200 1 0 0
+{
+T 2050 1200 9 10 1 1 0 7 1
+pinlabel=Piezo-Control(LEMO)
+T 100 1250 5 8 1 1 0 0 1
+pinnumber=5
+T 2300 1250 5 8 0 1 0 0 1
+pinseq=5
+T 2000 1250 9 10 0 1 0 6 1
+pintype=pas
+}
+T 2900 0 9 10 1 0 0 0 4
+LEMO:
+1.Ground(V return)
+2.+V
+3.Chassis Ground
+P 4700 1800 4400 1800 1 0 0
+{
+T 3750 1800 9 10 1 1 0 1 1
+pinlabel=Output
+T 4900 1850 5 8 1 1 0 6 1
+pinnumber=1
+T 4900 1850 5 8 0 1 0 6 1
+pinseq=1
+T 4900 1850 9 10 0 1 0 6 1
+pintype=pas
+}

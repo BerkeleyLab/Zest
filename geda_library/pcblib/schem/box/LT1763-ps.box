@@ -1,0 +1,18 @@
+[labels]
+LT1763-ps
+refdes=U?
+! author=Jin Yang
+! device=LDO
+! description=sub-module
+! source=LT1763-ps.sch
+
+[left]
+1	VIN
+
+[right]
+2	VOUT
+
+[top]
+
+[bottom]
+3	GND

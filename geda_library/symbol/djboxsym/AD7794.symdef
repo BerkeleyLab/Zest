@@ -1,0 +1,40 @@
+[labels]
+AD7794
+refdes=U?
+! author=Gang Huang
+! device=6 Channel Low Noise, Low Power, 24-Bit Sigma Delta ADC with ON-Chip In-Amp and Reference
+[left]
+7  AIN1+
+8  AIN1-
+9  AIN2+
+10 AIN2-
+11 AIN3+
+12 AIN3-
+18 AIN4-/REFIN2-
+17 AIN4+/REFIN2+
+16 AIN5-/IOUT1
+15 AIN5+/IOUT2
+5  AIN6+/P1
+6  AIN6-/P2
+
+14 REFIN1-
+13 REFIN1+
+
+19 PSW 
+
+
+[top]
+21 AVDD
+20 GND
+22 DVDD
+
+
+[right]
+23 DOUT/RDYb
+24 DIN
+1  SCLK
+3  CSb
+
+2  CLK
+[bottom]
+

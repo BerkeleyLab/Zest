@@ -1,0 +1,21 @@
+
+# ZX60-H242+ generated symbol
+
+[labels]
+
+ZX60-H242+
+refdes=ZX60-H242+
+! author=Qi Chen
+! device=ZX60-H242+
+! description=ZX60-H242+ generated symbol
+! footprint=ZX60-H242+
+! vendor=LBNL
+
+[left]
+IN IN
+
+[right]
+V+ V+
+GND GND
+
+OUT OUT

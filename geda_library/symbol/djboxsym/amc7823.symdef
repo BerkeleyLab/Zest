@@ -1,0 +1,72 @@
+
+# TI AMC7823
+[labels]
+
+AMC7823IR
+refdes=U?
+! author=Qiang Du
+! device=AMC7823IRTAT
+! description=IC MONITOR/CONTROL ANALOG 40WQFN
+! footprint=QFN40
+! price=14.10
+! vendor=digikey
+! vendor_id=296-18680-1-ND
+
+[left]
+
+26 ! RESET
+
+32 > SCLK
+33 MOSI
+35 ! SS
+34 MISO
+
+2 ! DAV
+31 CONVERT
+3 ELDAC
+1 ! GALR
+
+[right]
+4 ISET_RES
+21 EXT_REF_IN
+
+.bus
+20 AD7
+19 AD6
+18 AD5
+17 AD4
+14 AD3
+13 AD2
+12 AD1
+11 AD0
+
+.bus
+9 DAC3
+8 DAC2
+7 DAC1
+6 DAC0
+
+5 THERM_I_OUT
+
+.bus
+40 GPIO5
+39 GPIO4
+30 GPIO3
+29 GPIO2
+28 GPIO1
+27 GPIO0
+25 DAC7
+24 DAC6
+23 DAC5
+22 DAC4
+
+[top]
+37 DVDD
+36 BVDD
+16 AVDD
+
+[bottom]
+15 AGND
+38 DGND
+10 SGND
+41 PAD

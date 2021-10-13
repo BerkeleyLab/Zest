@@ -1,0 +1,24 @@
+[labels]
+AT24C32D
+refdes=U?
+! author=Gang Huang
+! device=I2C compatitble Serial EEPROM 32Kbit (4096x8)
+! net=VCC:8
+! net=GND:4
+
+[left]
+1  A0
+2  A1
+3  A2
+
+6  SCL
+5  SDA
+
+[top]
+8  VCC
+
+[right]
+
+[bottom]
+7  WP
+4  GND

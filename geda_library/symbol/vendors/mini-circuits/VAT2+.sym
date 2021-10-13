@@ -1,0 +1,38 @@
+v 20130925 2
+B 300 500 1300 600 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 2200 1200 9 10 0 0 0 0 1
+vendor=LBNL
+T 2200 1400 9 10 0 0 0 0 1
+footprint=VAT2+
+T 2200 1600 9 10 0 0 0 0 1
+description=VAT2+ generated symbol
+T 2200 1800 9 10 0 0 0 0 1
+device=VAT2+
+T 2200 2000 9 10 0 0 0 0 1
+author=Qi Chen
+T 1000 900 9 10 1 1 0 3 1
+VAT2+
+T 1300 100 9 10 0 1 0 3 1
+refdes=VAT2+
+P 0 700 300 700 1 0 0
+{
+T 350 700 9 10 1 1 0 1 1
+pinlabel=SMAF
+T 200 750 5 8 0 1 0 6 1
+pinnumber=SMAF
+T 200 750 5 8 0 1 0 6 1
+pinseq=1
+T 200 750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 1900 700 1600 700 1 0 0
+{
+T 1550 700 9 10 1 1 0 7 1
+pinlabel=SMAM
+T 1700 750 5 8 0 1 0 0 1
+pinnumber=SMAM
+T 1700 750 5 8 0 1 0 0 1
+pinseq=2
+T 1500 750 9 10 0 1 0 6 1
+pintype=pas
+}

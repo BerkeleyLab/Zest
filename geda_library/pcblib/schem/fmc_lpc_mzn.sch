@@ -1,0 +1,772 @@
+v 20110115 2
+C 2900 16700 1 270 1 gnd-1.sym
+C 6900 13700 1 270 1 gnd-1.sym
+C 2900 13500 1 270 1 gnd-1.sym
+C 6900 12500 1 270 1 gnd-1.sym
+C 4900 13000 1 270 1 gnd-1.sym
+C 6900 10100 1 270 1 gnd-1.sym
+C 4900 11800 1 270 1 gnd-1.sym
+C 6900 11300 1 270 1 gnd-1.sym
+C 6900 14900 1 270 1 gnd-1.sym
+C 4900 15400 1 270 1 gnd-1.sym
+C 2900 12300 1 270 1 gnd-1.sym
+C 4900 14200 1 270 1 gnd-1.sym
+C 2900 14700 1 270 1 gnd-1.sym
+C 900 1600 1 270 1 gnd-1.sym
+C 900 3200 1 270 1 gnd-1.sym
+C 2900 1900 1 270 1 gnd-1.sym
+C 2900 6300 1 270 1 gnd-1.sym
+C 4900 7000 1 270 1 gnd-1.sym
+C 2900 2700 1 270 1 gnd-1.sym
+C 4900 8200 1 270 1 gnd-1.sym
+C 2900 7500 1 270 1 gnd-1.sym
+C 2900 8700 1 270 1 gnd-1.sym
+C 900 2400 1 270 1 gnd-1.sym
+C 900 4400 1 270 1 gnd-1.sym
+C 900 4800 1 270 1 gnd-1.sym
+C 6900 8900 1 270 1 gnd-1.sym
+C 6900 7700 1 270 1 gnd-1.sym
+C 4900 2200 1 270 1 gnd-1.sym
+C 4900 3400 1 270 1 gnd-1.sym
+C 6900 1700 1 270 1 gnd-1.sym
+C 6900 2900 1 270 1 gnd-1.sym
+C 6900 4100 1 270 1 gnd-1.sym
+C 4900 1400 1 270 1 gnd-1.sym
+C 6900 6500 1 270 1 gnd-1.sym
+C 6900 5300 1 270 1 gnd-1.sym
+C 4900 4600 1 270 1 gnd-1.sym
+C 4900 5800 1 270 1 gnd-1.sym
+C 900 14400 1 270 1 gnd-1.sym
+C 2900 16300 1 270 1 gnd-1.sym
+C 4900 17000 1 270 1 gnd-1.sym
+C 4900 15800 1 270 1 gnd-1.sym
+C 2900 15100 1 270 1 gnd-1.sym
+C 900 12800 1 270 1 gnd-1.sym
+C 900 12400 1 270 1 gnd-1.sym
+C 900 15600 1 270 1 gnd-1.sym
+C 900 14000 1 270 1 gnd-1.sym
+C 6900 16100 1 270 1 gnd-1.sym
+C 2900 11100 1 270 1 gnd-1.sym
+C 900 9200 1 270 1 gnd-1.sym
+C 2900 9900 1 270 1 gnd-1.sym
+C 900 11200 1 270 1 gnd-1.sym
+C 900 6000 1 270 1 gnd-1.sym
+C 900 6400 1 270 1 gnd-1.sym
+C 4900 10600 1 270 1 gnd-1.sym
+C 4900 9400 1 270 1 gnd-1.sym
+C 900 7600 1 270 1 gnd-1.sym
+C 900 8000 1 270 1 gnd-1.sym
+C 900 10800 1 270 1 gnd-1.sym
+C 900 9600 1 270 1 gnd-1.sym
+C 0 0 1 0 0 fmccdhg.sym
+{
+T 3800 300 5 10 1 1 0 0 1
+refdes=J1
+T 0 0 5 10 0 0 0 0 1
+footprint=FMC_LPC_MEZ_VIA
+T 0 0 5 10 0 0 0 0 1
+value=fmc_mez
+}
+C 900 16000 1 270 1 gnd-1.sym
+C 900 17200 1 270 1 gnd-1.sym
+C 1400 400 1 90 0 in-1.sym
+{
+T 1100 400 5 10 0 0 90 0 1
+device=INPUT
+T 1100 400 5 10 1 1 90 0 1
+refdes=GND
+}
+C 1000 900 1 270 1 gnd-1.sym
+C 600 16800 1 0 0 in-1.sym
+{
+T 600 17100 5 10 0 0 0 0 1
+device=INPUT
+T 600 17100 5 10 1 1 0 0 1
+refdes=C2
+}
+C 600 16400 1 0 0 in-1.sym
+{
+T 600 16700 5 10 0 0 0 0 1
+device=INPUT
+T 600 16700 5 10 1 1 0 0 1
+refdes=C3
+}
+C 600 15200 1 0 0 in-1.sym
+{
+T 600 15500 5 10 0 0 0 0 1
+device=INPUT
+T 600 15500 5 10 1 1 0 0 1
+refdes=C6
+}
+C 600 14800 1 0 0 in-1.sym
+{
+T 600 15100 5 10 0 0 0 0 1
+device=INPUT
+T 600 15100 5 10 1 1 0 0 1
+refdes=C7
+}
+C 600 13600 1 0 0 in-1.sym
+{
+T 600 13900 5 10 0 0 0 0 1
+device=INPUT
+T 600 13900 5 10 1 1 0 0 1
+refdes=C10
+}
+C 600 13200 1 0 0 in-1.sym
+{
+T 600 13500 5 10 0 0 0 0 1
+device=INPUT
+T 600 13500 5 10 1 1 0 0 1
+refdes=C11
+}
+C 600 12000 1 0 0 in-1.sym
+{
+T 600 12300 5 10 0 0 0 0 1
+device=INPUT
+T 600 12300 5 10 1 1 0 0 1
+refdes=C14
+}
+C 600 11600 1 0 0 in-1.sym
+{
+T 600 11900 5 10 0 0 0 0 1
+device=INPUT
+T 600 11900 5 10 1 1 0 0 1
+refdes=C15
+}
+C 600 10400 1 0 0 in-1.sym
+{
+T 600 10700 5 10 0 0 0 0 1
+device=INPUT
+T 600 10700 5 10 1 1 0 0 1
+refdes=C18
+}
+C 600 10000 1 0 0 in-1.sym
+{
+T 600 10300 5 10 0 0 0 0 1
+device=INPUT
+T 600 10300 5 10 1 1 0 0 1
+refdes=C19
+}
+C 600 8800 1 0 0 in-1.sym
+{
+T 600 9100 5 10 0 0 0 0 1
+device=INPUT
+T 600 9100 5 10 1 1 0 0 1
+refdes=C22
+}
+C 600 8400 1 0 0 in-1.sym
+{
+T 600 8700 5 10 0 0 0 0 1
+device=INPUT
+T 600 8700 5 10 1 1 0 0 1
+refdes=C23
+}
+C 600 7200 1 0 0 in-1.sym
+{
+T 600 7500 5 10 0 0 0 0 1
+device=INPUT
+T 600 7500 5 10 1 1 0 0 1
+refdes=C26
+}
+C 600 6800 1 0 0 in-1.sym
+{
+T 600 7100 5 10 0 0 0 0 1
+device=INPUT
+T 600 7100 5 10 1 1 0 0 1
+refdes=C27
+}
+C 600 5600 1 0 0 in-1.sym
+{
+T 600 5900 5 10 0 0 0 0 1
+device=INPUT
+T 600 5900 5 10 1 1 0 0 1
+refdes=C30
+}
+C 600 5200 1 0 0 in-1.sym
+{
+T 600 5500 5 10 0 0 0 0 1
+device=INPUT
+T 600 5500 5 10 1 1 0 0 1
+refdes=C31
+}
+C 600 4000 1 0 0 in-1.sym
+{
+T 600 4300 5 10 0 0 0 0 1
+device=INPUT
+T 600 4300 5 10 1 1 0 0 1
+refdes=C34
+}
+C 600 3600 1 0 0 in-1.sym
+{
+T 600 3900 5 10 0 0 0 0 1
+device=INPUT
+T 600 3900 5 10 1 1 0 0 1
+refdes=C35
+}
+C 600 2800 1 0 0 in-1.sym
+{
+T 600 3100 5 10 0 0 0 0 1
+device=INPUT
+T 600 3100 5 10 1 1 0 0 1
+refdes=C37
+}
+C 600 2000 1 0 0 in-1.sym
+{
+T 600 2300 5 10 0 0 0 0 1
+device=INPUT
+T 600 2300 5 10 1 1 0 0 1
+refdes=C39
+}
+C 2600 17100 1 0 0 in-1.sym
+{
+T 2600 17400 5 10 0 0 0 0 1
+device=INPUT
+T 2600 17400 5 10 1 1 0 0 1
+refdes=D1
+}
+C 2600 15900 1 0 0 in-1.sym
+{
+T 2600 16200 5 10 0 0 0 0 1
+device=INPUT
+T 2600 16200 5 10 1 1 0 0 1
+refdes=D4
+}
+C 2600 15500 1 0 0 in-1.sym
+{
+T 2600 15800 5 10 0 0 0 0 1
+device=INPUT
+T 2600 15800 5 10 1 1 0 0 1
+refdes=D5
+}
+C 2600 14300 1 0 0 in-1.sym
+{
+T 2600 14600 5 10 0 0 0 0 1
+device=INPUT
+T 2600 14600 5 10 1 1 0 0 1
+refdes=D8
+}
+C 2600 13900 1 0 0 in-1.sym
+{
+T 2600 14200 5 10 0 0 0 0 1
+device=INPUT
+T 2600 14200 5 10 1 1 0 0 1
+refdes=D9
+}
+C 2600 13100 1 0 0 in-1.sym
+{
+T 2600 13400 5 10 0 0 0 0 1
+device=INPUT
+T 2600 13400 5 10 1 1 0 0 1
+refdes=D11
+}
+C 2600 12700 1 0 0 in-1.sym
+{
+T 2600 13000 5 10 0 0 0 0 1
+device=INPUT
+T 2600 13000 5 10 1 1 0 0 1
+refdes=D12
+}
+C 2600 11900 1 0 0 in-1.sym
+{
+T 2600 12200 5 10 0 0 0 0 1
+device=INPUT
+T 2600 12200 5 10 1 1 0 0 1
+refdes=D14
+}
+C 2600 11500 1 0 0 in-1.sym
+{
+T 2600 11800 5 10 0 0 0 0 1
+device=INPUT
+T 2600 11800 5 10 1 1 0 0 1
+refdes=D15
+}
+C 2600 10700 1 0 0 in-1.sym
+{
+T 2600 11000 5 10 0 0 0 0 1
+device=INPUT
+T 2600 11000 5 10 1 1 0 0 1
+refdes=D17
+}
+C 2600 10300 1 0 0 in-1.sym
+{
+T 2600 10600 5 10 0 0 0 0 1
+device=INPUT
+T 2600 10600 5 10 1 1 0 0 1
+refdes=D18
+}
+C 2600 9500 1 0 0 in-1.sym
+{
+T 2600 9800 5 10 0 0 0 0 1
+device=INPUT
+T 2600 9800 5 10 1 1 0 0 1
+refdes=D20
+}
+C 2600 9100 1 0 0 in-1.sym
+{
+T 2600 9400 5 10 0 0 0 0 1
+device=INPUT
+T 2600 9400 5 10 1 1 0 0 1
+refdes=D21
+}
+C 2600 8300 1 0 0 in-1.sym
+{
+T 2600 8600 5 10 0 0 0 0 1
+device=INPUT
+T 2600 8600 5 10 1 1 0 0 1
+refdes=D23
+}
+C 2600 7900 1 0 0 in-1.sym
+{
+T 2600 8200 5 10 0 0 0 0 1
+device=INPUT
+T 2600 8200 5 10 1 1 0 0 1
+refdes=D24
+}
+C 2600 7100 1 0 0 in-1.sym
+{
+T 2600 7400 5 10 0 0 0 0 1
+device=INPUT
+T 2600 7400 5 10 1 1 0 0 1
+refdes=D26
+}
+C 2600 6700 1 0 0 in-1.sym
+{
+T 2600 7000 5 10 0 0 0 0 1
+device=INPUT
+T 2600 7000 5 10 1 1 0 0 1
+refdes=D27
+}
+C 2600 5900 1 0 0 in-1.sym
+{
+T 2600 6200 5 10 0 0 0 0 1
+device=INPUT
+T 2600 6200 5 10 1 1 0 0 1
+refdes=D29
+}
+C 2600 5500 1 0 0 in-1.sym
+{
+T 2600 5800 5 10 0 0 0 0 1
+device=INPUT
+T 2600 5800 5 10 1 1 0 0 1
+refdes=D30
+}
+C 2600 5100 1 0 0 in-1.sym
+{
+T 2600 5400 5 10 0 0 0 0 1
+device=INPUT
+T 2600 5400 5 10 1 1 0 0 1
+refdes=D31
+}
+C 2600 4700 1 0 0 in-1.sym
+{
+T 2600 5000 5 10 0 0 0 0 1
+device=INPUT
+T 2600 5000 5 10 1 1 0 0 1
+refdes=D32
+}
+C 2600 4300 1 0 0 in-1.sym
+{
+T 2600 4600 5 10 0 0 0 0 1
+device=INPUT
+T 2600 4600 5 10 1 1 0 0 1
+refdes=D33
+}
+C 2600 3900 1 0 0 in-1.sym
+{
+T 2600 4200 5 10 0 0 0 0 1
+device=INPUT
+T 2600 4200 5 10 1 1 0 0 1
+refdes=D34
+}
+C 2600 3500 1 0 0 in-1.sym
+{
+T 2600 3800 5 10 0 0 0 0 1
+device=INPUT
+T 2600 3800 5 10 1 1 0 0 1
+refdes=D35
+}
+C 2600 3100 1 0 0 in-1.sym
+{
+T 2600 3400 5 10 0 0 0 0 1
+device=INPUT
+T 2600 3400 5 10 1 1 0 0 1
+refdes=D36
+}
+C 2600 2300 1 0 0 in-1.sym
+{
+T 2600 2600 5 10 0 0 0 0 1
+device=INPUT
+T 2600 2600 5 10 1 1 0 0 1
+refdes=D38
+}
+C 2600 1500 1 0 0 in-1.sym
+{
+T 2600 1800 5 10 0 0 0 0 1
+device=INPUT
+T 2600 1800 5 10 1 1 0 0 1
+refdes=D40
+}
+C 4600 16600 1 0 0 in-1.sym
+{
+T 4600 16900 5 10 0 0 0 0 1
+device=INPUT
+T 4600 16900 5 10 1 1 0 0 1
+refdes=G2
+}
+C 4600 16200 1 0 0 in-1.sym
+{
+T 4600 16500 5 10 0 0 0 0 1
+device=INPUT
+T 4600 16500 5 10 1 1 0 0 1
+refdes=G3
+}
+C 4600 15000 1 0 0 in-1.sym
+{
+T 4600 15300 5 10 0 0 0 0 1
+device=INPUT
+T 4600 15300 5 10 1 1 0 0 1
+refdes=G6
+}
+C 4600 14600 1 0 0 in-1.sym
+{
+T 4600 14900 5 10 0 0 0 0 1
+device=INPUT
+T 4600 14900 5 10 1 1 0 0 1
+refdes=G7
+}
+C 4600 13800 1 0 0 in-1.sym
+{
+T 4600 14100 5 10 0 0 0 0 1
+device=INPUT
+T 4600 14100 5 10 1 1 0 0 1
+refdes=G9
+}
+C 4600 13400 1 0 0 in-1.sym
+{
+T 4600 13700 5 10 0 0 0 0 1
+device=INPUT
+T 4600 13700 5 10 1 1 0 0 1
+refdes=G10
+}
+C 4600 12600 1 0 0 in-1.sym
+{
+T 4600 12900 5 10 0 0 0 0 1
+device=INPUT
+T 4600 12900 5 10 1 1 0 0 1
+refdes=G12
+}
+C 4600 12200 1 0 0 in-1.sym
+{
+T 4600 12500 5 10 0 0 0 0 1
+device=INPUT
+T 4600 12500 5 10 1 1 0 0 1
+refdes=G13
+}
+C 4600 11400 1 0 0 in-1.sym
+{
+T 4600 11700 5 10 0 0 0 0 1
+device=INPUT
+T 4600 11700 5 10 1 1 0 0 1
+refdes=G15
+}
+C 4600 11000 1 0 0 in-1.sym
+{
+T 4600 11300 5 10 0 0 0 0 1
+device=INPUT
+T 4600 11300 5 10 1 1 0 0 1
+refdes=G16
+}
+C 4600 10200 1 0 0 in-1.sym
+{
+T 4600 10500 5 10 0 0 0 0 1
+device=INPUT
+T 4600 10500 5 10 1 1 0 0 1
+refdes=G18
+}
+C 4600 9800 1 0 0 in-1.sym
+{
+T 4600 10100 5 10 0 0 0 0 1
+device=INPUT
+T 4600 10100 5 10 1 1 0 0 1
+refdes=G19
+}
+C 4600 9000 1 0 0 in-1.sym
+{
+T 4600 9300 5 10 0 0 0 0 1
+device=INPUT
+T 4600 9300 5 10 1 1 0 0 1
+refdes=G21
+}
+C 4600 8600 1 0 0 in-1.sym
+{
+T 4600 8900 5 10 0 0 0 0 1
+device=INPUT
+T 4600 8900 5 10 1 1 0 0 1
+refdes=G22
+}
+C 4600 7800 1 0 0 in-1.sym
+{
+T 4600 8100 5 10 0 0 0 0 1
+device=INPUT
+T 4600 8100 5 10 1 1 0 0 1
+refdes=G24
+}
+C 4600 7400 1 0 0 in-1.sym
+{
+T 4600 7700 5 10 0 0 0 0 1
+device=INPUT
+T 4600 7700 5 10 1 1 0 0 1
+refdes=G25
+}
+C 4600 6600 1 0 0 in-1.sym
+{
+T 4600 6900 5 10 0 0 0 0 1
+device=INPUT
+T 4600 6900 5 10 1 1 0 0 1
+refdes=G27
+}
+C 4600 6200 1 0 0 in-1.sym
+{
+T 4600 6500 5 10 0 0 0 0 1
+device=INPUT
+T 4600 6500 5 10 1 1 0 0 1
+refdes=G28
+}
+C 4600 5400 1 0 0 in-1.sym
+{
+T 4600 5700 5 10 0 0 0 0 1
+device=INPUT
+T 4600 5700 5 10 1 1 0 0 1
+refdes=G30
+}
+C 4600 5000 1 0 0 in-1.sym
+{
+T 4600 5300 5 10 0 0 0 0 1
+device=INPUT
+T 4600 5300 5 10 1 1 0 0 1
+refdes=G31
+}
+C 4600 4200 1 0 0 in-1.sym
+{
+T 4600 4500 5 10 0 0 0 0 1
+device=INPUT
+T 4600 4500 5 10 1 1 0 0 1
+refdes=G33
+}
+C 4600 3800 1 0 0 in-1.sym
+{
+T 4600 4100 5 10 0 0 0 0 1
+device=INPUT
+T 4600 4100 5 10 1 1 0 0 1
+refdes=G34
+}
+C 4600 3000 1 0 0 in-1.sym
+{
+T 4600 3300 5 10 0 0 0 0 1
+device=INPUT
+T 4600 3300 5 10 1 1 0 0 1
+refdes=G36
+}
+C 4600 2600 1 0 0 in-1.sym
+{
+T 4600 2900 5 10 0 0 0 0 1
+device=INPUT
+T 4600 2900 5 10 1 1 0 0 1
+refdes=G37
+}
+C 4600 1800 1 0 0 in-1.sym
+{
+T 4600 2100 5 10 0 0 0 0 1
+device=INPUT
+T 4600 2100 5 10 1 1 0 0 1
+refdes=G39
+}
+C 6600 16900 1 0 0 in-1.sym
+{
+T 6600 17200 5 10 0 0 0 0 1
+device=INPUT
+T 6600 17200 5 10 1 1 0 0 1
+refdes=H1
+}
+C 6600 16500 1 0 0 in-1.sym
+{
+T 6600 16800 5 10 0 0 0 0 1
+device=INPUT
+T 6600 16800 5 10 1 1 0 0 1
+refdes=H2
+}
+C 6600 15700 1 0 0 in-1.sym
+{
+T 6600 16000 5 10 0 0 0 0 1
+device=INPUT
+T 6600 16000 5 10 1 1 0 0 1
+refdes=H4
+}
+C 6600 15300 1 0 0 in-1.sym
+{
+T 6600 15600 5 10 0 0 0 0 1
+device=INPUT
+T 6600 15600 5 10 1 1 0 0 1
+refdes=H5
+}
+C 6600 14500 1 0 0 in-1.sym
+{
+T 6600 14800 5 10 0 0 0 0 1
+device=INPUT
+T 6600 14800 5 10 1 1 0 0 1
+refdes=H7
+}
+C 6600 14100 1 0 0 in-1.sym
+{
+T 6600 14400 5 10 0 0 0 0 1
+device=INPUT
+T 6600 14400 5 10 1 1 0 0 1
+refdes=H8
+}
+C 6600 13300 1 0 0 in-1.sym
+{
+T 6600 13600 5 10 0 0 0 0 1
+device=INPUT
+T 6600 13600 5 10 1 1 0 0 1
+refdes=H10
+}
+C 6600 12900 1 0 0 in-1.sym
+{
+T 6600 13200 5 10 0 0 0 0 1
+device=INPUT
+T 6600 13200 5 10 1 1 0 0 1
+refdes=H11
+}
+C 6600 12100 1 0 0 in-1.sym
+{
+T 6600 12400 5 10 0 0 0 0 1
+device=INPUT
+T 6600 12400 5 10 1 1 0 0 1
+refdes=H13
+}
+C 6600 11700 1 0 0 in-1.sym
+{
+T 6600 12000 5 10 0 0 0 0 1
+device=INPUT
+T 6600 12000 5 10 1 1 0 0 1
+refdes=H14
+}
+C 6600 10900 1 0 0 in-1.sym
+{
+T 6600 11200 5 10 0 0 0 0 1
+device=INPUT
+T 6600 11200 5 10 1 1 0 0 1
+refdes=H16
+}
+C 6600 10500 1 0 0 in-1.sym
+{
+T 6600 10800 5 10 0 0 0 0 1
+device=INPUT
+T 6600 10800 5 10 1 1 0 0 1
+refdes=H17
+}
+C 6600 9700 1 0 0 in-1.sym
+{
+T 6600 10000 5 10 0 0 0 0 1
+device=INPUT
+T 6600 10000 5 10 1 1 0 0 1
+refdes=H19
+}
+C 6600 9300 1 0 0 in-1.sym
+{
+T 6600 9600 5 10 0 0 0 0 1
+device=INPUT
+T 6600 9600 5 10 1 1 0 0 1
+refdes=H20
+}
+C 6600 8500 1 0 0 in-1.sym
+{
+T 6600 8800 5 10 0 0 0 0 1
+device=INPUT
+T 6600 8800 5 10 1 1 0 0 1
+refdes=H22
+}
+C 6600 8100 1 0 0 in-1.sym
+{
+T 6600 8400 5 10 0 0 0 0 1
+device=INPUT
+T 6600 8400 5 10 1 1 0 0 1
+refdes=H23
+}
+C 6600 7300 1 0 0 in-1.sym
+{
+T 6600 7600 5 10 0 0 0 0 1
+device=INPUT
+T 6600 7600 5 10 1 1 0 0 1
+refdes=H25
+}
+C 6600 6900 1 0 0 in-1.sym
+{
+T 6600 7200 5 10 0 0 0 0 1
+device=INPUT
+T 6600 7200 5 10 1 1 0 0 1
+refdes=H26
+}
+C 6600 6100 1 0 0 in-1.sym
+{
+T 6600 6400 5 10 0 0 0 0 1
+device=INPUT
+T 6600 6400 5 10 1 1 0 0 1
+refdes=H28
+}
+C 6600 5700 1 0 0 in-1.sym
+{
+T 6600 6000 5 10 0 0 0 0 1
+device=INPUT
+T 6600 6000 5 10 1 1 0 0 1
+refdes=H29
+}
+C 6600 4900 1 0 0 in-1.sym
+{
+T 6600 5200 5 10 0 0 0 0 1
+device=INPUT
+T 6600 5200 5 10 1 1 0 0 1
+refdes=H31
+}
+C 6600 4500 1 0 0 in-1.sym
+{
+T 6600 4800 5 10 0 0 0 0 1
+device=INPUT
+T 6600 4800 5 10 1 1 0 0 1
+refdes=H32
+}
+C 6600 3700 1 0 0 in-1.sym
+{
+T 6600 4000 5 10 0 0 0 0 1
+device=INPUT
+T 6600 4000 5 10 1 1 0 0 1
+refdes=H34
+}
+C 6600 3300 1 0 0 in-1.sym
+{
+T 6600 3600 5 10 0 0 0 0 1
+device=INPUT
+T 6600 3600 5 10 1 1 0 0 1
+refdes=H35
+}
+C 6600 2500 1 0 0 in-1.sym
+{
+T 6600 2800 5 10 0 0 0 0 1
+device=INPUT
+T 6600 2800 5 10 1 1 0 0 1
+refdes=H37
+}
+C 6600 2100 1 0 0 in-1.sym
+{
+T 6600 2400 5 10 0 0 0 0 1
+device=INPUT
+T 6600 2400 5 10 1 1 0 0 1
+refdes=H38
+}
+C 6600 1300 1 0 0 in-1.sym
+{
+T 6600 1600 5 10 0 0 0 0 1
+device=INPUT
+T 6600 1600 5 10 1 1 0 0 1
+refdes=H40
+}
