@@ -8,7 +8,10 @@ need [gschem](http://wiki.geda-project.org/geda:gaf) installed.
 Tested on [Debian](https://www.debian.org) Jessie, Stretch, or Buster, where
 you simply `apt-get install geda-gschem`.
 
-![Image of completed board](doc/digitizer_top_x.jpg) [block diagram](doc/digitizer_block.png)
+![Image of completed board](doc/digitizer_top_x.jpg) 
+
+This is the block diagram of the design:
+![block_diagram](doc/digitizer_block.png)
 
 The digitizer board features:
 
