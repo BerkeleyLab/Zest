@@ -10,7 +10,7 @@ TOP_SCH = digitizer_01_adda.sch digitizer_02_fmc.sch digitizer_03_housekeeping.s
 TARGET = $(SOURCE_PDF) digitizer_schematics.pdf
 
 all: $(TARGET)
-CLEAN += digitizer_schematics.pdf *.ps partslist3.txt bom.txt bom2.txt digitizer.net digitizer.net1 digitizer.drc orderable.txt digitizer_schematics.pdf parts1.csv merged_xy.csv pads.csv cover2_layers.dat *.stl gnet-pads2.scm
+CLEAN += digitizer_schematics.pdf digitizer_05_se2diff.sch digitizer_06_diff2se.sch digitizer_07_thermo_bridge.sch digitizer_08_LDO-B.sch digitizer_09_LT6655-ref.sch digitizer_10_TPS62210-ps.sch digitizer_11_LT1763-ps.sch *.ps partslist3.txt bom.txt bom2.txt digitizer.net digitizer.net1 digitizer.drc orderable.txt digitizer_schematics.pdf parts1.csv merged_xy.csv pads.csv cover2_layers.dat *.stl gnet-pads2.scm
 include ./rules.mk
 
 
