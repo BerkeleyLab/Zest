@@ -42,20 +42,19 @@ djboxsym: OK
 
 ## Artwork/Gerbers
 
-Created by Kathy Pham at SLAC using PADS.  Latest is 20170519.
+Created by Kathy Pham at SLAC using PADS.  The latest version is from May 19, 2017.
 The PADS design imports the netlist exported from this gschem design.
-These PADS files are _not_ kept in this git repository, but
-their SHA256 signatures are kept in the
-[layout_20170519.sha256sum](layout_20170519.sha256sum) file in this directory.
+These PADS pcb file is in the top directory in this repository (`PC-379-396-15-C02_DIGITIZER BOARD.pcb`) and the gerbers
+are in the `gerbers` directory.
 
 QR-code serial-number overlay Gerbers are generated with `qr_gen.py`.
 
 ## BOM
 
-Get a copy of the `PC-379-396-15-C02_DIGITIZER BOARD_XY.xlsx` file exported from
-the PADS design reference above, and place it in this directory.
+The BOM is also in the top directory in this repository (`PC-379-396-15-C02_DIGITIZER BOARD_XY.xlsx`).
+This file was exported from the PADS design referenced above.
 
-Then `make merged_xy.csv` to merge the actual orderable part numbers (kept here
+If you run `make merged_xy.csv`, you can merge the actual orderable part numbers (kept here
 in the parts.data file) and get a usable xy assembly file for fabrication.
 
 ## Plastic Cover
