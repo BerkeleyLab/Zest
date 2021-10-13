@@ -1,19 +1,18 @@
-# Zest
+# Zest board
 
-This directory will hold the schematics and associated files (but not the layout)
-for the the Zest board, an FMC-ish mezzanine board designed for LLRF and related applications.
-Before its release as Open Hardware, it was known as the LCLS-II LLRF Digitizer Board, currently Rev. 1.1.
-It is in gschem format; to work with it you
+Zest (Z=e^(st)) is a double FMC mezzanine board performing Analog to Digital and Digital to Analog conversions.
+This board is mainly used as a part of Radio Frequency (RF) controls electronics systems in particle accelerators.
+Over 400 units have been manufactured by Berkeley Lab and SLAC National Laboratories and is the ADC/DAC board base design of the
+LCLS-II (Linac Coherent Light Source II) Low-Level RF (LLRF) system at SLAC.
+
+The schematic is in gschem format; to work with it you
 need [gschem](http://wiki.geda-project.org/geda:gaf) installed.
 Tested on [Debian](https://www.debian.org) Jessie, Stretch, or Buster, where
 you simply `apt-get install geda-gschem`.
 
 ![Image of completed board](doc/digitizer_top_x.jpg) 
 
-This is the block diagram of the design:
-![block_diagram](doc/digitizer_block.png)
-
-The digitizer board features:
+The Zest board features:
 
 * 8 x transformer-coupled inputs sampled at 95 MS/s (2 x AD9653)
 * 2 x transformer-coupled outputs sampled at 190 MS/s (AD9781)
@@ -23,6 +22,8 @@ The digitizer board features:
 * Interface to FPGA via dual-LPC-FMC connectors
 * 181.8 x 110 mm, 8-layer, with notch to accommodate Xilinx FMC eval boards
 * 4W power dissipation
+
+![block_diagram](doc/digitizer_block.png)
 
 ## Schematics
 
@@ -70,8 +71,9 @@ OpenSCAD will export an STL file which is easily 3-D printed.
 ## References
 
  G. Huang, L. R. Doolittle, J. Yang, Y. Xu,
-*``Low Noise Digitizer Design for LCLS-II LLRF,''* in NAPAC2016
+*"Low Noise Digitizer Design for LCLS-II LLRF,"* in NAPAC2016
 [TUPOA40](http://accelconf.web.cern.ch/AccelConf/napac2016/papers/tupoa40.pdf).
+
 
 ## Copyright
 
