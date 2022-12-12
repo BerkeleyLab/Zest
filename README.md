@@ -20,7 +20,7 @@ The Zest board features:
 * Extra clock divider output
 * 2 x Pmod digital I/O
 * Interface to FPGA via dual-LPC-FMC connectors
-* 181.8 x 110 mm, 8-layer, with notch to accommodate Xilinx FMC eval boards
+* 181.8 x 110 mm, 8-layer, with notch to accommodate Xilinx FMC eval boards, also known to work with [Marble](https://github.com/BerkeleyLab/Marble) and [Marble-Mini](https://github.com/BerkeleyLab/Marble-Mini)
 * 4W power dissipation
 
 ![block_diagram](doc/digitizer_block.png)
