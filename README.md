@@ -1,7 +1,7 @@
 # Zest
 
 This directory will hold the schematics and associated files (but not the layout)
-for the the Zest board, an FMC-ish mezzanine board designed for LLRF and related applications.
+for the original Zest board, an FMC-ish mezzanine board designed for LLRF and related applications.
 Before its release as Open Hardware, it was known as the LCLS-II LLRF Digitizer Board, currently Rev. 1.1.
 It is in gschem format; to work with it you
 need [gschem](http://wiki.geda-project.org/geda:gaf) installed.
@@ -20,6 +20,9 @@ The digitizer board features:
 * Interface to FPGA via dual-LPC-FMC connectors
 * 181.8 x 110 mm, 8-layer, with notch to accommodate Xilinx FMC eval boards
 * 4W power dissipation
+
+This design has been skillfully ported to [KiCad](https://www.kicad.org/) 8 by Gang Huang.
+Go [here](https://gitlab.com/lbl-boards/zest) for that work, now labeled Zest v1.2.
 
 ## Schematics
 
