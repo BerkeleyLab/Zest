@@ -4,6 +4,7 @@ GAF_VERSION := $(shell gaf --version 2>/dev/null)
 FOOTGEN_DIR = $(TOP)geda_library/footprint
 DJBOXSYM_DIR = $(TOP)/geda_library/symbol
 SCRIPT_DIR = /usr/share/gEDA/scheme/
+DJBOXSYM = djboxsym
 #$(TOP)script
 
 # AUTHOR=`git log --pretty="%an" -1 logen.sch`; sed -e 's/\$Author\$/'"$AUTHOR"'/g' logen.sch > logen_git.sch
@@ -70,7 +71,7 @@ geda_lib:
 	make -C $(DJBOXSYM_DIR)
 
 %.sym: %.symdef
-	$(TOP)geda_library/script/djboxsym $< > $@
+	$(DJBOXSYM) $< > $@
 
 clean: clean_dep
 	rm -f *~ *- $(TARGET) $(CLEAN)
