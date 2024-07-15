@@ -23,6 +23,9 @@ The Zest board features:
 * 181.8 x 110 mm, 8-layer, with notch to accommodate Xilinx FMC eval boards, also known to work with [Marble](https://github.com/BerkeleyLab/Marble) and [Marble-Mini](https://github.com/BerkeleyLab/Marble-Mini)
 * 4W power dissipation
 
+This design has been skillfully ported to [KiCad](https://www.kicad.org/) 8 by Gang Huang.
+Go [here](https://gitlab.com/lbl-boards/zest) for that work, now labeled Zest v1.2.
+
 ![block_diagram](doc/digitizer_block.png)
 
 ## Schematics
