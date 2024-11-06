@@ -74,7 +74,7 @@ OpenSCAD will export an STL file which is easily 3-D printed.
 
  G. Huang, L. R. Doolittle, J. Yang, Y. Xu,
 *"Low Noise Digitizer Design for LCLS-II LLRF,"* in NAPAC2016
-[TUPOA40](http://accelconf.web.cern.ch/AccelConf/napac2016/papers/tupoa40.pdf).
+[TUPOA40](https://accelconf.web.cern.ch/napac2016/papers/tupoa40.pdf).
 
 
 ## Copyright
