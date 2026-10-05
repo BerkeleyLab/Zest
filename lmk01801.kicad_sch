@@ -4647,7 +4647,7 @@
 		)
 		(uuid "132a8b9d-60ef-4ec1-b19e-fea841c450db")
 	)
-	(label "aux_clk_p"
+	(label "aux_clk_P"
 		(at 246.38 93.98 0)
 		(effects
 			(font
@@ -4657,7 +4657,7 @@
 		)
 		(uuid "1419fa98-594f-4468-ba56-726b23c1053e")
 	)
-	(label "aux_clk_p"
+	(label "aux_clk_P"
 		(at 172.72 149.86 180)
 		(effects
 			(font
@@ -4716,6 +4716,16 @@
 			(justify left bottom)
 		)
 		(uuid "2978e8af-2e03-448a-a47c-251c86423174")
+	)
+	(label "CinP"
+		(at 85.09 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "363b976a-5ead-4dbe-822a-74a5633b6cf1")
 	)
 	(label "LMK13_plane"
 		(at 74.93 44.45 0)
@@ -4777,7 +4787,7 @@
 		)
 		(uuid "51ab678d-9a86-4651-9259-96b224ff0fb2")
 	)
-	(label "aux_clk_n"
+	(label "aux_clk_N"
 		(at 172.72 152.4 180)
 		(effects
 			(font
@@ -4877,7 +4887,7 @@
 		)
 		(uuid "9f274af5-1704-4896-98b5-e0c37f06f048")
 	)
-	(label "aux_clk_n"
+	(label "aux_clk_N"
 		(at 246.38 91.44 0)
 		(effects
 			(font
@@ -4956,6 +4966,16 @@
 			(justify left bottom)
 		)
 		(uuid "f1c9db46-a5ba-4752-9a9d-f2c4668dcf12")
+	)
+	(label "CinN"
+		(at 85.09 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fd9b3704-a7ca-4906-8989-68c7a825d3e3")
 	)
 	(hierarchical_label "{ADC1CLK}"
 		(shape input)

@@ -1865,7 +1865,7 @@
 		(uuid "3ff20bd9-65b5-4915-ad73-e8e943766f03")
 	)
 	(junction
-		(at 219.71 102.87)
+		(at 222.25 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "49ece929-65d4-43ba-a91d-8ca899b46a0e")
@@ -1901,7 +1901,7 @@
 		(uuid "7add73e8-7ace-42a7-8e9d-ae9e1e3f5629")
 	)
 	(junction
-		(at 219.71 95.25)
+		(at 222.25 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7f851946-c51c-4a94-9e87-e40a96eb6e48")
@@ -2153,7 +2153,7 @@
 		(uuid "882caefb-15be-4e73-a790-0fda79614a39")
 	)
 	(bus_entry
-		(at 237.49 100.33)
+		(at 240.03 100.33)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2207,7 +2207,7 @@
 		(uuid "d99407b3-edf9-4d35-a661-4ff0b4b5d3f5")
 	)
 	(bus_entry
-		(at 237.49 92.71)
+		(at 240.03 92.71)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2253,7 +2253,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 100.33) (xy 205.74 100.33)
+			(xy 199.39 100.33) (xy 208.28 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2303,7 +2303,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 100.33) (xy 213.36 102.87)
+			(xy 215.9 100.33) (xy 215.9 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2333,7 +2333,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 97.79) (xy 213.36 95.25)
+			(xy 215.9 97.79) (xy 215.9 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2613,7 +2613,7 @@
 	)
 	(bus
 		(pts
-			(xy 237.49 92.71) (xy 237.49 100.33)
+			(xy 240.03 92.71) (xy 240.03 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2663,7 +2663,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 102.87) (xy 234.95 102.87)
+			(xy 222.25 102.87) (xy 237.49 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2683,7 +2683,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 102.87) (xy 219.71 102.87)
+			(xy 215.9 102.87) (xy 222.25 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2773,7 +2773,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 97.79) (xy 205.74 97.79)
+			(xy 199.39 97.79) (xy 208.28 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2913,7 +2913,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 95.25) (xy 234.95 95.25)
+			(xy 222.25 95.25) (xy 237.49 95.25)
 		)
 		(stroke
 			(width 0)
@@ -3323,7 +3323,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 95.25) (xy 219.71 95.25)
+			(xy 215.9 95.25) (xy 222.25 95.25)
 		)
 		(stroke
 			(width 0)
@@ -3691,8 +3691,28 @@
 		)
 		(uuid "455d3c3d-c376-4163-bae6-f1de7e7dfc5f")
 	)
+	(label "A1_CLK-"
+		(at 207.01 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "529d8eb8-d5c6-4e40-9a91-7bfecf2ea5a4")
+	)
+	(label "A1_CLK+"
+		(at 207.01 100.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "53fae0c8-1c90-411b-b071-7241a9eb865b")
+	)
 	(label "ADC1_CLK-"
-		(at 232.41 95.25 180)
+		(at 234.95 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3712,7 +3732,7 @@
 		(uuid "5f4135c6-f63a-4005-b273-ee047042e097")
 	)
 	(label "ADC1_CLK+"
-		(at 232.41 102.87 180)
+		(at 234.95 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3938,7 +3958,7 @@
 	)
 	(hierarchical_label "{ADC1CLK}"
 		(shape input)
-		(at 237.49 96.52 0)
+		(at 240.03 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5559,7 +5579,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 219.71 99.06 0)
+		(at 222.25 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5570,7 +5590,7 @@
 		(fields_autoplaced yes)
 		(uuid "7de280b3-5fe6-4cdb-bf2f-2c90c2206ac6")
 		(property "Reference" "R702"
-			(at 222.25 97.7899 0)
+			(at 224.79 97.7899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5581,7 +5601,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 222.25 100.3299 0)
+			(at 224.79 100.3299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5592,7 +5612,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 217.932 99.06 90)
+			(at 220.472 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5603,7 +5623,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 219.71 99.06 0)
+			(at 222.25 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5614,7 +5634,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 219.71 99.06 0)
+			(at 222.25 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5625,7 +5645,7 @@
 			)
 		)
 		(property "Vendor" "digikey:311-100HRCT-ND"
-			(at 0 198.12 0)
+			(at 2.54 198.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6294,7 +6314,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 209.55 100.33 270)
+		(at 212.09 100.33 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -6305,7 +6325,7 @@
 		(dnp no)
 		(uuid "afd0192d-8070-40de-8026-6431a4b05204")
 		(property "Reference" "C712"
-			(at 209.55 96.52 90)
+			(at 212.09 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6315,7 +6335,7 @@
 			)
 		)
 		(property "Value" "10000PF"
-			(at 209.55 95.25 90)
+			(at 212.09 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6325,7 +6345,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 205.74 99.3648 0)
+			(at 208.28 99.3648 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6336,7 +6356,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 100.33 0)
+			(at 212.09 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6347,7 +6367,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 209.55 100.33 0)
+			(at 212.09 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6358,7 +6378,7 @@
 			)
 		)
 		(property "Vendor" "digikey:445-2664-1-ND"
-			(at 109.22 309.88 0)
+			(at 111.76 309.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6822,7 +6842,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 209.55 97.79 270)
+		(at 212.09 97.79 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6832,7 +6852,7 @@
 		(dnp no)
 		(uuid "e89f088a-2b56-4029-a01d-0ca2ece0b2cf")
 		(property "Reference" "C711"
-			(at 209.55 101.6 90)
+			(at 212.09 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6842,7 +6862,7 @@
 			)
 		)
 		(property "Value" "10000PF"
-			(at 209.55 102.87 90)
+			(at 212.09 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6852,7 +6872,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 205.74 98.7552 0)
+			(at 208.28 98.7552 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6863,7 +6883,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 97.79 0)
+			(at 212.09 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6874,7 +6894,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 209.55 97.79 0)
+			(at 212.09 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6885,7 +6905,7 @@
 			)
 		)
 		(property "Vendor" "digikey:445-2664-1-ND"
-			(at 111.76 -111.76 0)
+			(at 114.3 -111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

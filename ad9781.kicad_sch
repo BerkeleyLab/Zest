@@ -4595,6 +4595,16 @@
 		)
 		(uuid "ff893ffc-7c37-4464-b0b1-a03c4ed77cde")
 	)
+	(label "D_CLKP"
+		(at 91.44 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "143fcf2f-d86e-4e8a-ac1d-f79ec4c9f123")
+	)
 	(label "D_P_11"
 		(at 151.13 93.98 180)
 		(effects
@@ -4854,6 +4864,16 @@
 			(justify left bottom)
 		)
 		(uuid "bd4e970a-9e37-4331-b254-44d4f2082774")
+	)
+	(label "D_CLKN"
+		(at 91.44 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bef06f4f-1f13-4e89-8a5c-5fcc9b06be02")
 	)
 	(label "D_N_13"
 		(at 151.13 86.36 180)
