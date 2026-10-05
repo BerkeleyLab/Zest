@@ -3,6 +3,8 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -37,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 3.2,
+          "height": 5.8,
+          "width": 5.8
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,6 +50,7 @@
         "silk_text_thickness": 0.1016,
         "silk_text_upright": false,
         "zones": {
+          "45_degree_only": false,
           "min_clearance": 0.0
         }
       },
@@ -56,6 +59,16 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.3,
+          "via_gap": 0.3,
+          "width": 0.12
+        },
+        {
+          "gap": 0.127,
+          "via_gap": 0.127,
+          "width": 0.145
         }
       ],
       "drc_exclusions": [],
@@ -69,16 +82,21 @@
         "copper_edge_clearance": "warning",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
+        "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "hole_to_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -88,9 +106,12 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "warning",
         "padstack": "warning",
         "pth_inside_courtyard": "warning",
@@ -99,25 +120,35 @@
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
-        "solder_mask_bridge": "ignore",
+        "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "warning",
+        "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
+        "track_angle": "error",
         "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
+        "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
+        "zone_has_empty_net": "error",
         "zones_intersect": "error"
       },
       "rules": {
+        "allow_blind_buried_vias": false,
+        "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
+        "min_clearance": 0.12,
+        "min_connection": 0.1,
         "min_copper_edge_clearance": 0.5,
+        "min_groove_width": 0.0,
         "min_hole_clearance": 0.2032,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2032,
@@ -127,7 +158,7 @@
         "min_text_height": 0.381,
         "min_text_thickness": 0.0508,
         "min_through_hole_diameter": 0.2032,
-        "min_track_width": 0.0,
+        "min_track_width": 0.12,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -135,10 +166,11 @@
       },
       "teardrop_options": [
         {
-          "td_onpadsmd": true,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onvia": true
         }
       ],
       "teardrop_parameters": [
@@ -177,7 +209,12 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.145,
+        0.2,
+        0.26,
+        0.3,
+        0.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -209,21 +246,38 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.25
         }
       ],
-      "zones_allow_external_fillets": false
+      "zones_allow_external_fillets": false,
+      "zones_use_no_outline": true
     },
     "ipc2581": {
+      "bom_rev": "",
       "dist": "",
       "distpn": "",
       "internal_id": "",
       "mfg": "",
-      "mpn": ""
+      "mpn": "",
+      "sch_revision": ""
     },
+    "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
   "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -405,19 +459,27 @@
     "rule_severities": {
       "bus_definition_conflict": "error",
       "bus_entry_needed": "error",
+      "bus_label_syntax": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
-      "conflicting_netclasses": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "field_name_whitespace": "warning",
+      "footprint_filter": "ignore",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "ignore",
       "global_label_dangling": "warning",
+      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
       "label_dangling": "error",
+      "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -430,9 +492,16 @@
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
       "similar_labels": "warning",
+      "similar_power": "warning",
       "simulation_model_issue": "ignore",
+      "single_global_label": "ignore",
+      "stacked_pin_name": "warning",
       "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -444,30 +513,47 @@
   },
   "meta": {
     "filename": "zest.kicad_pro",
-    "version": 1
+    "version": 3
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.01,
-        "diff_pair_gap": 0.25,
+        "clearance": 0.125,
+        "diff_pair_gap": 0.127,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.145,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.127,
+        "tuning_profile": "",
         "via_diameter": 0.508,
         "via_drill": 0.254,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.127,
+        "diff_pair_gap": 0.127,
+        "diff_pair_width": 0.145,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "50r_top_bottom",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.26,
+        "tuning_profile": "",
+        "via_diameter": 0.508,
+        "via_drill": 0.254
       }
     ],
     "meta": {
-      "version": 3
+      "version": 5
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -489,6 +575,11 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "annotation": {
+      "method": 0,
+      "sort_order": 0
+    },
+    "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -554,9 +645,252 @@
       ],
       "filter_string": "",
       "group_symbols": true,
+      "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
+    },
+    "bus_aliases": {
+      "AD7794_SPI_CLK": [
+        "CLK",
+        "SCLK",
+        "DIN",
+        "DOUT/RDYb",
+        "CSb"
+      ],
+      "ADC0": [
+        "ADC0_D0A_N",
+        "ADC0_D0A_P",
+        "ADC0_D0B_N",
+        "ADC0_D0B_P",
+        "ADC0_D0C_N",
+        "ADC0_D0C_P",
+        "ADC0_D0D_N",
+        "ADC0_D0D_P",
+        "ADC0_D1A_N",
+        "ADC0_D1A_P",
+        "ADC0_D1B_N",
+        "ADC0_D1B_P",
+        "ADC0_D1C_N",
+        "ADC0_D1C_P",
+        "ADC0_D1D_N",
+        "ADC0_D1D_P",
+        "ADC0_DCO_N",
+        "ADC0_DCO_P",
+        "ADC0_FCO_N",
+        "ADC0_FCO_P"
+      ],
+      "ADC01SPIPDNSYNC": [
+        "ADC0_CSB",
+        "ADC1_CSB",
+        "ADC01_SCLK",
+        "ADC01_SDIO",
+        "ADC01_PDWN",
+        "ADC01_SYNC"
+      ],
+      "ADC0CLK": [
+        "ADC0_CLK+",
+        "ADC0_CLK-"
+      ],
+      "ADC1": [
+        "ADC1_D0A_N",
+        "ADC1_D0A_P",
+        "ADC1_D0B_N",
+        "ADC1_D0B_P",
+        "ADC1_D0C_N",
+        "ADC1_D0C_P",
+        "ADC1_D0D_N",
+        "ADC1_D0D_P",
+        "ADC1_D1A_N",
+        "ADC1_D1A_P",
+        "ADC1_D1B_N",
+        "ADC1_D1B_P",
+        "ADC1_D1C_N",
+        "ADC1_D1C_P",
+        "ADC1_D1D_N",
+        "ADC1_D1D_P",
+        "ADC1_DCO_N",
+        "ADC1_DCO_P",
+        "ADC1_FCO_N",
+        "ADC1_FCO_P"
+      ],
+      "ADC1CLK": [
+        "ADC1_CLK+",
+        "ADC1_CLK-"
+      ],
+      "AMC7823": [
+        "CONVERT",
+        "ADC0",
+        "V2P2V_Mon",
+        "V3P7V_Mon",
+        "ADC3",
+        "LT6233_OUT",
+        "LO_MON",
+        "I_Mon",
+        "ADC7",
+        "DAC0",
+        "DAC1",
+        "DAC2",
+        "DAC3",
+        "DAC4",
+        "DAC5",
+        "DAC6",
+        "DAC7",
+        "GPIO0",
+        "GPIO1",
+        "GPIO2",
+        "GPIO3",
+        "GPIO4",
+        "GPIO5",
+        "PRECISION_I_OUTPUT",
+        "EXT_REF_IN"
+      ],
+      "AMC7823_SPI": [
+        "SS",
+        "MISO",
+        "MOSI",
+        "SCLK"
+      ],
+      "DAC": [
+        "D_P_0",
+        "D_P_1",
+        "D_P_2",
+        "D_P_3",
+        "D_P_4",
+        "D_P_5",
+        "D_P_6",
+        "D_P_7",
+        "D_P_8",
+        "D_P_9",
+        "D_P_10",
+        "D_P_11",
+        "D_P_12",
+        "D_P_13",
+        "D_N_0",
+        "D_N_1",
+        "D_N_2",
+        "D_N_3",
+        "D_N_4",
+        "D_N_5",
+        "D_N_6",
+        "D_N_7",
+        "D_N_8",
+        "D_N_9",
+        "D_N_10",
+        "D_N_11",
+        "D_N_12",
+        "D_N_13",
+        "DCI_P",
+        "DCI_N",
+        "DCO_P",
+        "DCO_N"
+      ],
+      "DACCLK": [
+        "DAC_CLKP",
+        "DAC_CLKN"
+      ],
+      "DACSPIRST": [
+        "DAC_CSB",
+        "DAC_SCLK",
+        "DAC_SDIO",
+        "DAC_SDO",
+        "DAC_RESET"
+      ],
+      "HDMI": [
+        "HDMI_CEC",
+        "HDMI_CK_N",
+        "HDMI_CK_P",
+        "HDMI_D0_N",
+        "HDMI_D0_P",
+        "HDMI_D1_N",
+        "HDMI_D1_P",
+        "HDMI_D2_N",
+        "HDMI_D2_P",
+        "HDMI_DET",
+        "HDMI_SCL",
+        "HDMI_SDA"
+      ],
+      "LMKuWire": [
+        "DATAuWire_CLKoutDIV_0",
+        "CLKuWire_CLKoutDIV_1",
+        "LEuWire_CLKoutDIV_2"
+      ],
+      "PMOD1": [
+        "PMOD1_1",
+        "PMOD1_2",
+        "PMOD1_3",
+        "PMOD1_4",
+        "PMOD1_5",
+        "PMOD1_6",
+        "PMOD1_7",
+        "PMOD1_8",
+        "PMOD1_9",
+        "PMOD1_10"
+      ],
+      "PMOD2": [
+        "PMOD2_1",
+        "PMOD2_2",
+        "PMOD2_3",
+        "PMOD2_4",
+        "PMOD2_5",
+        "PMOD2_6",
+        "PMOD2_7",
+        "PMOD2_8",
+        "PMOD2_9",
+        "PMOD2_10"
+      ],
+      "fmc_lmk_clk": [
+        "LMK_CLKout3_P",
+        "LMK_CLKout3_N",
+        "LMK_CLKout4_P",
+        "LMK_CLKout4_N"
+      ],
+      "fmcpower": [
+        "P1_12PV0",
+        "P1_VADJ",
+        "P2_12P0V",
+        "P2_3P3V",
+        "P2_VADJ",
+        "P1_3P3VAUX"
+      ],
+      "slowctrl": [
+        "P1_SCL",
+        "P1_SDA",
+        "P1_GA0",
+        "P1_TDI",
+        "P1_TDO",
+        "P1_GA1",
+        "P1_PRSNT",
+        "P2_PWR_SYNC",
+        "P2_PWR_EN",
+        "P2_AD7794_CSb",
+        "P2_AD7794_DOUT/RDYb",
+        "P2_TDI",
+        "P2_TDO",
+        "P2_ADC_PDWN",
+        "P2_POLL_SCLK",
+        "P2_AD7794_FCLK",
+        "P2_LMK_DATAuWire/CLKoutDIV_0",
+        "P2_LMK_CLKuWire/CLKoutDIV_1",
+        "P2_LMK_LEuWire/CLKoutDIV_2",
+        "P2_SDI",
+        "P2_SCLK",
+        "P2_ADC0_CSB",
+        "P2_ADC1_CSB",
+        "P2_ADC_SYNC",
+        "P2_POLL_MOSI",
+        "P2_PRSNT",
+        "P2_DAC_SDO",
+        "P2_DAC_CSB",
+        "P2_DAC_RESET",
+        "P2_AMC7823_SPI_MISO",
+        "P2_AMC7823_SPI_SS",
+        "P2_ADC_SDIO",
+        "P2_ADC_SDIO_DIR",
+        "P2_APP_I2C_SCL",
+        "P2_APP_I2C_SDA",
+        "P2_PG_C2M"
+      ]
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -565,6 +899,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
+      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -586,8 +921,20 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "fix_passive_vals": false,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "zest",
+    "reuse_designators": true,
+    "space_save_all_events": true,
+    "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -595,7 +942,16 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "zest.kicad_sch",
+        "name": "zest",
+        "uuid": "00000000-0000-0000-0000-000000000000"
+      }
+    ],
+    "used_designators": "",
+    "variants": []
   },
   "sheets": [
     [
@@ -743,5 +1099,11 @@
       "thermometer_bridge_4"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {},
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": []
+  }
 }

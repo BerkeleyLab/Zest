@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "15bc585b-4cc6-44da-876e-84bcb0a2f0bd")
 	(paper "A4")
 	(lib_symbols
@@ -86,18 +86,6 @@
 			(symbol "AD7794BRUZ_0_1"
 				(polyline
 					(pts
-						(xy 7.62 -43.18) (xy 73.66 -43.18)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 7.62 5.08) (xy 7.62 -43.18)
 					)
 					(stroke
@@ -110,7 +98,7 @@
 				)
 				(polyline
 					(pts
-						(xy 73.66 -43.18) (xy 73.66 5.08)
+						(xy 7.62 -43.18) (xy 73.66 -43.18)
 					)
 					(stroke
 						(width 0.127)
@@ -132,238 +120,16 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
-					(at 81.28 -27.94 180)
-					(length 7.62)
-					(name "SCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 73.66 -43.18) (xy 73.66 5.08)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0.127)
+						(type default)
 					)
-				)
-				(pin unspecified line
-					(at 0 -12.7 0)
-					(length 7.62)
-					(name "AIN2(-)"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -20.32 0)
-					(length 7.62)
-					(name "AIN3(+)"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -17.78 0)
-					(length 7.62)
-					(name "AIN3(-)"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 81.28 -35.56 180)
-					(length 7.62)
-					(name "REFIN1(+)"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 81.28 -38.1 180)
-					(length 7.62)
-					(name "REFIN1(-)"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -30.48 0)
-					(length 7.62)
-					(name "AIN5(+)/IOUT2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -27.94 0)
-					(length 7.62)
-					(name "AIN5(-)/IOUT1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -25.4 0)
-					(length 7.62)
-					(name "AIN4(+)/REFIN2(+)"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -22.86 0)
-					(length 7.62)
-					(name "AIN4(-)/REFIN2(-)"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 81.28 -10.16 180)
-					(length 7.62)
-					(name "PSW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 81.28 -30.48 180)
-					(length 7.62)
-					(name "CLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 81.28 -5.08 180)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(fill
+						(type none)
 					)
 				)
 				(pin unspecified line
@@ -395,6 +161,294 @@
 						)
 					)
 					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -7.62 0)
+					(length 7.62)
+					(name "AIN1(-)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -10.16 0)
+					(length 7.62)
+					(name "AIN1(+)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -12.7 0)
+					(length 7.62)
+					(name "AIN2(-)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -15.24 0)
+					(length 7.62)
+					(name "AIN2(+)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -17.78 0)
+					(length 7.62)
+					(name "AIN3(-)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -20.32 0)
+					(length 7.62)
+					(name "AIN3(+)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -22.86 0)
+					(length 7.62)
+					(name "AIN4(-)/REFIN2(-)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -25.4 0)
+					(length 7.62)
+					(name "AIN4(+)/REFIN2(+)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -27.94 0)
+					(length 7.62)
+					(name "AIN5(-)/IOUT1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -30.48 0)
+					(length 7.62)
+					(name "AIN5(+)/IOUT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -33.02 0)
+					(length 7.62)
+					(name "AIN6(-)/P2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -35.56 0)
+					(length 7.62)
+					(name "AIN6(+)/P1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 81.28 0 180)
+					(length 7.62)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 81.28 -5.08 180)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 81.28 -10.16 180)
+					(length 7.62)
+					(name "PSW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 81.28 -15.24 180)
+					(length 7.62)
+					(name "*CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -439,16 +493,16 @@
 					)
 				)
 				(pin unspecified line
-					(at 81.28 -15.24 180)
+					(at 81.28 -27.94 180)
 					(length 7.62)
-					(name "*CS"
+					(name "SCLK"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -457,16 +511,16 @@
 					)
 				)
 				(pin unspecified line
-					(at 81.28 0 180)
+					(at 81.28 -30.48 180)
 					(length 7.62)
-					(name "NC"
+					(name "CLK"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -475,16 +529,16 @@
 					)
 				)
 				(pin unspecified line
-					(at 0 -35.56 0)
+					(at 81.28 -35.56 180)
 					(length 7.62)
-					(name "AIN6(+)/P1"
+					(name "REFIN1(+)"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -493,70 +547,16 @@
 					)
 				)
 				(pin unspecified line
-					(at 0 -33.02 0)
+					(at 81.28 -38.1 180)
 					(length 7.62)
-					(name "AIN6(-)/P2"
+					(name "REFIN1(-)"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -10.16 0)
-					(length 7.62)
-					(name "AIN1(+)"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -7.62 0)
-					(length 7.62)
-					(name "AIN1(-)"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -15.24 0)
-					(length 7.62)
-					(name "AIN2(+)"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -565,9 +565,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -640,7 +643,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -652,7 +655,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -701,9 +704,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -822,12 +828,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -918,6 +929,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(bus_alias "AD7794_SPI_CLK"
@@ -1696,7 +1708,6 @@
 	)
 	(label "CSb"
 		(at 228.6 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1707,7 +1718,6 @@
 	)
 	(label "DOUT{slash}RDYb"
 		(at 228.6 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1718,7 +1728,6 @@
 	)
 	(label "{AD7794_SPI_CLK}"
 		(at 248.92 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1729,7 +1738,6 @@
 	)
 	(label "SCLK"
 		(at 228.6 105.41 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1740,7 +1748,6 @@
 	)
 	(label "DIN"
 		(at 228.6 100.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1751,7 +1758,6 @@
 	)
 	(label "CLK"
 		(at 228.6 107.95 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1763,7 +1769,6 @@
 	(hierarchical_label "{AD7794_SPI_CLK}"
 		(shape input)
 		(at 248.92 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1775,7 +1780,6 @@
 	(hierarchical_label "VSS3P3V"
 		(shape input)
 		(at 76.2 60.96 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2435,6 +2439,10 @@
 	(sheet
 		(at 88.9 110.49)
 		(size 21.59 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2464,48 +2472,52 @@
 		)
 		(pin "VIN" input
 			(at 88.9 114.3 180)
+			(uuid "ca1848f6-436b-421b-b1f7-56dd96aba137")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ca1848f6-436b-421b-b1f7-56dd96aba137")
 		)
 		(pin "VOUT_P" input
 			(at 110.49 114.3 0)
+			(uuid "db946210-027b-4ad4-9edc-d802265f8d40")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "db946210-027b-4ad4-9edc-d802265f8d40")
 		)
 		(pin "VOUT_N" input
 			(at 110.49 111.76 0)
+			(uuid "c619f8b1-a33c-4c0a-8eca-163a584544a8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c619f8b1-a33c-4c0a-8eca-163a584544a8")
 		)
 		(pin "SENGND" input
 			(at 88.9 111.76 180)
+			(uuid "06aebbb3-4118-4498-a5b0-ef09c63c17bf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "06aebbb3-4118-4498-a5b0-ef09c63c17bf")
 		)
 	)
 	(sheet
 		(at 88.9 80.01)
 		(size 21.59 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2535,48 +2547,52 @@
 		)
 		(pin "VIN" input
 			(at 88.9 83.82 180)
+			(uuid "575ff416-beed-4b46-a3f7-f2ef058216e9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "575ff416-beed-4b46-a3f7-f2ef058216e9")
 		)
 		(pin "VOUT_P" input
 			(at 110.49 83.82 0)
+			(uuid "86a2d080-f699-41d9-b8f5-99497030b250")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "86a2d080-f699-41d9-b8f5-99497030b250")
 		)
 		(pin "VOUT_N" input
 			(at 110.49 81.28 0)
+			(uuid "decee504-4825-4fd6-8a2f-6a7c3e85d03e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "decee504-4825-4fd6-8a2f-6a7c3e85d03e")
 		)
 		(pin "SENGND" input
 			(at 88.9 81.28 180)
+			(uuid "489acef8-d249-4d93-b23f-9f134e1b1872")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "489acef8-d249-4d93-b23f-9f134e1b1872")
 		)
 	)
 	(sheet
 		(at 88.9 90.17)
 		(size 21.59 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2606,48 +2622,52 @@
 		)
 		(pin "VIN" input
 			(at 88.9 93.98 180)
+			(uuid "afda4e6e-5314-4605-9a60-1186c98eb6ef")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "afda4e6e-5314-4605-9a60-1186c98eb6ef")
 		)
 		(pin "VOUT_P" input
 			(at 110.49 93.98 0)
+			(uuid "19d19a5e-824d-45c9-951e-2844349e428e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "19d19a5e-824d-45c9-951e-2844349e428e")
 		)
 		(pin "VOUT_N" input
 			(at 110.49 91.44 0)
+			(uuid "cd88e8d1-ff2d-4244-8b78-e9972adf2099")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "cd88e8d1-ff2d-4244-8b78-e9972adf2099")
 		)
 		(pin "SENGND" input
 			(at 88.9 91.44 180)
+			(uuid "5da0c146-cc2a-4d2a-9d68-ec73003e7077")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5da0c146-cc2a-4d2a-9d68-ec73003e7077")
 		)
 	)
 	(sheet
 		(at 88.9 100.33)
 		(size 21.59 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2677,43 +2697,43 @@
 		)
 		(pin "VIN" input
 			(at 88.9 104.14 180)
+			(uuid "72c9323e-990f-4010-8d19-b6f418f06ff4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "72c9323e-990f-4010-8d19-b6f418f06ff4")
 		)
 		(pin "VOUT_P" input
 			(at 110.49 104.14 0)
+			(uuid "c875f126-bc45-4734-aa70-8d4b7db628ea")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c875f126-bc45-4734-aa70-8d4b7db628ea")
 		)
 		(pin "VOUT_N" input
 			(at 110.49 101.6 0)
+			(uuid "8e4aa26a-7eef-4a3e-8d90-79997a9c15a9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8e4aa26a-7eef-4a3e-8d90-79997a9c15a9")
 		)
 		(pin "SENGND" input
 			(at 88.9 101.6 180)
+			(uuid "045c0d54-ffe4-4276-81f2-63ae0050f139")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "045c0d54-ffe4-4276-81f2-63ae0050f139")
 		)
 	)
 )

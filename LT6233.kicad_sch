@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "acdeea32-6293-4a96-8821-2997ed34bb49")
 	(paper "A4")
 	(lib_symbols
@@ -131,24 +131,6 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 45.72 -2.54 180)
-					(length 7.62)
-					(name "*ENABLE"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at 45.72 0 180)
 					(length 7.62)
@@ -160,6 +142,24 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 45.72 -2.54 180)
+					(length 7.62)
+					(name "*ENABLE"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -188,6 +188,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "001_symbol:PBSS4230T"
 			(pin_names
@@ -270,18 +271,6 @@
 			(symbol "PBSS4230T_0_1"
 				(polyline
 					(pts
-						(xy 7.62 -7.62) (xy 63.5 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 7.62 5.08) (xy 7.62 -7.62)
 					)
 					(stroke
@@ -294,7 +283,7 @@
 				)
 				(polyline
 					(pts
-						(xy 63.5 -7.62) (xy 63.5 5.08)
+						(xy 7.62 -7.62) (xy 63.5 -7.62)
 					)
 					(stroke
 						(width 0.127)
@@ -307,6 +296,18 @@
 				(polyline
 					(pts
 						(xy 63.5 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 63.5 -7.62) (xy 63.5 5.08)
 					)
 					(stroke
 						(width 0.127)
@@ -335,24 +336,6 @@
 					)
 				)
 				(pin unspecified line
-					(at 71.12 -2.54 180)
-					(length 7.62)
-					(name "EMITTER"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
 					(at 71.12 0 180)
 					(length 7.62)
 					(name "COLLECTOR"
@@ -370,10 +353,31 @@
 						)
 					)
 				)
+				(pin unspecified line
+					(at 71.12 -2.54 180)
+					(length 7.62)
+					(name "EMITTER"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -446,7 +450,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -458,7 +462,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -507,9 +511,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:FerriteBead"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -580,7 +587,7 @@
 			(symbol "FerriteBead_0_1"
 				(polyline
 					(pts
-						(xy 0 -1.27) (xy 0 -1.2192)
+						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
 					)
 					(stroke
 						(width 0)
@@ -604,7 +611,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
+						(xy 0 -1.27) (xy 0 -1.2192)
 					)
 					(stroke
 						(width 0)
@@ -653,9 +660,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -774,12 +784,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -870,6 +885,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -1305,7 +1321,6 @@
 	(hierarchical_label "REF"
 		(shape input)
 		(at 29.21 96.52 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1317,7 +1332,6 @@
 	(hierarchical_label "2P2V"
 		(shape input)
 		(at 165.1 60.96 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1329,7 +1343,6 @@
 	(hierarchical_label "3P3V"
 		(shape input)
 		(at 78.74 68.58 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1341,7 +1354,6 @@
 	(hierarchical_label "1P8OUT"
 		(shape input)
 		(at 252.73 113.03 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

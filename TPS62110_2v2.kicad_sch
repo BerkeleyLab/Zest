@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "18470bd9-d7e2-472a-8dd4-f63698fe2e34")
 	(paper "A4")
 	(lib_symbols
@@ -95,18 +95,6 @@
 			(symbol "TPS62110RSAR_0_1"
 				(polyline
 					(pts
-						(xy 7.62 -25.4) (xy 53.34 -25.4)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 7.62 5.08) (xy 7.62 -25.4)
 					)
 					(stroke
@@ -119,7 +107,7 @@
 				)
 				(polyline
 					(pts
-						(xy 53.34 -25.4) (xy 53.34 5.08)
+						(xy 7.62 -25.4) (xy 53.34 -25.4)
 					)
 					(stroke
 						(width 0.127)
@@ -141,6 +129,18 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 53.34 -25.4) (xy 53.34 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin input line
 					(at 0 0 0)
 					(length 7.62)
@@ -152,132 +152,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 60.96 -17.78 180)
-					(length 7.62)
-					(name "FB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 60.96 -15.24 180)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 60.96 -12.7 180)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 60.96 -10.16 180)
-					(length 7.62)
-					(name "PG"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 60.96 -5.08 180)
-					(length 7.62)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 60.96 -2.54 180)
-					(length 7.62)
-					(name "PGND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 60.96 0 180)
-					(length 7.62)
-					(name "EPAD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -411,6 +285,132 @@
 						)
 					)
 				)
+				(pin unspecified line
+					(at 60.96 0 180)
+					(length 7.62)
+					(name "EPAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 60.96 -2.54 180)
+					(length 7.62)
+					(name "PGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 60.96 -5.08 180)
+					(length 7.62)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 60.96 -10.16 180)
+					(length 7.62)
+					(name "PG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 60.96 -12.7 180)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 60.96 -15.24 180)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 60.96 -17.78 180)
+					(length 7.62)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin input line
 					(at 60.96 -20.32 180)
 					(length 7.62)
@@ -450,9 +450,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -525,7 +528,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -537,7 +540,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -586,9 +589,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:FerriteBead"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -659,7 +665,7 @@
 			(symbol "FerriteBead_0_1"
 				(polyline
 					(pts
-						(xy 0 -1.27) (xy 0 -1.2192)
+						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
 					)
 					(stroke
 						(width 0)
@@ -683,7 +689,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
+						(xy 0 -1.27) (xy 0 -1.2192)
 					)
 					(stroke
 						(width 0)
@@ -732,11 +738,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:L"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -803,32 +814,8 @@
 			)
 			(symbol "L_0_1"
 				(arc
-					(start 0 -2.54)
-					(mid 0.6323 -1.905)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 0.635)
+					(start 0 2.54)
+					(mid 0.6323 1.905)
 					(end 0 1.27)
 					(stroke
 						(width 0)
@@ -840,8 +827,32 @@
 				)
 				(arc
 					(start 0 1.27)
-					(mid 0.6323 1.905)
-					(end 0 2.54)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -889,9 +900,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -1010,12 +1024,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1106,6 +1125,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -1687,7 +1707,6 @@
 	(hierarchical_label "ENABLE"
 		(shape input)
 		(at 92.71 100.33 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1699,7 +1718,6 @@
 	(hierarchical_label "12P0V"
 		(shape input)
 		(at 48.26 83.82 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1711,7 +1729,6 @@
 	(hierarchical_label "SYNC"
 		(shape input)
 		(at 92.71 97.79 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1723,7 +1740,6 @@
 	(hierarchical_label "OUTPUT"
 		(shape input)
 		(at 213.36 100.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

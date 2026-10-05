@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "bbf2baa8-ebb9-4d5e-a494-a45bd42c6e0b")
 	(paper "A4")
 	(lib_symbols
@@ -131,24 +131,6 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 45.72 -2.54 180)
-					(length 7.62)
-					(name "*ENABLE"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at 45.72 0 180)
 					(length 7.62)
@@ -160,6 +142,24 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 45.72 -2.54 180)
+					(length 7.62)
+					(name "*ENABLE"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -188,6 +188,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "001_symbol:SPU0410HR5H-PB"
 			(pin_names
@@ -279,18 +280,6 @@
 			(symbol "SPU0410HR5H-PB_0_1"
 				(polyline
 					(pts
-						(xy 7.62 -7.62) (xy 33.02 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 7.62 5.08) (xy 7.62 -7.62)
 					)
 					(stroke
@@ -303,7 +292,7 @@
 				)
 				(polyline
 					(pts
-						(xy 33.02 -7.62) (xy 33.02 5.08)
+						(xy 7.62 -7.62) (xy 33.02 -7.62)
 					)
 					(stroke
 						(width 0.127)
@@ -316,6 +305,18 @@
 				(polyline
 					(pts
 						(xy 33.02 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 33.02 -7.62) (xy 33.02 5.08)
 					)
 					(stroke
 						(width 0.127)
@@ -400,11 +401,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.762) hide)
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -502,9 +508,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -577,7 +586,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -589,7 +598,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -638,9 +647,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -759,12 +771,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -855,6 +872,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -1172,7 +1190,6 @@
 	(hierarchical_label "VDD3P3V"
 		(shape input)
 		(at 68.58 58.42 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1184,7 +1201,6 @@
 	(hierarchical_label "OUT"
 		(shape input)
 		(at 219.71 71.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

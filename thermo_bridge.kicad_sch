@@ -1,12 +1,14 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "d88fac29-0492-41d0-b7c4-7055d2fcc74b")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -125,6 +127,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -234,7 +237,6 @@
 	(hierarchical_label "VIN"
 		(shape input)
 		(at 78.74 87.63 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -246,7 +248,6 @@
 	(hierarchical_label "VOUT_N"
 		(shape input)
 		(at 113.03 102.87 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -258,7 +259,6 @@
 	(hierarchical_label "VOUT_P"
 		(shape input)
 		(at 113.03 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -270,7 +270,6 @@
 	(hierarchical_label "SENGND"
 		(shape input)
 		(at 107.95 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -289,7 +288,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0c2191a1-17b6-4552-b2d9-b63b3e8aeb97")
-		(property "Reference" "R3602"
+		(property "Reference" "R3302"
 			(at 90.17 100.33 90)
 			(effects
 				(font
@@ -377,7 +376,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1aa39bb1-9915-48e3-a878-d1e4b25dc0f4")
-		(property "Reference" "R3601"
+		(property "Reference" "R3301"
 			(at 90.17 81.28 90)
 			(effects
 				(font
@@ -466,7 +465,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f6b58cd-78e6-4b42-af63-84386a8ef67f")
-		(property "Reference" "R3603"
+		(property "Reference" "R3303"
 			(at 97.79 81.28 90)
 			(effects
 				(font
@@ -555,7 +554,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d289328a-3c6c-4e17-93ce-d61bd693032e")
-		(property "Reference" "R3604"
+		(property "Reference" "R3304"
 			(at 97.79 100.33 90)
 			(effects
 				(font
