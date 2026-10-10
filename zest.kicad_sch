@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "00000000-0000-0000-0000-000000000003")
 	(paper "A4")
 	(lib_symbols
@@ -12,8 +12,12 @@
 			(exclude_from_sim yes)
 			(in_bom no)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "H"
 				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -22,6 +26,8 @@
 			)
 			(property "Value" "MountingHole_GH"
 				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -30,47 +36,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Mounting Hole without connection"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "mounting hole"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "MountingHole*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "MountingHole_GH_0_1"
@@ -106,45 +122,8 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-	)
-	(bus_alias "ADC0"
-		(members "ADC0_D0A_N" "ADC0_D0A_P" "ADC0_D0B_N" "ADC0_D0B_P" "ADC0_D0C_N"
-			"ADC0_D0C_P" "ADC0_D0D_N" "ADC0_D0D_P" "ADC0_D1A_N" "ADC0_D1A_P" "ADC0_D1B_N"
-			"ADC0_D1B_P" "ADC0_D1C_N" "ADC0_D1C_P" "ADC0_D1D_N" "ADC0_D1D_P" "ADC0_DCO_N"
-			"ADC0_DCO_P" "ADC0_FCO_N" "ADC0_FCO_P"
-		)
-	)
-	(bus_alias "ADC01SPIPDNSYNC"
-		(members "ADC0_CSB" "ADC1_CSB" "ADC01_SCLK" "ADC01_SDIO" "ADC01_PDWN" "ADC01_SYNC")
-	)
-	(bus_alias "ADC0CLK"
-		(members "ADC0_CLK+" "ADC0_CLK-")
-	)
-	(bus_alias "ADC1"
-		(members "ADC1_D0A_N" "ADC1_D0A_P" "ADC1_D0B_N" "ADC1_D0B_P" "ADC1_D0C_N"
-			"ADC1_D0C_P" "ADC1_D0D_N" "ADC1_D0D_P" "ADC1_D1A_N" "ADC1_D1A_P" "ADC1_D1B_N"
-			"ADC1_D1B_P" "ADC1_D1C_N" "ADC1_D1C_P" "ADC1_D1D_N" "ADC1_D1D_P" "ADC1_DCO_N"
-			"ADC1_DCO_P" "ADC1_FCO_N" "ADC1_FCO_P"
-		)
-	)
-	(bus_alias "ADC1CLK"
-		(members "ADC1_CLK+" "ADC1_CLK-")
-	)
-	(bus_alias "AMC7823"
-		(members "CONVERT" "ADC0" "V2P2V_Mon" "V3P7V_Mon" "ADC3" "LT6233_OUT" "LO_MON"
-			"I_Mon" "ADC7" "DAC0" "DAC1" "DAC2" "DAC3" "DAC4" "DAC5" "DAC6" "DAC7"
-			"GPIO0" "GPIO1" "GPIO2" "GPIO3" "GPIO4" "GPIO5" "PRECISION_I_OUTPUT" "EXT_REF_IN"
-		)
-	)
-	(bus_alias "AMC7823_SPI"
-		(members "SS" "MISO" "MOSI" "SCLK")
-	)
-	(bus_alias "DACCLK"
-		(members "DAC_CLKP" "DAC_CLKN")
-	)
-	(bus_alias "DACSPIRST"
-		(members "DAC_CSB" "DAC_SCLK" "DAC_SDIO" "DAC_SDO" "DAC_RESET")
 	)
 	(junction
 		(at 111.76 90.17)
@@ -999,7 +978,6 @@
 	)
 	(label "P2_VADJ"
 		(at 149.86 57.15 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1010,7 +988,6 @@
 	)
 	(label "VDD1P8V"
 		(at 60.96 110.49 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1021,7 +998,6 @@
 	)
 	(label "P2_APP_I2C_SDA"
 		(at 133.35 160.02 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1032,7 +1008,6 @@
 	)
 	(label "V3P7V_Mon"
 		(at 234.95 100.33 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1043,7 +1018,6 @@
 	)
 	(label "VDD3P3V"
 		(at 57.15 57.15 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1054,7 +1028,6 @@
 	)
 	(label "P2_APP_I2C_SCL"
 		(at 135.89 157.48 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1065,7 +1038,6 @@
 	)
 	(label "V2P2V_Mon"
 		(at 190.5 36.83 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1076,7 +1048,6 @@
 	)
 	(label "VSS1P8V"
 		(at 190.5 31.75 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1087,7 +1058,6 @@
 	)
 	(label "P2_12P0V"
 		(at 161.29 24.13 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1098,7 +1068,6 @@
 	)
 	(label "P1_SDA"
 		(at 139.7 144.78 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1109,7 +1078,6 @@
 	)
 	(label "VSS3P3V"
 		(at 106.68 62.23 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1120,7 +1088,6 @@
 	)
 	(label "P1_GA0"
 		(at 146.05 137.16 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1131,7 +1098,6 @@
 	)
 	(label "VSS1P8V"
 		(at 106.68 57.15 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1142,7 +1108,6 @@
 	)
 	(label "I_Mon"
 		(at 234.95 97.79 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1153,7 +1118,6 @@
 	)
 	(label "VSS1P8V"
 		(at 60.96 107.95 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1164,7 +1128,6 @@
 	)
 	(label "VREFADC_1P25V"
 		(at 60.96 78.74 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1175,7 +1138,6 @@
 	)
 	(label "VSS1P8V"
 		(at 60.96 73.66 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1186,7 +1148,6 @@
 	)
 	(label "VDD1P8V"
 		(at 60.96 76.2 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1197,7 +1158,6 @@
 	)
 	(label "VDD3P3V"
 		(at 106.68 59.69 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1208,7 +1168,6 @@
 	)
 	(label "V12P0V_bus"
 		(at 234.95 107.95 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1219,7 +1178,6 @@
 	)
 	(label "VDD3P3V"
 		(at 234.95 92.71 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1230,7 +1188,6 @@
 	)
 	(label "P1_3P3VAUX"
 		(at 129.54 134.62 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1241,7 +1198,6 @@
 	)
 	(label "VSS3P3V"
 		(at 30.48 64.77 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1252,7 +1208,6 @@
 	)
 	(label "P1_SCL"
 		(at 140.97 142.24 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1263,7 +1218,6 @@
 	)
 	(label "VDD1P8V"
 		(at 190.5 29.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1274,7 +1228,6 @@
 	)
 	(label "LT6233_OUT"
 		(at 243.84 123.19 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1285,7 +1238,6 @@
 	)
 	(label "VDD3P3V"
 		(at 151.13 62.23 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1296,7 +1248,6 @@
 	)
 	(label "VREFADC_1P25V"
 		(at 190.5 41.91 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1307,7 +1258,6 @@
 	)
 	(label "VDD1P8V"
 		(at 106.68 54.61 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1318,7 +1268,6 @@
 	)
 	(label "PWR_EN"
 		(at 182.88 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1329,7 +1278,6 @@
 	)
 	(label "LT6233_OUT"
 		(at 234.95 110.49 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1340,7 +1288,6 @@
 	)
 	(label "V12P0V_bus"
 		(at 190.5 21.59 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1351,7 +1298,6 @@
 	)
 	(label "I_Mon"
 		(at 190.5 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1362,7 +1308,6 @@
 	)
 	(label "P1_12PV0"
 		(at 161.29 21.59 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1373,7 +1318,6 @@
 	)
 	(label "PWR_EN"
 		(at 162.56 33.02 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1384,7 +1328,6 @@
 	)
 	(label "VDD3P3V"
 		(at 193.04 92.71 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1395,7 +1338,6 @@
 	)
 	(label "VDD3P3V"
 		(at 224.79 123.19 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1406,7 +1348,6 @@
 	)
 	(label "VREFADC_1P25V"
 		(at 60.96 113.03 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1417,7 +1358,6 @@
 	)
 	(label "LO_MON"
 		(at 234.95 105.41 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1428,7 +1368,6 @@
 	)
 	(label "PWR_SYNC"
 		(at 162.56 35.56 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1439,7 +1378,6 @@
 	)
 	(label "VSS3P3V"
 		(at 186.69 110.49 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1450,7 +1388,6 @@
 	)
 	(label "P2_3P3V"
 		(at 161.29 26.67 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1461,7 +1398,6 @@
 	)
 	(label "P1_GA1"
 		(at 143.51 139.7 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1472,7 +1408,6 @@
 	)
 	(label "VDD3P3V"
 		(at 190.5 24.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1483,7 +1418,6 @@
 	)
 	(label "VSS3P3V"
 		(at 190.5 26.67 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1494,7 +1428,6 @@
 	)
 	(label "V2P2V_Mon"
 		(at 234.95 102.87 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1505,7 +1438,6 @@
 	)
 	(label "LO_MON"
 		(at 77.47 57.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1516,7 +1448,6 @@
 	)
 	(label "V3P7V_Mon"
 		(at 190.5 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1527,7 +1458,6 @@
 	)
 	(label "PWR_SYNC"
 		(at 182.88 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1538,7 +1468,6 @@
 	)
 	(label "VDD3P3V"
 		(at 157.48 154.94 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1549,7 +1478,6 @@
 	)
 	(label "VDD3P3V"
 		(at 114.3 160.02 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1560,7 +1488,6 @@
 	)
 	(label "VDD1P8V"
 		(at 151.13 59.69 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1572,7 +1499,6 @@
 	(hierarchical_label "{fmcpower}"
 		(shape input)
 		(at 127 31.75 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1584,7 +1510,6 @@
 	(hierarchical_label "{slowctrl}"
 		(shape input)
 		(at 119.38 87.63 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1597,13 +1522,17 @@
 		(lib_id "001_symbol:MountingHole_GH")
 		(at 45.72 142.24 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "070bdf3c-72cd-40bf-af3d-bbee91940554")
 		(property "Reference" "H102"
 			(at 43.18 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1613,6 +1542,8 @@
 		)
 		(property "Value" "MountingHole"
 			(at 43.18 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1622,29 +1553,35 @@
 		)
 		(property "Footprint" "001_download:MountingHole_digitizer"
 			(at 45.72 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 45.72 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
 			(at 45.72 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1663,13 +1600,17 @@
 		(lib_id "001_symbol:MountingHole_GH")
 		(at 38.1 142.24 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "2cc1ef7b-d441-4e71-8e2a-2d148f4da04f")
 		(property "Reference" "H101"
 			(at 35.56 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1679,6 +1620,8 @@
 		)
 		(property "Value" "MountingHole"
 			(at 35.56 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1688,29 +1631,35 @@
 		)
 		(property "Footprint" "001_download:MountingHole_digitizer"
 			(at 38.1 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 38.1 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
 			(at 38.1 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1729,13 +1678,17 @@
 		(lib_id "001_symbol:MountingHole_GH")
 		(at 85.09 142.24 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "491dc945-e928-47af-a0d9-698a2a3999a4")
 		(property "Reference" "H107"
 			(at 82.55 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1745,6 +1698,8 @@
 		)
 		(property "Value" "MountingHole"
 			(at 82.55 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1754,29 +1709,35 @@
 		)
 		(property "Footprint" "001_download:MountingHole_digitizer"
 			(at 85.09 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 85.09 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
 			(at 85.09 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1795,13 +1756,17 @@
 		(lib_id "001_symbol:MountingHole_GH")
 		(at 69.85 142.24 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "4938146d-f37d-4d15-b8b1-ce183111778e")
 		(property "Reference" "H105"
 			(at 67.31 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1811,6 +1776,8 @@
 		)
 		(property "Value" "MountingHole"
 			(at 67.31 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1820,29 +1787,35 @@
 		)
 		(property "Footprint" "001_download:MountingHole_digitizer"
 			(at 69.85 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 69.85 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
 			(at 69.85 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1861,13 +1834,17 @@
 		(lib_id "001_symbol:MountingHole_GH")
 		(at 77.47 142.24 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "68aaa7a2-d280-4ba8-aafa-43b06d6d7ab1")
 		(property "Reference" "H106"
 			(at 74.93 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1877,6 +1854,8 @@
 		)
 		(property "Value" "MountingHole"
 			(at 74.93 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1886,29 +1865,35 @@
 		)
 		(property "Footprint" "001_download:MountingHole_digitizer"
 			(at 77.47 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 77.47 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
 			(at 77.47 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1927,13 +1912,17 @@
 		(lib_id "001_symbol:MountingHole_GH")
 		(at 54.61 142.24 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "820ece43-fb47-497d-a077-da583e251131")
 		(property "Reference" "H103"
 			(at 52.07 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1943,6 +1932,8 @@
 		)
 		(property "Value" "MountingHole"
 			(at 52.07 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1952,29 +1943,35 @@
 		)
 		(property "Footprint" "001_download:MountingHole_digitizer"
 			(at 54.61 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 54.61 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
 			(at 54.61 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1993,13 +1990,17 @@
 		(lib_id "001_symbol:MountingHole_GH")
 		(at 62.23 142.24 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "a23d8263-36bc-445c-9a82-71d27b209199")
 		(property "Reference" "H104"
 			(at 59.69 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2009,6 +2010,8 @@
 		)
 		(property "Value" "MountingHole"
 			(at 59.69 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2018,29 +2021,35 @@
 		)
 		(property "Footprint" "001_download:MountingHole_digitizer"
 			(at 62.23 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 62.23 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
 			(at 62.23 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2058,17 +2067,23 @@
 	(sheet
 		(at 60.96 71.12)
 		(size 20.32 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-000000000000")
 		(property "Sheetname" "ADC0"
 			(at 60.96 70.4084 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2078,6 +2093,8 @@
 		)
 		(property "Sheetfile" "ad9653_adc0.kicad_sch"
 			(at 60.96 86.9446 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2087,63 +2104,63 @@
 		)
 		(pin "{ADC}" output
 			(at 81.28 74.93 0)
+			(uuid "d6692881-21f5-404e-a606-6548bcfbaa1e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d6692881-21f5-404e-a606-6548bcfbaa1e")
 		)
 		(pin "VSS1P8V" input
 			(at 60.96 73.66 180)
+			(uuid "20de2832-3c9a-487a-a47d-e28a6056b280")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "20de2832-3c9a-487a-a47d-e28a6056b280")
 		)
 		(pin "VDD1P8V" input
 			(at 60.96 76.2 180)
+			(uuid "28ab62f0-f20c-4382-aaa8-1a05c71af6ec")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "28ab62f0-f20c-4382-aaa8-1a05c71af6ec")
 		)
 		(pin "{ADC0CLK}" input
 			(at 60.96 81.28 180)
+			(uuid "fdc44f94-ed31-4a38-9e7f-c80545591b81")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "fdc44f94-ed31-4a38-9e7f-c80545591b81")
 		)
 		(pin "VREFADC_1P25V" input
 			(at 60.96 78.74 180)
+			(uuid "4bb05ca6-6e88-429e-8ed1-2592cb9744e9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4bb05ca6-6e88-429e-8ed1-2592cb9744e9")
 		)
 		(pin "{ADC01SPIPDNSYNC}" input
 			(at 81.28 83.82 0)
+			(uuid "99f2dd42-3233-498b-b83d-6098ad598242")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "99f2dd42-3233-498b-b83d-6098ad598242")
 		)
 		(instances
 			(project "zest"
@@ -2156,17 +2173,23 @@
 	(sheet
 		(at 60.96 105.41)
 		(size 20.32 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-000000000001")
 		(property "Sheetname" "ADC1"
 			(at 60.96 104.6984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2176,6 +2199,8 @@
 		)
 		(property "Sheetfile" "ad9653_adc1.kicad_sch"
 			(at 60.96 121.2346 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2185,63 +2210,63 @@
 		)
 		(pin "{ADC}" input
 			(at 81.28 109.22 0)
+			(uuid "832ebd7d-05e9-467e-be44-860999798973")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "832ebd7d-05e9-467e-be44-860999798973")
 		)
 		(pin "VSS1P8V" input
 			(at 60.96 107.95 180)
+			(uuid "81977864-4780-412f-b271-7a4d17031ed3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "81977864-4780-412f-b271-7a4d17031ed3")
 		)
 		(pin "VDD1P8V" input
 			(at 60.96 110.49 180)
+			(uuid "19f285cb-5e14-4539-b985-ef0b64fd10a4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "19f285cb-5e14-4539-b985-ef0b64fd10a4")
 		)
 		(pin "{ADC1CLK}" input
 			(at 60.96 115.57 180)
+			(uuid "0b2f7b6b-f76a-488e-9eab-70b1b65b4bb3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0b2f7b6b-f76a-488e-9eab-70b1b65b4bb3")
 		)
 		(pin "VREFADC_1P25V" input
 			(at 60.96 113.03 180)
+			(uuid "ae26bdcb-5b41-49ea-88e4-193426c5c896")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ae26bdcb-5b41-49ea-88e4-193426c5c896")
 		)
 		(pin "{ADC01SPIPDNSYNC}" input
 			(at 81.28 118.11 0)
+			(uuid "3777f765-c526-4923-8f90-b55196f7fb07")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "3777f765-c526-4923-8f90-b55196f7fb07")
 		)
 		(instances
 			(project "zest"
@@ -2254,17 +2279,23 @@
 	(sheet
 		(at 162.56 19.05)
 		(size 27.94 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-000000000002")
 		(property "Sheetname" "PowerSupply"
 			(at 162.56 18.3384 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2274,6 +2305,8 @@
 		)
 		(property "Sheetfile" "PowerSupply.kicad_sch"
 			(at 162.56 45.0346 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2283,143 +2316,143 @@
 		)
 		(pin "V12P0V_bus" input
 			(at 190.5 21.59 0)
+			(uuid "00b307e8-e73a-439d-a03e-76ae34c24490")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "00b307e8-e73a-439d-a03e-76ae34c24490")
 		)
 		(pin "P2_12P0V" input
 			(at 162.56 24.13 180)
+			(uuid "5959b159-69cc-4833-b774-908ea68582c7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5959b159-69cc-4833-b774-908ea68582c7")
 		)
 		(pin "P2_3P3V" input
 			(at 162.56 26.67 180)
+			(uuid "a58a70b9-61f6-445a-8978-458ba8df11a6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a58a70b9-61f6-445a-8978-458ba8df11a6")
 		)
 		(pin "P1_12P0V" input
 			(at 162.56 21.59 180)
+			(uuid "621b3afb-af8d-4cd7-af70-3f360a86624f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "621b3afb-af8d-4cd7-af70-3f360a86624f")
 		)
 		(pin "VDD3P3V" input
 			(at 190.5 24.13 0)
+			(uuid "8531294f-a9e0-4e59-ae21-2bfb09dd785e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8531294f-a9e0-4e59-ae21-2bfb09dd785e")
 		)
 		(pin "V2P2V_Mon" input
 			(at 190.5 36.83 0)
+			(uuid "ea6e2e93-235e-4ac5-9675-df6b79ab0366")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ea6e2e93-235e-4ac5-9675-df6b79ab0366")
 		)
 		(pin "I_Mon" input
 			(at 190.5 39.37 0)
+			(uuid "ee9bf535-29bf-4400-b564-c6f765361efc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ee9bf535-29bf-4400-b564-c6f765361efc")
 		)
 		(pin "PWR_EN" input
 			(at 162.56 33.02 180)
+			(uuid "31653043-09f8-4c96-b1b9-f9a2d955391f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "31653043-09f8-4c96-b1b9-f9a2d955391f")
 		)
 		(pin "PWR_SYNC" input
 			(at 162.56 35.56 180)
+			(uuid "3eac82e0-de9a-4fac-b1d8-d59e6b11787c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3eac82e0-de9a-4fac-b1d8-d59e6b11787c")
 		)
 		(pin "VSS1P8V" input
 			(at 190.5 31.75 0)
+			(uuid "caa65ccf-d4f9-46a0-b072-51be6a4bdad1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "caa65ccf-d4f9-46a0-b072-51be6a4bdad1")
 		)
 		(pin "V3P7V_Mon" input
 			(at 190.5 34.29 0)
+			(uuid "111a0f6c-474a-4ef6-8c95-7c466da7f6f7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "111a0f6c-474a-4ef6-8c95-7c466da7f6f7")
 		)
 		(pin "VSS3P3V" input
 			(at 190.5 26.67 0)
+			(uuid "8788fc8b-d9f4-4d8a-ac8d-9e5750c662b7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8788fc8b-d9f4-4d8a-ac8d-9e5750c662b7")
 		)
 		(pin "VDD1P8V" input
 			(at 190.5 29.21 0)
+			(uuid "d8143170-2fd4-4d4d-ae6c-89ae7e949a69")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d8143170-2fd4-4d4d-ae6c-89ae7e949a69")
 		)
 		(pin "VREFADC_1P25V" input
 			(at 190.5 41.91 0)
+			(uuid "9ddbd446-45f2-49f9-a8ab-818fa980e0cf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9ddbd446-45f2-49f9-a8ab-818fa980e0cf")
 		)
 		(instances
 			(project "zest"
@@ -2432,16 +2465,22 @@
 	(sheet
 		(at 186.69 107.95)
 		(size 21.59 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-00000000000a")
 		(property "Sheetname" "ad7794"
 			(at 191.77 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2451,6 +2490,8 @@
 		)
 		(property "Sheetfile" "ad7794.kicad_sch"
 			(at 186.69 116.1546 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2460,23 +2501,23 @@
 		)
 		(pin "VSS3P3V" input
 			(at 186.69 110.49 180)
+			(uuid "1a79e897-2512-44ec-b63c-8e6eeff333d9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1a79e897-2512-44ec-b63c-8e6eeff333d9")
 		)
 		(pin "{AD7794_SPI_CLK}" input
 			(at 186.69 113.03 180)
+			(uuid "a14c0384-3ac0-4f2f-8555-9f1eff0b0335")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a14c0384-3ac0-4f2f-8555-9f1eff0b0335")
 		)
 		(instances
 			(project "zest"
@@ -2489,17 +2530,23 @@
 	(sheet
 		(at 106.68 52.07)
 		(size 15.24 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-00000000000b")
 		(property "Sheetname" "ad9781"
 			(at 106.68 51.3584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2509,6 +2556,8 @@
 		)
 		(property "Sheetfile" "ad9781.kicad_sch"
 			(at 106.68 78.0546 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2518,73 +2567,73 @@
 		)
 		(pin "{DAC}" input
 			(at 106.68 74.93 180)
+			(uuid "a1dd5784-1cb4-4082-a9d3-3489afac2078")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a1dd5784-1cb4-4082-a9d3-3489afac2078")
 		)
 		(pin "VDD1P8V" input
 			(at 106.68 54.61 180)
+			(uuid "5bd089c3-1bfe-4126-b79b-20cb3d84a003")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5bd089c3-1bfe-4126-b79b-20cb3d84a003")
 		)
 		(pin "VDD3P3V" input
 			(at 106.68 59.69 180)
+			(uuid "f5fecd22-7554-4177-9500-f023f5115df7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f5fecd22-7554-4177-9500-f023f5115df7")
 		)
 		(pin "VSS1P8V" input
 			(at 106.68 57.15 180)
+			(uuid "c1647b66-f32d-48bb-b31f-fceaeafaa13b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c1647b66-f32d-48bb-b31f-fceaeafaa13b")
 		)
 		(pin "VSS3P3V" input
 			(at 106.68 62.23 180)
+			(uuid "1ced6101-46b2-4cd6-881f-55f25232e66f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1ced6101-46b2-4cd6-881f-55f25232e66f")
 		)
 		(pin "{DACCLK}" input
 			(at 106.68 67.31 180)
+			(uuid "d059c09f-edab-4e54-b7ef-baedbd0016c3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d059c09f-edab-4e54-b7ef-baedbd0016c3")
 		)
 		(pin "{DACSPIRST}" input
 			(at 121.92 71.12 0)
+			(uuid "953b1213-5905-4e4c-947f-6336ec1f9cbf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "953b1213-5905-4e4c-947f-6336ec1f9cbf")
 		)
 		(instances
 			(project "zest"
@@ -2597,17 +2646,23 @@
 	(sheet
 		(at 57.15 54.61)
 		(size 20.32 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-00000000000c")
 		(property "Sheetname" "adl5501"
 			(at 57.15 53.8984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2617,6 +2672,8 @@
 		)
 		(property "Sheetfile" "adl5501.kicad_sch"
 			(at 57.15 62.8146 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2626,33 +2683,33 @@
 		)
 		(pin "RFIN" input
 			(at 57.15 59.69 180)
+			(uuid "ef343317-4ac4-4256-9e44-1c91f35a33d1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ef343317-4ac4-4256-9e44-1c91f35a33d1")
 		)
 		(pin "VDD3P3V" input
 			(at 57.15 57.15 180)
+			(uuid "00b43270-d3bf-459e-bbc7-3d9416f382a5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "00b43270-d3bf-459e-bbc7-3d9416f382a5")
 		)
 		(pin "LO_MON" input
 			(at 77.47 57.15 0)
+			(uuid "5133eed5-3db1-4494-b368-811738d8ab26")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5133eed5-3db1-4494-b368-811738d8ab26")
 		)
 		(instances
 			(project "zest"
@@ -2665,17 +2722,23 @@
 	(sheet
 		(at 193.04 88.9)
 		(size 29.21 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-00000000000d")
 		(property "Sheetname" "amc7823"
 			(at 193.04 88.1884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2685,6 +2748,8 @@
 		)
 		(property "Sheetfile" "amc7823.kicad_sch"
 			(at 193.04 98.3746 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2694,33 +2759,33 @@
 		)
 		(pin "VDD3P3V" input
 			(at 193.04 92.71 180)
+			(uuid "36398484-f7f8-4402-97cc-c1a1a13eb70a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "36398484-f7f8-4402-97cc-c1a1a13eb70a")
 		)
 		(pin "{AMC7823_SPI}" input
 			(at 193.04 95.25 180)
+			(uuid "d3cde22c-874b-429b-a8ce-e8956f50676a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d3cde22c-874b-429b-a8ce-e8956f50676a")
 		)
 		(pin "{AMC7823}" input
 			(at 222.25 95.25 0)
+			(uuid "d2cffbeb-c7c1-462a-99e0-76193993252f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d2cffbeb-c7c1-462a-99e0-76193993252f")
 		)
 		(instances
 			(project "zest"
@@ -2733,17 +2798,23 @@
 	(sheet
 		(at 157.48 132.08)
 		(size 12.7 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-00000000000e")
 		(property "Sheetname" "at24c32d"
 			(at 157.48 131.3684 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2753,6 +2824,8 @@
 		)
 		(property "Sheetfile" "at24c32d.kicad_sch"
 			(at 157.48 147.9046 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2762,53 +2835,53 @@
 		)
 		(pin "SCL" input
 			(at 157.48 142.24 180)
+			(uuid "e8b50aa8-06eb-42c6-b5a1-c336f196c769")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e8b50aa8-06eb-42c6-b5a1-c336f196c769")
 		)
 		(pin "SDA" input
 			(at 157.48 144.78 180)
+			(uuid "f8a8aa15-fcf2-491a-8cb5-2cca9d6245e1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f8a8aa15-fcf2-491a-8cb5-2cca9d6245e1")
 		)
 		(pin "A0" input
 			(at 157.48 137.16 180)
+			(uuid "8e412df5-0dd9-4a4e-9b49-7df9e60d904c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8e412df5-0dd9-4a4e-9b49-7df9e60d904c")
 		)
 		(pin "A1" input
 			(at 157.48 139.7 180)
+			(uuid "83092b01-948a-471f-939a-b4d54880bf98")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "83092b01-948a-471f-939a-b4d54880bf98")
 		)
 		(pin "VCC" input
 			(at 157.48 134.62 180)
+			(uuid "10dcd153-d8f8-425b-b81a-0f72521069c0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "10dcd153-d8f8-425b-b81a-0f72521069c0")
 		)
 		(instances
 			(project "zest"
@@ -2821,17 +2894,23 @@
 	(sheet
 		(at 114.3 144.78)
 		(size 15.24 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-000000000011")
 		(property "Sheetname" "fmc_misc"
 			(at 114.3 144.0684 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2841,6 +2920,8 @@
 		)
 		(property "Sheetfile" "fmc_misc.kicad_sch"
 			(at 114.3 163.1446 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2850,63 +2931,63 @@
 		)
 		(pin "{slowctrl}" input
 			(at 114.3 149.86 180)
+			(uuid "ff810492-ad38-48d3-af75-0f1a429a40e0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ff810492-ad38-48d3-af75-0f1a429a40e0")
 		)
 		(pin "{fmcpower}" input
 			(at 114.3 147.32 180)
+			(uuid "09f1fc7d-9e30-48d4-a9c0-7dfcf88c8cc6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "09f1fc7d-9e30-48d4-a9c0-7dfcf88c8cc6")
 		)
 		(pin "{PMOD1}" input
 			(at 114.3 152.4 180)
+			(uuid "e4494ba3-04d2-4d5a-8fa5-83d3f9f18933")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e4494ba3-04d2-4d5a-8fa5-83d3f9f18933")
 		)
 		(pin "{HDMI}" input
 			(at 114.3 157.48 180)
+			(uuid "5b1ba2c0-a7b4-4fa4-9498-b511df1a902a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5b1ba2c0-a7b4-4fa4-9498-b511df1a902a")
 		)
 		(pin "{PMOD2}" input
 			(at 114.3 154.94 180)
+			(uuid "22b49e06-b3a8-4c6b-ad2a-c8e885aa1ea5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "22b49e06-b3a8-4c6b-ad2a-c8e885aa1ea5")
 		)
 		(pin "VDD3P3V" input
 			(at 114.3 160.02 180)
+			(uuid "442810b0-c926-43cf-87d6-861d3fe85c68")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "442810b0-c926-43cf-87d6-861d3fe85c68")
 		)
 		(instances
 			(project "zest"
@@ -2919,17 +3000,23 @@
 	(sheet
 		(at 85.09 71.12)
 		(size 19.05 43.18)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-000000000012")
 		(property "Sheetname" "fmclpc"
 			(at 85.09 70.4084 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2939,6 +3026,8 @@
 		)
 		(property "Sheetfile" "fmclpc.kicad_sch"
 			(at 85.09 114.8846 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2948,93 +3037,93 @@
 		)
 		(pin "{slowctrl}" input
 			(at 104.14 90.17 0)
+			(uuid "65abf4c4-ade0-47d6-8708-d6db55972f66")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "65abf4c4-ade0-47d6-8708-d6db55972f66")
 		)
 		(pin "{PMOD2}" input
 			(at 104.14 109.22 0)
+			(uuid "3daacdcb-ec29-4725-980d-0a7a3ce9659f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "3daacdcb-ec29-4725-980d-0a7a3ce9659f")
 		)
 		(pin "{fmcpower}" input
 			(at 104.14 97.79 0)
+			(uuid "a6289d40-653f-408e-840c-14fbcdc6eb14")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a6289d40-653f-408e-840c-14fbcdc6eb14")
 		)
 		(pin "{DAC}" output
 			(at 104.14 74.93 0)
+			(uuid "0d5b1fa3-59a4-40b7-accf-6d5a47ed541a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0d5b1fa3-59a4-40b7-accf-6d5a47ed541a")
 		)
 		(pin "{HDMI}" input
 			(at 104.14 113.03 0)
+			(uuid "ba4b76f7-1312-4fff-ba4e-c5948a28f66c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ba4b76f7-1312-4fff-ba4e-c5948a28f66c")
 		)
 		(pin "{fmc_lmk_clk}" input
 			(at 85.09 95.25 180)
+			(uuid "5d1b270f-76ad-44ba-8fe0-113bf6c1479c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5d1b270f-76ad-44ba-8fe0-113bf6c1479c")
 		)
 		(pin "{ADC1}" input
 			(at 85.09 109.22 180)
+			(uuid "5439e800-255c-4e75-b0f8-90895deaa589")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5439e800-255c-4e75-b0f8-90895deaa589")
 		)
 		(pin "{ADC0}" input
 			(at 85.09 74.93 180)
+			(uuid "bd62aed4-7dca-4c88-b8b0-aad87ce916de")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bd62aed4-7dca-4c88-b8b0-aad87ce916de")
 		)
 		(pin "{PMOD1}" input
 			(at 104.14 105.41 0)
+			(uuid "6830b2ee-40ff-4f77-b17d-c77e2c1359f2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6830b2ee-40ff-4f77-b17d-c77e2c1359f2")
 		)
 		(instances
 			(project "zest"
@@ -3047,17 +3136,23 @@
 	(sheet
 		(at 157.48 152.4)
 		(size 12.7 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-000000000013")
 		(property "Sheetname" "kx023"
 			(at 157.48 151.6884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3067,6 +3162,8 @@
 		)
 		(property "Sheetfile" "kx023.kicad_sch"
 			(at 157.48 163.1446 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3076,33 +3173,33 @@
 		)
 		(pin "VDD3P3V" input
 			(at 157.48 154.94 180)
+			(uuid "f1443e52-9b57-4d4d-9e79-c3144e1bbe16")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f1443e52-9b57-4d4d-9e79-c3144e1bbe16")
 		)
 		(pin "SCL" input
 			(at 157.48 157.48 180)
+			(uuid "38570f0c-6114-41a7-92d4-f3197c51fb8d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "38570f0c-6114-41a7-92d4-f3197c51fb8d")
 		)
 		(pin "SDA" input
 			(at 157.48 160.02 180)
+			(uuid "63dd769b-bc52-41df-9a9c-f0009cca1050")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "63dd769b-bc52-41df-9a9c-f0009cca1050")
 		)
 		(instances
 			(project "zest"
@@ -3115,17 +3212,23 @@
 	(sheet
 		(at 151.13 54.61)
 		(size 31.75 71.12)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-000000000014")
 		(property "Sheetname" "level_shift"
 			(at 151.13 53.8984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3135,6 +3238,8 @@
 		)
 		(property "Sheetfile" "level_shift.kicad_sch"
 			(at 151.13 126.3146 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3144,113 +3249,113 @@
 		)
 		(pin "{slowctrl}" input
 			(at 151.13 90.17 180)
+			(uuid "854f1756-7b89-4fa8-9080-bb761ac97c0e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "854f1756-7b89-4fa8-9080-bb761ac97c0e")
 		)
 		(pin "P2_VADJ" input
 			(at 151.13 57.15 180)
+			(uuid "6ff4d6a4-47f0-4d51-9870-470eab30c079")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6ff4d6a4-47f0-4d51-9870-470eab30c079")
 		)
 		(pin "VDD1P8V" input
 			(at 151.13 59.69 180)
+			(uuid "c1a9bf8b-61a8-4d62-8513-8c41938a6237")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c1a9bf8b-61a8-4d62-8513-8c41938a6237")
 		)
 		(pin "{DACSPIRST}" input
 			(at 151.13 71.12 180)
+			(uuid "5c143887-9f50-4e42-9f5a-6ea07634f9cf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5c143887-9f50-4e42-9f5a-6ea07634f9cf")
 		)
 		(pin "{AMC7823_SPI}" input
 			(at 182.88 95.25 0)
+			(uuid "6c0282e3-fcd7-4ea0-a8a5-4da009a17095")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6c0282e3-fcd7-4ea0-a8a5-4da009a17095")
 		)
 		(pin "{AD7794_SPI_CLK}" input
 			(at 182.88 113.03 0)
+			(uuid "fe36ff71-9f97-4b55-af89-4fd96e42ba04")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fe36ff71-9f97-4b55-af89-4fd96e42ba04")
 		)
 		(pin "PWR_SYNC" input
 			(at 182.88 104.14 0)
+			(uuid "ec73d20f-869c-4bb9-96f7-265c898d298a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ec73d20f-869c-4bb9-96f7-265c898d298a")
 		)
 		(pin "PWR_EN" input
 			(at 182.88 106.68 0)
+			(uuid "39288e32-afd8-487d-a66f-6fc1fbbafae4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "39288e32-afd8-487d-a66f-6fc1fbbafae4")
 		)
 		(pin "{LMKuWire}" input
 			(at 182.88 88.9 0)
+			(uuid "c2789bb9-d846-43f9-8ea8-74c68a055c01")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c2789bb9-d846-43f9-8ea8-74c68a055c01")
 		)
 		(pin "VDD3P3V" input
 			(at 151.13 62.23 180)
+			(uuid "46e2cad9-7423-4ef6-8272-4760152c6155")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "46e2cad9-7423-4ef6-8272-4760152c6155")
 		)
 		(pin "{ADC01SPIPDNSYNC}" input
 			(at 151.13 83.82 180)
+			(uuid "603cac79-8ca0-4c76-820c-22d0953ef27e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "603cac79-8ca0-4c76-820c-22d0953ef27e")
 		)
 		(instances
 			(project "zest"
@@ -3263,17 +3368,23 @@
 	(sheet
 		(at 30.48 62.23)
 		(size 24.13 59.69)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-000000000015")
 		(property "Sheetname" "lmk01801"
 			(at 30.48 61.5184 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3283,6 +3394,8 @@
 		)
 		(property "Sheetfile" "lmk01801.kicad_sch"
 			(at 30.48 122.5046 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3292,73 +3405,73 @@
 		)
 		(pin "VSS3P3V" input
 			(at 30.48 64.77 180)
+			(uuid "124fdb60-9b95-4a54-9fc6-2a59bf57d73e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "124fdb60-9b95-4a54-9fc6-2a59bf57d73e")
 		)
 		(pin "clock_split" input
 			(at 54.61 64.77 0)
+			(uuid "c97db0dc-6ee3-4f4d-bad7-80750f45b7b9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c97db0dc-6ee3-4f4d-bad7-80750f45b7b9")
 		)
 		(pin "{DACCLK}" input
 			(at 54.61 67.31 0)
+			(uuid "f4366bac-e375-4035-ba72-7e6501c6281b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f4366bac-e375-4035-ba72-7e6501c6281b")
 		)
 		(pin "{LMKuWire}" input
 			(at 30.48 67.31 180)
+			(uuid "9dbba73b-38a2-4421-80a9-151090eed991")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9dbba73b-38a2-4421-80a9-151090eed991")
 		)
 		(pin "{ADC0CLK}" input
 			(at 54.61 81.28 0)
+			(uuid "94c168bf-59d2-4f65-9588-55590f7954f3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "94c168bf-59d2-4f65-9588-55590f7954f3")
 		)
 		(pin "{fmc_lmk_clk}" input
 			(at 54.61 95.25 0)
+			(uuid "dd647524-b99d-4e9e-8d47-923427a0ac0d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "dd647524-b99d-4e9e-8d47-923427a0ac0d")
 		)
 		(pin "{ADC1CLK}" input
 			(at 54.61 115.57 0)
+			(uuid "a84cba2c-3e87-49a9-87c5-2cd0c731f9c5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a84cba2c-3e87-49a9-87c5-2cd0c731f9c5")
 		)
 		(instances
 			(project "zest"
@@ -3371,17 +3484,23 @@
 	(sheet
 		(at 234.95 90.17)
 		(size 20.32 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-00000000001a")
 		(property "Sheetname" "slowmon"
 			(at 234.95 89.4584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3391,6 +3510,8 @@
 		)
 		(property "Sheetfile" "slowmon.kicad_sch"
 			(at 234.95 113.6146 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3400,83 +3521,83 @@
 		)
 		(pin "VDD3P3V" input
 			(at 234.95 92.71 180)
+			(uuid "418a0ac8-a42a-41d8-81ac-af469402d1be")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "418a0ac8-a42a-41d8-81ac-af469402d1be")
 		)
 		(pin "I_Mon" input
 			(at 234.95 97.79 180)
+			(uuid "c888516c-197a-418a-ae05-e62b29fcbab3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c888516c-197a-418a-ae05-e62b29fcbab3")
 		)
 		(pin "V3P7V_Mon" input
 			(at 234.95 100.33 180)
+			(uuid "9f17e672-33de-4c29-864d-dbc2e8af63d7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9f17e672-33de-4c29-864d-dbc2e8af63d7")
 		)
 		(pin "V2P2V_Mon" input
 			(at 234.95 102.87 180)
+			(uuid "aeac2a28-2076-4eae-8541-e914ee6ce5e7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "aeac2a28-2076-4eae-8541-e914ee6ce5e7")
 		)
 		(pin "LO_MON" input
 			(at 234.95 105.41 180)
+			(uuid "1247a719-dd79-4655-9bbd-413fb3743aa9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1247a719-dd79-4655-9bbd-413fb3743aa9")
 		)
 		(pin "V12P0V_bus" input
 			(at 234.95 107.95 180)
+			(uuid "5477d0db-3277-4934-ac2c-5ac413d0cf4d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5477d0db-3277-4934-ac2c-5ac413d0cf4d")
 		)
 		(pin "LT6233_OUT" input
 			(at 234.95 110.49 180)
+			(uuid "bdb1f17f-7911-4a99-9eab-94d073523d41")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bdb1f17f-7911-4a99-9eab-94d073523d41")
 		)
 		(pin "{AMC7823}" input
 			(at 234.95 95.25 180)
+			(uuid "eb0a68ec-7b21-44c0-91b2-d7dfe49ae98d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "eb0a68ec-7b21-44c0-91b2-d7dfe49ae98d")
 		)
 		(instances
 			(project "zest"
@@ -3489,17 +3610,23 @@
 	(sheet
 		(at 224.79 120.65)
 		(size 19.05 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-00000000001b")
 		(property "Sheetname" "spu0410"
 			(at 224.79 119.9384 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3509,6 +3636,8 @@
 		)
 		(property "Sheetfile" "spu0410.kicad_sch"
 			(at 224.79 126.3146 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3518,23 +3647,23 @@
 		)
 		(pin "VDD3P3V" input
 			(at 224.79 123.19 180)
+			(uuid "aab538a8-9444-46b7-a50f-7d3ac924841f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "aab538a8-9444-46b7-a50f-7d3ac924841f")
 		)
 		(pin "OUT" input
 			(at 243.84 123.19 0)
+			(uuid "7ec84065-e21b-45bb-8ab1-0d7d0e4ab72e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7ec84065-e21b-45bb-8ab1-0d7d0e4ab72e")
 		)
 		(instances
 			(project "zest"
@@ -3549,4 +3678,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
