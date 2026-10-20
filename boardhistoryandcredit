@@ -1,7 +1,7 @@
 The digitizer board design started around May 2015 for the LCLS-II LLRF Precision Receiver Chassis (PRC) project.
 
 The original schematic designers were Larry Doolittle, Gang Huang, Jin Yang, and Yilun Xu from LBNL.
-The schematic was created using GnuEDA (gEDA, gschem). The dual FMC LPC, clock, ADC, and DAC were designed based on the reference design from the vendor. The power supply section and the housekeeping session referenced/reused several of Jin Yang's LTC2714 test boards and Qiang Du's rxtx board for ALS LLRF.
+The schematic was initially created using GnuEDA (gEDA, gschem). The dual FMC LPC, clock, ADC, and DAC were designed based on the reference design from the vendor. The power supply section and the housekeeping session referenced/reused several of Jin Yang's LTC2714 test boards and Qiang Du's rxtx board for ALS LLRF.
 The oldest email I can find is from May 29, 2015, discussing basic configurations. Yilun Xu joined the schematic drawing a little later that year.
 
 The PCB layout was designed by Kathy Pham from SLAC using PADS. Larry and I do not have access to PADS, and Kathy does not use gEDA. At that time, the schematic was transferred using the netlist file (also PDF for discussions), and the layout was transferred back using Gerber files. The "Final files" from Kathy were received via email on 20160413.
