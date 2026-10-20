@@ -5,10 +5,17 @@ This board is mainly used as a part of Radio Frequency (RF) controls electronics
 Over 400 units have been manufactured by Berkeley Lab and SLAC National Laboratories and is the ADC/DAC board base design of the
 LCLS-II (Linac Coherent Light Source II) Low-Level RF (LLRF) system at SLAC.
 
-The schematic is in gschem format; to work with it you
-need [gschem](http://wiki.geda-project.org/geda:gaf) installed.
-Tested on [Debian](https://www.debian.org) Jessie, Stretch, or Buster, where
-you simply `apt-get install geda-gschem`.
+This board is designed in KiCad 10.0.
+The original Zest board design was skillfully ported to KiCad by Gang Huang and purposefully uses the exact same traces/vias/zones as v1.1, except:
+
+* The simple R/C/L footprints use the built-in footprints from KiCad, so those pad sizes are slightly different from the original Gerber.
+* The other footprints are directly downloaded from different online repos, including digikey.com and snapeda.com.
+* The footprint files are not included because they are not licensed for redistribution.
+* The reference ID for each component has changed because the KiCad and gEDA manage the hierarchical sheets / subcircuit differently. A mapping of the v1.2 and v1.1 part reference ID can be found in the partsub.json.
+
+The original Zest board can be found at https://github.com/BerkeleyLab/Zest as v1.1 and below,
+which use gEDA and PADS for the schematic and layout design.
+The history and credit of the board can be found in the boardhistoryandcredit file.
 
 ![Image of completed board](doc/digitizer_top_x.jpg) 
 
@@ -23,42 +30,36 @@ The Zest board features:
 * 181.8 x 110 mm, 8-layer, with notch to accommodate Xilinx FMC eval boards, also known to work with [Marble](https://github.com/BerkeleyLab/Marble) and [Marble-Mini](https://github.com/BerkeleyLab/Marble-Mini)
 * 4W power dissipation
 
-This design has been skillfully ported to [KiCad](https://www.kicad.org/) 8 by Gang Huang.
-Go [here](https://gitlab.com/lbl-boards/zest) for that work, now labeled Zest v1.2.
-
 ![block_diagram](doc/digitizer_block.png)
 
 ## Schematics
 
 To get PDF versions for reference:
 
-  * Download the `djboxsym` tool. Put it in your PATH.
+  `make pdf` 
 
-```bash
-$ wget http://www.gedasymbols.org/user/dj_delorie/tools/djboxsym
-$ echo "1a372fdef8e474119fae8acde38226f82271b62cd16b7f47b6b2408f0c0dd1ea  djboxsym" | sha256sum -c
-djboxsym: OK
-```
+### Generate fabrication package
+`make fab`
 
-  * call `make` in `geda_library/symbol/djboxsym/`, which generates symbols from the included symbol templates
-  * call `make` in `digitizer/`, which should generate `digitizer_schematic.pdf`
+It will download the Gerber.py script from the [BIDS repo](https://gitlab.com/lbl-bids/kicad_library) and use it to generate the Gerber, drill, bom and xyposition files. I didn't include the whole BIDS as submodule because I don't feel it's necessary, as I am only using this single file here.
 
-## Artwork/Gerbers
+### Generate QR code for SN
 
-Created by Kathy Pham at SLAC using PADS.  The latest version is from May 19, 2017.
-The PADS design imports the netlist exported from this gschem design.
-These PADS pcb file is in the top directory in this repository (`PC-379-396-15-C02_DIGITIZER BOARD.pcb`) and the gerbers
-are in the `gerbers` directory.
+`make qrsn SNSTART=10 SNSTOP=20`
 
-QR-code serial-number overlay Gerbers are generated with `qr_gen.py`.
+This will generate the Gerber file for 10 different serial numbers. The generated Gerbers can be found in the directory
 
-## BOM
+`ls qrsngbr`
 
-The BOM is also in the top directory in this repository (`PC-379-396-15-C02_DIGITIZER BOARD_XY.xlsx`).
-This file was exported from the PADS design referenced above.
+### Generate zip file
+`make zip SNSTART=10 SNSTOP=20`
 
-If you run `make merged_xy.csv`, you can merge the actual orderable part numbers (kept here
-in the parts.data file) and get a usable xy assembly file for fabrication.
+This will generate a zip file containing files from the fab and the qrsngbr directories.
+
+### Generate tarball file
+`make tarball SNSTART=10 SNSTOP=20`
+
+This will generate a .tar.gz file containing files from the fab and the qrsngbr directories.
 
 ## Plastic Cover
 
@@ -69,6 +70,7 @@ This is designed in [OpenSCAD](http://www.openscad.org/) with a process that
 matches up its features with the Gerber file; see covergen.py.
 The OpenSCAD source file is cover1.scad.
 OpenSCAD will export an STL file which is easily 3-D printed.
+We also include a more compact Solidworks generated STL file (narrow_cover.STL) which can be mounted on the board using 1/4" adhesive strips.
 
 ## References
 

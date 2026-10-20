@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "001_symbol")(type "KiCad")(uri "${KIPRJMOD}/downloads/combine.kicad_sym")(options "")(descr ""))
+)

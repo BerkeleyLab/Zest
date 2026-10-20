@@ -1,0 +1,26 @@
+The digitizer board design started around May 2015 for the LCLS-II LLRF Precision Receiver Chassis (PRC) project.
+
+The original schematic designers were Larry Doolittle, Gang Huang, Jin Yang, and Yilun Xu from LBNL.
+The schematic was created using GnuEDA (gEDA, gschem). The dual FMC LPC, clock, ADC, and DAC were designed based on the reference design from the vendor. The power supply section and the housekeeping session referenced/reused several of Jin Yang's LTC2714 test boards and Qiang Du's rxtx board for ALS LLRF.
+The oldest email I can find is from May 29, 2015, discussing basic configurations. Yilun Xu joined the schematic drawing a little later that year.
+
+The PCB layout was designed by Kathy Pham from SLAC using PADS. Larry and I do not have access to PADS, and Kathy does not use gEDA. At that time, the schematic was transferred using the netlist file (also PDF for discussions), and the layout was transferred back using Gerber files. The "Final files" from Kathy were received via email on 20160413.
+
+The digitizer board was built to mate with dual FMC carriers, including different Xilinx evaluation boards such as AC701 and KC705. For the LCLS-II project, we started with the BMB7 board designed by John Jones, which was used in the Early Injector Commissioning. Later, for the main cold Linac, we upgraded to the QF2-pre board, also designed by John Jones.
+Larry and Carlos later guided the design of the Marble board, which uses the same FPGA chip and dual-FMC as the QF2-pre, and the digitizer directly mates with it.
+
+The performance was tested on the early batches of the board, and it showed good noise performance. You can find more details in the paper Low Noise Digitizer Design for LCLS-II LLRF, G. Huang et al., NAPAC206, at https://accelconf.web.cern.ch/napac2016/papers/tupoa40.pdf.
+
+Among other use cases, the digitizer board is integrated into the LCLS-II LLRF project's field control chassis, including the PRC and the RF station (RFS).
+
+Around 2019, the team decided to release the board design as open source under the CERN OHL v. 1.2 and gave it a new name: Zest.
+The design source is hosted at https://github.com/BerkeleyLab/Zest .
+
+In April 2024, I heard that people wanted to make modifications to the digitizer, but the toolchain is no longer readily available. Since I was recently involved in board design tasks for another project and had tested different Python KiCad bindings, especially the pcbnew Python interface, I decided to take this on as another test project. My goal is to bring the digitizer design to the latest open-source KiCad 8.0 and name it Zest 1.2.
+
+The primary objective of this conversion (from gEDA/PADS to KiCad) is to not make any changes. People should be able to use this design to fabricate the exact same board as the one from the Zest repository and expect the same performance.
+
+Hopefully, this can serve as a baseline for other modifications of the digitizer board.
+
+Gang Huang
+20240506
